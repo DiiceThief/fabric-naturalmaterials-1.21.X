@@ -1,5 +1,13 @@
 {
   "values": [
-    "naturalmaterials:palm_planks"
+    "naturalmaterials:palm_planks",
+    "naturalmaterials:palm_stairs",
+    "naturalmaterials:palm_slab",
+    "naturalmaterials:palm_pressure_plate",
+    "naturalmaterials:palm_button",
+    "naturalmaterials:palm_door",
+    "naturalmaterials:palm_trapdoor",
+    "naturalmaterials:palm_fence",
+    "naturalmaterials:palm_fence_gate"
   ]
 }
