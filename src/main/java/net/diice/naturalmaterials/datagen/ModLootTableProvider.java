@@ -15,6 +15,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PALM_PLANKS);
+        addDrop(ModBlocks.PALM_STAIRS);
+        addDrop(ModBlocks.PALM_SLAB, slabDrops(ModBlocks.PALM_SLAB));
+        addDrop(ModBlocks.PALM_BUTTON);
+        addDrop(ModBlocks.PALM_PRESSURE_PLATE);
+        addDrop(ModBlocks.PALM_DOOR, doorDrops(ModBlocks.PALM_DOOR));
+        addDrop(ModBlocks.PALM_TRAPDOOR);
+        addDrop(ModBlocks.PALM_FENCE);
+        addDrop(ModBlocks.PALM_FENCE_GATE);
 
     }
 }

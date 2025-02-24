@@ -1,3 +1,11 @@
 {
-"block.naturalmaterials.palm_planks": "Palm Planks"
+"block.naturalmaterials.palm_planks": "Palm Planks",
+"block.naturalmaterials.palm_stairs": "Palm Stairs",
+"block.naturalmaterials.palm_slab": "Palm Slab",
+"block.naturalmaterials.palm_button": "Palm Button",
+"block.naturalmaterials.palm_pressure_plate": "Palm Pressure Plate",
+"block.naturalmaterials.palm_door": "Palm Door",
+"block.naturalmaterials.palm_trapdoor": "Palm Trapdoor",
+"block.naturalmaterials.palm_fence": "Palm Fence",
+"block.naturalmaterials.palm_fence_gate": "Palm Fence Gate"
 }

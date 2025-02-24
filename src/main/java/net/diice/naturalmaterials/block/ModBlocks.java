@@ -1,9 +1,7 @@
 package net.diice.naturalmaterials.block;
 
 import net.diice.naturalmaterials.NaturalMaterials;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -14,6 +12,24 @@ public class ModBlocks {
 
     public static final Block PALM_PLANKS = registerBlock("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block PALM_STAIRS = registerBlock("palm_stairs",
+            new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    public static final Block PALM_SLAB = registerBlock("palm_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    public static final Block PALM_BUTTON = registerBlock("palm_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+    public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+    public static final Block PALM_FENCE = registerBlock("palm_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+    public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+    public static final Block PALM_DOOR = registerBlock("palm_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
+    public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
