@@ -1,0 +1,11 @@
+package net.diice.naturalmaterials;
+
+import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+
+public class NaturalMaterialsDataGenerator implements DataGeneratorEntrypoint {
+	@Override
+	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+
+	}
+}
