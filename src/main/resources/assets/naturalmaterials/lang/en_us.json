@@ -9,5 +9,15 @@
 "block.naturalmaterials.palm_door": "Palm Door",
 "block.naturalmaterials.palm_trapdoor": "Palm Trapdoor",
 "block.naturalmaterials.palm_fence": "Palm Fence",
-"block.naturalmaterials.palm_fence_gate": "Palm Fence Gate"
+"block.naturalmaterials.palm_fence_gate": "Palm Fence Gate",
+
+  "block.naturalmaterials.redwood_planks": "Redwood Planks",
+  "block.naturalmaterials.redwood_stairs": "Redwood Stairs",
+  "block.naturalmaterials.redwood_slab": "Redwood Slab",
+  "block.naturalmaterials.redwood_button": "Redwood Button",
+  "block.naturalmaterials.redwood_pressure_plate": "Redwood Pressure Plate",
+  "block.naturalmaterials.redwood_door": "Redwood Door",
+  "block.naturalmaterials.redwood_trapdoor": "Redwood Trapdoor",
+  "block.naturalmaterials.redwood_fence": "Redwood Fence",
+  "block.naturalmaterials.redwood_fence_gate": "Redwood Fence Gate"
 }

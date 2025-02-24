@@ -24,5 +24,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_FENCE);
         addDrop(ModBlocks.PALM_FENCE_GATE);
 
+        addDrop(ModBlocks.REDWOOD_PLANKS);
+        addDrop(ModBlocks.REDWOOD_STAIRS);
+        addDrop(ModBlocks.REDWOOD_SLAB, slabDrops(ModBlocks.REDWOOD_SLAB));
+        addDrop(ModBlocks.REDWOOD_BUTTON);
+        addDrop(ModBlocks.REDWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.REDWOOD_DOOR, doorDrops(ModBlocks.REDWOOD_DOOR));
+        addDrop(ModBlocks.REDWOOD_TRAPDOOR);
+        addDrop(ModBlocks.REDWOOD_FENCE);
+        addDrop(ModBlocks.REDWOOD_FENCE_GATE);
+
     }
 }

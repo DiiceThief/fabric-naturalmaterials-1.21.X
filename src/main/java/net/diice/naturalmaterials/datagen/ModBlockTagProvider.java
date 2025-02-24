@@ -18,7 +18,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.PALM_PLANKS);
+                .add(ModBlocks.PALM_PLANKS)
+                .add(ModBlocks.PALM_STAIRS)
+                .add(ModBlocks.PALM_SLAB)
+                .add(ModBlocks.PALM_PRESSURE_PLATE)
+                .add(ModBlocks.PALM_BUTTON)
+                .add(ModBlocks.PALM_DOOR)
+                .add(ModBlocks.PALM_TRAPDOOR)
+                .add(ModBlocks.PALM_FENCE)
+                .add(ModBlocks.PALM_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.PALM_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PALM_FENCE_GATE);
