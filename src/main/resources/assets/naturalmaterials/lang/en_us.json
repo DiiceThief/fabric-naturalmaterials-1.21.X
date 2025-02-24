@@ -1,5 +1,7 @@
 {
-"block.naturalmaterials.palm_planks": "Palm Planks",
+  "itemgroup.naturalmaterials.natural_materials_blocks": "Natural Materials",
+
+  "block.naturalmaterials.palm_planks": "Palm Planks",
 "block.naturalmaterials.palm_stairs": "Palm Stairs",
 "block.naturalmaterials.palm_slab": "Palm Slab",
 "block.naturalmaterials.palm_button": "Palm Button",
