@@ -1,2 +1,4 @@
-// 1.21	2025-02-23T19:51:53.3973069	NaturalMaterials/Tags for minecraft:block
-025cfe7395e97a316d94193fb409022acfca871f data\minecraft\tags\block\mineable\axe.json
+// 1.21	2025-02-24T17:40:15.5333971	NaturalMaterials/Tags for minecraft:block
+a186ae191905555968e7e25d4cc224dec9093e53 data\minecraft\tags\block\wooden_fences.json
+9049cfe9667e9508b9c6f412c92dc150e3d2cd91 data\minecraft\tags\block\fence_gates.json
+68ca66600c374282dbb0a52876d38743d7590072 data\minecraft\tags\block\mineable\axe.json

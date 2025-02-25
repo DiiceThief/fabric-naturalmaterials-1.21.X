@@ -35,7 +35,8 @@ public class ModBlocks {
     public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block REDWOOD_STAIRS = registerBlock("redwood_stairs",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+            new StairsBlock(ModBlocks.REDWOOD_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
     public static final Block REDWOOD_SLAB = registerBlock("redwood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
     public static final Block REDWOOD_BUTTON = registerBlock("redwood_button",
