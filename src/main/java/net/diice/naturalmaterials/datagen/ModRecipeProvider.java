@@ -20,7 +20,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter recipeExporter) {
 
-        createStairsRecipe(ModBlocks.PALM_DOOR, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
+        createStairsRecipe(ModBlocks.PALM_STAIRS, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_SLAB, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
         createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.PALM_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
         createTrapdoorRecipe(ModBlocks.PALM_TRAPDOOR, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
@@ -36,5 +36,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createFenceRecipe(ModBlocks.REDWOOD_FENCE, Ingredient.ofItems(ModBlocks.REDWOOD_PLANKS));
         createFenceGateRecipe(ModBlocks.REDWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.REDWOOD_PLANKS));
 
+        createStairsRecipe(ModBlocks.CYPRESS_STAIRS, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYPRESS_SLAB, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.CYPRESS_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createDoorRecipe(ModBlocks.CYPRESS_DOOR, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createTrapdoorRecipe(ModBlocks.CYPRESS_TRAPDOOR, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createFenceRecipe(ModBlocks.CYPRESS_FENCE, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+        createFenceGateRecipe(ModBlocks.CYPRESS_FENCE_GATE, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
     }
 }

@@ -1,5 +1,7 @@
 {
   "values": [
-    "naturalmaterials:palm_fence"
+    "naturalmaterials:palm_fence",
+    "naturalmaterials:redwood_fence",
+    "naturalmaterials:cypress_fence"
   ]
 }

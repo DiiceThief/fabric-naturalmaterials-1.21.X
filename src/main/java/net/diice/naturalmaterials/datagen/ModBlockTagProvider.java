@@ -26,9 +26,35 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PALM_DOOR)
                 .add(ModBlocks.PALM_TRAPDOOR)
                 .add(ModBlocks.PALM_FENCE)
-                .add(ModBlocks.PALM_FENCE_GATE);
+                .add(ModBlocks.PALM_FENCE_GATE)
 
-        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.PALM_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PALM_FENCE_GATE);
+                .add(ModBlocks.REDWOOD_PLANKS)
+                .add(ModBlocks.REDWOOD_STAIRS)
+                .add(ModBlocks.REDWOOD_SLAB)
+                .add(ModBlocks.REDWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.REDWOOD_BUTTON)
+                .add(ModBlocks.REDWOOD_DOOR)
+                .add(ModBlocks.REDWOOD_TRAPDOOR)
+                .add(ModBlocks.REDWOOD_FENCE)
+                .add(ModBlocks.REDWOOD_FENCE_GATE)
+
+                .add(ModBlocks.CYPRESS_PLANKS)
+                .add(ModBlocks.CYPRESS_STAIRS)
+                .add(ModBlocks.CYPRESS_SLAB)
+                .add(ModBlocks.CYPRESS_PRESSURE_PLATE)
+                .add(ModBlocks.CYPRESS_BUTTON)
+                .add(ModBlocks.CYPRESS_DOOR)
+                .add(ModBlocks.CYPRESS_TRAPDOOR)
+                .add(ModBlocks.CYPRESS_FENCE)
+                .add(ModBlocks.CYPRESS_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.PALM_FENCE)
+                .add(ModBlocks.REDWOOD_FENCE)
+                .add(ModBlocks.CYPRESS_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PALM_FENCE_GATE)
+                .add(ModBlocks.REDWOOD_FENCE_GATE)
+                .add(ModBlocks.CYPRESS_FENCE_GATE);
     }
 }
