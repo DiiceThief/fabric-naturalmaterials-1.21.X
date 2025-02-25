@@ -26,6 +26,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PALM_DOOR);
                         entries.add(ModBlocks.PALM_TRAPDOOR);
 
+                        entries.add(ModBlocks.REDWOOD_PLANKS);
+                        entries.add(ModBlocks.REDWOOD_STAIRS);
+                        entries.add(ModBlocks.REDWOOD_SLAB);
+                        entries.add(ModBlocks.REDWOOD_BUTTON);
+                        entries.add(ModBlocks.REDWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.REDWOOD_FENCE);
+                        entries.add(ModBlocks.REDWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.REDWOOD_DOOR);
+                        entries.add(ModBlocks.REDWOOD_TRAPDOOR);
+
                     })).build());
 
     public static void registerItemGroups() {
