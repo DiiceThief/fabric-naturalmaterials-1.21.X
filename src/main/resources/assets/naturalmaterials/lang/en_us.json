@@ -29,5 +29,7 @@
   "block.naturalmaterials.manawood_door": "Manawood Door",
   "block.naturalmaterials.manawood_trapdoor": "Manawood Trapdoor",
   "block.naturalmaterials.manawood_fence": "Manawood Fence",
-  "block.naturalmaterials.manawood_fence_gate": "Manawood Fence Gate"
+  "block.naturalmaterials.manawood_fence_gate": "Manawood Fence Gate",
+
+  "block.naturalmaterials.duskslate": "Duskslate"
 }

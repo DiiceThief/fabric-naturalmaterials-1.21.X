@@ -6,6 +6,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -89,6 +90,10 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block MANAWOOD_TRAPDOOR = registerBlock("manawood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+
+    public static final Block DUSKSLATE = registerBlock("duskslate",
+            new PillarBlock(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 6.0f)
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
 
 
     private static Block registerBlock(String name, Block block) {

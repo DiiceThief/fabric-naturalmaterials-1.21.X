@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
@@ -60,6 +62,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
+
+        blockStateModelGenerator.registerRotatable(ModBlocks.DUSKSLATE);
+
 
 
 

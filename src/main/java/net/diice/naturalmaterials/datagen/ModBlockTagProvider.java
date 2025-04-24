@@ -68,5 +68,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.REDWOOD_FENCE_GATE)
                 .add(ModBlocks.CYPRESS_FENCE_GATE)
                 .add(ModBlocks.MANAWOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.DUSKSLATE);
     }
 }

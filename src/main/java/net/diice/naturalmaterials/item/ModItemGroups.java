@@ -56,6 +56,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MANAWOOD_DOOR);
                         entries.add(ModBlocks.MANAWOOD_TRAPDOOR);
 
+                        entries.add(ModBlocks.DUSKSLATE);
+
 
                     })).build());
 
