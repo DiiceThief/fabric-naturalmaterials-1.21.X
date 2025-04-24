@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "naturalmaterials:block/manawood_planks",
+    "side": "naturalmaterials:block/manawood_planks",
+    "top": "naturalmaterials:block/manawood_planks"
+  }
+}

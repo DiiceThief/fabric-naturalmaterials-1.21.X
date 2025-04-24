@@ -46,6 +46,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CYPRESS_DOOR);
                         entries.add(ModBlocks.CYPRESS_TRAPDOOR);
 
+                        entries.add(ModBlocks.MANAWOOD_PLANKS);
+                        entries.add(ModBlocks.MANAWOOD_STAIRS);
+                        entries.add(ModBlocks.MANAWOOD_SLAB);
+                        entries.add(ModBlocks.MANAWOOD_BUTTON);
+                        entries.add(ModBlocks.MANAWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.MANAWOOD_FENCE);
+                        entries.add(ModBlocks.MANAWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.MANAWOOD_DOOR);
+                        entries.add(ModBlocks.MANAWOOD_TRAPDOOR);
+
 
                     })).build());
 

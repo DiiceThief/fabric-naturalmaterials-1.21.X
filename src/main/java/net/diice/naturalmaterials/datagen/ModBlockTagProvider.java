@@ -46,15 +46,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CYPRESS_DOOR)
                 .add(ModBlocks.CYPRESS_TRAPDOOR)
                 .add(ModBlocks.CYPRESS_FENCE)
-                .add(ModBlocks.CYPRESS_FENCE_GATE);
+                .add(ModBlocks.CYPRESS_FENCE_GATE)
+
+                .add(ModBlocks.MANAWOOD_PLANKS)
+                .add(ModBlocks.MANAWOOD_STAIRS)
+                .add(ModBlocks.MANAWOOD_SLAB)
+                .add(ModBlocks.MANAWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.MANAWOOD_BUTTON)
+                .add(ModBlocks.MANAWOOD_DOOR)
+                .add(ModBlocks.MANAWOOD_TRAPDOOR)
+                .add(ModBlocks.MANAWOOD_FENCE)
+                .add(ModBlocks.MANAWOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.PALM_FENCE)
                 .add(ModBlocks.REDWOOD_FENCE)
-                .add(ModBlocks.CYPRESS_FENCE);
+                .add(ModBlocks.CYPRESS_FENCE)
+                .add(ModBlocks.MANAWOOD_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.PALM_FENCE_GATE)
                 .add(ModBlocks.REDWOOD_FENCE_GATE)
-                .add(ModBlocks.CYPRESS_FENCE_GATE);
+                .add(ModBlocks.CYPRESS_FENCE_GATE)
+                .add(ModBlocks.MANAWOOD_FENCE_GATE);
     }
 }

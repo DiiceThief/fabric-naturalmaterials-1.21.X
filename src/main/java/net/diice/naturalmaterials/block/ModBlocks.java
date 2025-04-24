@@ -12,7 +12,6 @@ public class ModBlocks {
 
     public static final Block PALM_PLANKS = registerBlock("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-
     public static final Block PALM_STAIRS = registerBlock("palm_stairs",
             new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
@@ -21,7 +20,7 @@ public class ModBlocks {
     public static final Block PALM_BUTTON = registerBlock("palm_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
     public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final Block PALM_FENCE = registerBlock("palm_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
     public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
@@ -29,8 +28,7 @@ public class ModBlocks {
     public static final Block PALM_DOOR = registerBlock("palm_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
     public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
     public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -42,7 +40,7 @@ public class ModBlocks {
     public static final Block REDWOOD_BUTTON = registerBlock("redwood_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
     public static final Block REDWOOD_PRESSURE_PLATE = registerBlock("redwood_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final Block REDWOOD_FENCE = registerBlock("redwood_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
     public static final Block REDWOOD_FENCE_GATE = registerBlock("redwood_fence_gate",
@@ -50,7 +48,7 @@ public class ModBlocks {
     public static final Block REDWOOD_DOOR = registerBlock("redwood_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
     public static final Block REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
     public static final Block CYPRESS_PLANKS = registerBlock("cypress_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -62,7 +60,7 @@ public class ModBlocks {
     public static final Block CYPRESS_BUTTON = registerBlock("cypress_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
     public static final Block CYPRESS_PRESSURE_PLATE = registerBlock("cypress_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
     public static final Block CYPRESS_FENCE = registerBlock("cypress_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
     public static final Block CYPRESS_FENCE_GATE = registerBlock("cypress_fence_gate",
@@ -70,7 +68,27 @@ public class ModBlocks {
     public static final Block CYPRESS_DOOR = registerBlock("cypress_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+
+    public static final Block MANAWOOD_PLANKS = registerBlock("manawood_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block MANAWOOD_STAIRS = registerBlock("manawood_stairs",
+            new StairsBlock(ModBlocks.MANAWOOD_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    public static final Block MANAWOOD_SLAB = registerBlock("manawood_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+    public static final Block MANAWOOD_BUTTON = registerBlock("manawood_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+    public static final Block MANAWOOD_PRESSURE_PLATE = registerBlock("manawood_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final Block MANAWOOD_FENCE = registerBlock("manawood_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+    public static final Block MANAWOOD_FENCE_GATE = registerBlock("manawood_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+    public static final Block MANAWOOD_DOOR = registerBlock("manawood_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+    public static final Block MANAWOOD_TRAPDOOR = registerBlock("manawood_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
 
     private static Block registerBlock(String name, Block block) {

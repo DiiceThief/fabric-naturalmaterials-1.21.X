@@ -44,5 +44,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CYPRESS_FENCE);
         addDrop(ModBlocks.CYPRESS_FENCE_GATE);
 
+        addDrop(ModBlocks.MANAWOOD_PLANKS);
+        addDrop(ModBlocks.MANAWOOD_STAIRS);
+        addDrop(ModBlocks.MANAWOOD_SLAB, slabDrops(ModBlocks.MANAWOOD_SLAB));
+        addDrop(ModBlocks.MANAWOOD_BUTTON);
+        addDrop(ModBlocks.MANAWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.MANAWOOD_DOOR, doorDrops(ModBlocks.MANAWOOD_DOOR));
+        addDrop(ModBlocks.MANAWOOD_TRAPDOOR);
+        addDrop(ModBlocks.MANAWOOD_FENCE);
+        addDrop(ModBlocks.MANAWOOD_FENCE_GATE);
+
     }
 }

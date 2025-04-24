@@ -19,6 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool PALM_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
         BlockStateModelGenerator.BlockTexturePool REDWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool CYPRESS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYPRESS_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool MANAWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANAWOOD_PLANKS);
 
         PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
         PALM_POOL.slab(ModBlocks.PALM_SLAB);
@@ -49,6 +50,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.CYPRESS_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.CYPRESS_TRAPDOOR);
+
+        MANAWOOD_POOL.stairs(ModBlocks.MANAWOOD_STAIRS);
+        MANAWOOD_POOL.slab(ModBlocks.MANAWOOD_SLAB);
+        MANAWOOD_POOL.pressurePlate(ModBlocks.MANAWOOD_PRESSURE_PLATE);
+        MANAWOOD_POOL.button(ModBlocks.MANAWOOD_BUTTON);
+        MANAWOOD_POOL.fence(ModBlocks.MANAWOOD_FENCE);
+        MANAWOOD_POOL.fenceGate(ModBlocks.MANAWOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
 
 
 

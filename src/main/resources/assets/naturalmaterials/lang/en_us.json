@@ -19,5 +19,15 @@
   "block.naturalmaterials.redwood_door": "Redwood Door",
   "block.naturalmaterials.redwood_trapdoor": "Redwood Trapdoor",
   "block.naturalmaterials.redwood_fence": "Redwood Fence",
-  "block.naturalmaterials.redwood_fence_gate": "Redwood Fence Gate"
+  "block.naturalmaterials.redwood_fence_gate": "Redwood Fence Gate",
+
+  "block.naturalmaterials.manawood_planks": "Manawood Planks",
+  "block.naturalmaterials.manawood_stairs": "Manawood Stairs",
+  "block.naturalmaterials.manawood_slab": "Manawood Slab",
+  "block.naturalmaterials.manawood_button": "Manawood Button",
+  "block.naturalmaterials.manawood_pressure_plate": "Manawood Pressure Plate",
+  "block.naturalmaterials.manawood_door": "Manawood Door",
+  "block.naturalmaterials.manawood_trapdoor": "Manawood Trapdoor",
+  "block.naturalmaterials.manawood_fence": "Manawood Fence",
+  "block.naturalmaterials.manawood_fence_gate": "Manawood Fence Gate"
 }

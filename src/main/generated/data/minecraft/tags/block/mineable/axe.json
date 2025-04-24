@@ -26,6 +26,15 @@
     "naturalmaterials:cypress_door",
     "naturalmaterials:cypress_trapdoor",
     "naturalmaterials:cypress_fence",
-    "naturalmaterials:cypress_fence_gate"
+    "naturalmaterials:cypress_fence_gate",
+    "naturalmaterials:manawood_planks",
+    "naturalmaterials:manawood_stairs",
+    "naturalmaterials:manawood_slab",
+    "naturalmaterials:manawood_pressure_plate",
+    "naturalmaterials:manawood_button",
+    "naturalmaterials:manawood_door",
+    "naturalmaterials:manawood_trapdoor",
+    "naturalmaterials:manawood_fence",
+    "naturalmaterials:manawood_fence_gate"
   ]
 }

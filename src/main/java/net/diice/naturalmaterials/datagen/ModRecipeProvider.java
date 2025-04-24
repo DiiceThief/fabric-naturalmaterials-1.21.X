@@ -43,5 +43,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createTrapdoorRecipe(ModBlocks.CYPRESS_TRAPDOOR, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
         createFenceRecipe(ModBlocks.CYPRESS_FENCE, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
         createFenceGateRecipe(ModBlocks.CYPRESS_FENCE_GATE, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
+
+        createStairsRecipe(ModBlocks.MANAWOOD_STAIRS, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANAWOOD_SLAB, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.MANAWOOD_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.MANAWOOD_PRESSURE_PLATE));
+        createDoorRecipe(ModBlocks.MANAWOOD_DOOR, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
+        createTrapdoorRecipe(ModBlocks.MANAWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
+        createFenceRecipe(ModBlocks.MANAWOOD_FENCE, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
+        createFenceGateRecipe(ModBlocks.MANAWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
     }
 }
