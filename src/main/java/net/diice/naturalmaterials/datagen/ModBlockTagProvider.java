@@ -70,6 +70,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANAWOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.DUSKSLATE);
+                .add(ModBlocks.DUSKSLATE)
+                .add(ModBlocks.DUSKSLATE_STAIRS)
+                .add(ModBlocks.DUSKSLATE_SLAB)
+                .add(ModBlocks.DUSKSLATE_WALL)
+                .add(ModBlocks.DUSKSLATE_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.DUSKSLATE_WALL);
     }
 }

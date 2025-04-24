@@ -21,6 +21,16 @@
   "block.naturalmaterials.redwood_fence": "Redwood Fence",
   "block.naturalmaterials.redwood_fence_gate": "Redwood Fence Gate",
 
+  "block.naturalmaterials.cypress_planks": "Cypress Planks",
+  "block.naturalmaterials.cypress_stairs": "Cypress Stairs",
+  "block.naturalmaterials.cypress_slab": "Cypress Slab",
+  "block.naturalmaterials.cypress_button": "Cypress Button",
+  "block.naturalmaterials.cypress_pressure_plate": "Cypress Pressure Plate",
+  "block.naturalmaterials.cypress_door": "Cypress Door",
+  "block.naturalmaterials.cypress_trapdoor": "Cypress Trapdoor",
+  "block.naturalmaterials.cypress_fence": "Cypress Fence",
+  "block.naturalmaterials.cypress_fence_gate": "Cypress Fence Gate",
+
   "block.naturalmaterials.manawood_planks": "Manawood Planks",
   "block.naturalmaterials.manawood_stairs": "Manawood Stairs",
   "block.naturalmaterials.manawood_slab": "Manawood Slab",
@@ -31,5 +41,9 @@
   "block.naturalmaterials.manawood_fence": "Manawood Fence",
   "block.naturalmaterials.manawood_fence_gate": "Manawood Fence Gate",
 
-  "block.naturalmaterials.duskslate": "Duskslate"
+  "block.naturalmaterials.duskslate": "Duskslate",
+  "block.naturualmaterials.duskslate_stairs": "Duskslate Stairs",
+  "block.naturualmaterials.duskslate_button": "Duskslate Button",
+  "block.naturualmaterials.duskslate_wall": "Duskslate Wall",
+  "block.naturualmaterials.duskslate_slab": "Duskslate Slab"
 }

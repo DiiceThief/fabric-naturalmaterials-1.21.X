@@ -3,10 +3,7 @@ package net.diice.naturalmaterials.datagen;
 import net.diice.naturalmaterials.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSetType;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
@@ -22,6 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool REDWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool CYPRESS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYPRESS_PLANKS);
         BlockStateModelGenerator.BlockTexturePool MANAWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANAWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DUSKSLATE);
 
         PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
         PALM_POOL.slab(ModBlocks.PALM_SLAB);
@@ -63,7 +61,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
 
-        blockStateModelGenerator.registerRotatable(ModBlocks.DUSKSLATE);
+        DUSKSLATE_POOL.stairs(ModBlocks.DUSKSLATE_STAIRS);
+        DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
+        DUSKSLATE_POOL.wall(ModBlocks.DUSKSLATE_WALL);
+        DUSKSLATE_POOL.button(ModBlocks.DUSKSLATE_BUTTON);
+
 
 
 

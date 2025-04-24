@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "naturalmaterials:block/duskslate",
+    "side": "naturalmaterials:block/duskslate",
+    "top": "naturalmaterials:block/duskslate"
+  }
+}
