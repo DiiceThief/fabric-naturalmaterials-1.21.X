@@ -62,6 +62,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DUSKSLATE_WALL);
                         entries.add(ModBlocks.DUSKSLATE_BUTTON);
 
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE);
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE_SLAB);
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE_WALL);
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE_BUTTON);
+
 
                     })).build());
 

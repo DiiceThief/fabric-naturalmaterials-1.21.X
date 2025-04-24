@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool CYPRESS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYPRESS_PLANKS);
         BlockStateModelGenerator.BlockTexturePool MANAWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANAWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DUSKSLATE);
+        BlockStateModelGenerator.BlockTexturePool POLISHED_DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DUSKSLATE);
 
         PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
         PALM_POOL.slab(ModBlocks.PALM_SLAB);
@@ -65,6 +66,11 @@ public class ModModelProvider extends FabricModelProvider {
         DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
         DUSKSLATE_POOL.wall(ModBlocks.DUSKSLATE_WALL);
         DUSKSLATE_POOL.button(ModBlocks.DUSKSLATE_BUTTON);
+
+        POLISHED_DUSKSLATE_POOL.stairs(ModBlocks.POLISHED_DUSKSLATE_STAIRS);
+        POLISHED_DUSKSLATE_POOL.slab(ModBlocks.POLISHED_DUSKSLATE_SLAB);
+        POLISHED_DUSKSLATE_POOL.wall(ModBlocks.POLISHED_DUSKSLATE_WALL);
+        POLISHED_DUSKSLATE_POOL.button(ModBlocks.POLISHED_DUSKSLATE_BUTTON);
 
 
 

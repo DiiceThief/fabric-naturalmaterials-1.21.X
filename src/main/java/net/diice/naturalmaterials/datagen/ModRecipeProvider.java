@@ -83,5 +83,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.DUSKSLATE), conditionsFromItem(ModBlocks.DUSKSLATE))
                 .offerTo(recipeExporter);
 
+        createStairsRecipe(ModBlocks.POLISHED_DUSKSLATE_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_DUSKSLATE));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DUSKSLATE_SLAB, Ingredient.ofItems(ModBlocks.POLISHED_DUSKSLATE));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DUSKSLATE_BUTTON, 1)
+                .input(ModBlocks.POLISHED_DUSKSLATE)
+                .criterion(hasItem(ModBlocks.POLISHED_DUSKSLATE), conditionsFromItem(ModBlocks.POLISHED_DUSKSLATE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DUSKSLATE_WALL, 6)
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.POLISHED_DUSKSLATE)
+                .criterion(hasItem(ModBlocks.POLISHED_DUSKSLATE), conditionsFromItem(ModBlocks.POLISHED_DUSKSLATE))
+                .offerTo(recipeExporter);
+
     }
 }

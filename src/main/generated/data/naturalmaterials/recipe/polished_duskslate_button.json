@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "naturalmaterials:polished_duskslate"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturalmaterials:polished_duskslate_button"
+  }
+}

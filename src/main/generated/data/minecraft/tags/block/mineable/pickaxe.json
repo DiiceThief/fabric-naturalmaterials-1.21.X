@@ -4,6 +4,11 @@
     "naturalmaterials:duskslate_stairs",
     "naturalmaterials:duskslate_slab",
     "naturalmaterials:duskslate_wall",
-    "naturalmaterials:duskslate_button"
+    "naturalmaterials:duskslate_button",
+    "naturalmaterials:polished_duskslate",
+    "naturalmaterials:polished_duskslate_stairs",
+    "naturalmaterials:polished_duskslate_slab",
+    "naturalmaterials:polished_duskslate_button",
+    "naturalmaterials:polished_duskslate_wall"
   ]
 }

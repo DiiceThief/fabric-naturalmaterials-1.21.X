@@ -92,7 +92,7 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
     public static final Block DUSKSLATE = registerBlock("duskslate",
-            new PillarBlock(AbstractBlock.Settings.create().requiresTool()
+            new Block(AbstractBlock.Settings.create().requiresTool()
                     .strength(3.0f, 6.0f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block DUSKSLATE_STAIRS = registerBlock("duskslate_stairs",
@@ -104,6 +104,18 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block DUSKSLATE_WALL = registerBlock("duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_WALL)));
+
+    public static final Block POLISHED_DUSKSLATE = registerBlock("polished_duskslate",
+            new Block(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE)));
+    public static final Block POLISHED_DUSKSLATE_STAIRS = registerBlock("polished_duskslate_stairs",
+            new StairsBlock(ModBlocks.POLISHED_DUSKSLATE.getDefaultState(),
+                    AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_STAIRS)));
+    public static final Block POLISHED_DUSKSLATE_SLAB = registerBlock("polished_duskslate_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_SLAB)));
+    public static final Block POLISHED_DUSKSLATE_BUTTON = registerBlock("polished_duskslate_button",
+            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_BUTTON)));
+    public static final Block POLISHED_DUSKSLATE_WALL = registerBlock("polished_duskslate_wall",
+            new WallBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_WALL)));
 
 
     private static Block registerBlock(String name, Block block) {
