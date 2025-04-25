@@ -1,6 +1,8 @@
 package net.diice.naturalmaterials.datagen;
 
+import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.block.ModBlocks;
+import net.diice.naturalmaterials.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -10,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 import org.apache.commons.codec.digest.Md5Crypt;
 
 import java.util.concurrent.CompletableFuture;
@@ -21,6 +24,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.HUNTER_SMITHING_TEMPLATE, Identifier.of(NaturalMaterials.MOD_ID, "hunter"));
 
         createStairsRecipe(ModBlocks.PALM_STAIRS, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_SLAB, Ingredient.ofItems(ModBlocks.PALM_PLANKS));

@@ -11,6 +11,17 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+
+    public static final ItemGroup NATURAL_MATERIALS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.AMBER))
+                    .displayName(Text.translatable("itemgroup.naturalmaterials.natural_materials_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.AMBER);
+
+                        entries.add(ModItems.HUNTER_SMITHING_TEMPLATE);
+
+                    }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PALM_PLANKS))

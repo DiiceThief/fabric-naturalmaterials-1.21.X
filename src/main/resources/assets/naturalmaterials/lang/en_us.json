@@ -1,5 +1,6 @@
 {
-  "itemgroup.naturalmaterials.natural_materials_blocks": "Natural Materials",
+  "itemgroup.naturalmaterials.natural_materials_blocks": "Natural Materials Blocks",
+  "itemgroup.naturalmaterials.natural_materials_items": "Natural Materials Items",
 
   "block.naturalmaterials.palm_log": "Palm Log",
   "block.naturalmaterials.palm_wood": "Palm Wood",
@@ -83,5 +84,16 @@
   "block.naturalmaterials.polished_blueshist_button": "Polished Blueshist Button",
   "block.naturalmaterials.polished_blueshist_wall": "Polished Blueshist Wall",
   "block.naturalmaterials.polished_blueshist_slab": "Polished Blueshist Slab",
-  "block.naturalmaterials.polished_blueshist_pressure_plate": "Polished Blueshist Pressure Plate"
+  "block.naturalmaterials.polished_blueshist_pressure_plate": "Polished Blueshist Pressure Plate",
+
+
+  "item.naturalmaterials.amber": "Amber",
+
+  "item.naturalmaterials.hunter_armor_trim_smithing_template": "Hunter Smithing Template",
+
+
+  "trim_material.naturalmaterials.amber": "Amber Material",
+
+
+  "trim_pattern.naturalmaterials.hunter": "Hunter Trim Pattern"
 }

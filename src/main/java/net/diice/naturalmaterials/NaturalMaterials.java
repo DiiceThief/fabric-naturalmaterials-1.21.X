@@ -15,6 +15,7 @@ public class NaturalMaterials implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();

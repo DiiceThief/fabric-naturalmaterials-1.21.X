@@ -1,8 +1,12 @@
 package net.diice.naturalmaterials;
 
 import net.diice.naturalmaterials.datagen.*;
+import net.diice.naturalmaterials.trim.ModTrimMaterials;
+import net.diice.naturalmaterials.trim.ModTrimPatterns;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class NaturalMaterialsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,6 +18,15 @@ public class NaturalMaterialsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModRegistryDataGenerator::new);
+
+
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 
 	}
 }

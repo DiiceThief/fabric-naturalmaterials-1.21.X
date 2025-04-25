@@ -1,6 +1,7 @@
 package net.diice.naturalmaterials.block;
 
 import net.diice.naturalmaterials.NaturalMaterials;
+import net.diice.naturalmaterials.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.item.BlockItem;
@@ -39,6 +40,10 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
     public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
+            new SaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
@@ -67,6 +72,11 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
     public static final Block REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+
 
  public static final Block CYPRESS_LEAVES = registerBlock("cypress_leaves",
          new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
@@ -97,6 +107,9 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
+            new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
@@ -125,6 +138,11 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block MANAWOOD_TRAPDOOR = registerBlock("manawood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block MANAWOOD_LEAVES = registerBlock("manawood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block MANAWOOD_SAPLING = registerBlock("manawood_sapling",
+            new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+
 
     public static final Block DUSKSLATE = registerBlock("duskslate",
             new Block(AbstractBlock.Settings.create().requiresTool()
@@ -142,6 +160,7 @@ public class ModBlocks {
     public static final Block DUSKSLATE_PRESSURE_PLATE = registerBlock("duskslate_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
+
     public static final Block POLISHED_DUSKSLATE = registerBlock("polished_duskslate",
             new Block(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE)));
     public static final Block POLISHED_DUSKSLATE_STAIRS = registerBlock("polished_duskslate_stairs",
@@ -155,6 +174,8 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_WALL)));
     public static final Block POLISHED_DUSKSLATE_PRESSURE_PLATE = registerBlock("polished_duskslate_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+
+
     public static final Block BLUESHIST = registerBlock("blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static final Block BLUESHIST_STAIRS = registerBlock("blueshist_stairs",
@@ -169,6 +190,7 @@ public class ModBlocks {
     public static final Block BLUESHIST_PRESSURE_PLATE = registerBlock("blueshist_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
+
     public static final Block POLISHED_BLUESHIST = registerBlock("polished_blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static final Block POLISHED_BLUESHIST_STAIRS = registerBlock("polished_blueshist_stairs",
@@ -182,6 +204,7 @@ public class ModBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
     public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerBlock("polished_blueshist_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+
 
 
     private static Block registerBlock(String name, Block block) {
