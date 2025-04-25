@@ -104,6 +104,8 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block DUSKSLATE_WALL = registerBlock("duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_WALL)));
+    public static final Block DUSKSLATE_PRESSURE_PLATE = registerBlock("duskslate_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
     public static final Block POLISHED_DUSKSLATE = registerBlock("polished_duskslate",
             new Block(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE)));
@@ -116,7 +118,8 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_BUTTON)));
     public static final Block POLISHED_DUSKSLATE_WALL = registerBlock("polished_duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_WALL)));
-
+    public static final Block POLISHED_DUSKSLATE_PRESSURE_PLATE = registerBlock("polished_duskslate_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
     public static final Block BLUESHIST = registerBlock("blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
     public static final Block BLUESHIST_STAIRS = registerBlock("blueshist_stairs",
@@ -128,6 +131,8 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block BLUESHIST_WALL = registerBlock("blueshist_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+    public static final Block BLUESHIST_PRESSURE_PLATE = registerBlock("blueshist_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
     public static final Block POLISHED_BLUESHIST = registerBlock("polished_blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
@@ -140,6 +145,8 @@ public class ModBlocks {
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
     public static final Block POLISHED_BLUESHIST_WALL = registerBlock("polished_blueshist_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+    public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerBlock("polished_blueshist_pressure_plate",
+            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
 
     private static Block registerBlock(String name, Block block) {

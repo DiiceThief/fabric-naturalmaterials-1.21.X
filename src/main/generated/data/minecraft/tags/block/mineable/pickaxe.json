@@ -5,20 +5,24 @@
     "naturalmaterials:duskslate_slab",
     "naturalmaterials:duskslate_wall",
     "naturalmaterials:duskslate_button",
+    "naturalmaterials:duskslate_pressure_plate",
     "naturalmaterials:polished_duskslate",
     "naturalmaterials:polished_duskslate_stairs",
     "naturalmaterials:polished_duskslate_slab",
     "naturalmaterials:polished_duskslate_button",
     "naturalmaterials:polished_duskslate_wall",
+    "naturalmaterials:polished_duskslate_pressure_plate",
     "naturalmaterials:blueshist",
     "naturalmaterials:blueshist_stairs",
     "naturalmaterials:blueshist_slab",
     "naturalmaterials:blueshist_button",
     "naturalmaterials:blueshist_wall",
+    "naturalmaterials:blueshist_pressure_plate",
     "naturalmaterials:polished_blueshist",
     "naturalmaterials:polished_blueshist_stairs",
     "naturalmaterials:polished_blueshist_slab",
     "naturalmaterials:polished_blueshist_button",
-    "naturalmaterials:polished_blueshist_wall"
+    "naturalmaterials:polished_blueshist_wall",
+    "naturalmaterials:polished_blueshist_pressure_plate"
   ]
 }

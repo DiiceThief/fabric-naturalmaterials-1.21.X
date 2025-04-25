@@ -72,6 +72,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         createStairsRecipe(ModBlocks.DUSKSLATE_STAIRS, Ingredient.ofItems(ModBlocks.DUSKSLATE));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DUSKSLATE_SLAB, Ingredient.ofItems(ModBlocks.DUSKSLATE));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.DUSKSLATE_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.DUSKSLATE));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.DUSKSLATE_BUTTON, 1)
                 .input(ModBlocks.DUSKSLATE)
                 .criterion(hasItem(ModBlocks.DUSKSLATE), conditionsFromItem(ModBlocks.DUSKSLATE))
@@ -84,6 +85,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.POLISHED_DUSKSLATE_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_DUSKSLATE));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DUSKSLATE_PRESSURE_PLATE,
+                Ingredient.ofItems(ModBlocks.POLISHED_DUSKSLATE_PRESSURE_PLATE));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DUSKSLATE_SLAB, Ingredient.ofItems(ModBlocks.POLISHED_DUSKSLATE));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.POLISHED_DUSKSLATE_BUTTON, 1)
                 .input(ModBlocks.POLISHED_DUSKSLATE)
@@ -97,6 +100,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.BLUESHIST_STAIRS, Ingredient.ofItems(ModBlocks.BLUESHIST));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.BLUESHIST_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.BLUESHIST));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUESHIST_SLAB, Ingredient.ofItems(ModBlocks.BLUESHIST_SLAB));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.BLUESHIST_BUTTON, 1)
                 .input(ModBlocks.BLUESHIST)
@@ -110,6 +114,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.POLISHED_BLUESHIST_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BLUESHIST));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE,
+                Ingredient.ofItems(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLUESHIST_SLAB, Ingredient.ofItems(ModBlocks.POLISHED_BLUESHIST));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.POLISHED_BLUESHIST_BUTTON, 1)
                 .input(ModBlocks.POLISHED_BLUESHIST)

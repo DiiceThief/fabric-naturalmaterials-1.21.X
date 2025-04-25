@@ -61,24 +61,28 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DUSKSLATE_SLAB);
                         entries.add(ModBlocks.DUSKSLATE_WALL);
                         entries.add(ModBlocks.DUSKSLATE_BUTTON);
+                        entries.add(ModBlocks.DUSKSLATE_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.POLISHED_DUSKSLATE);
                         entries.add(ModBlocks.POLISHED_DUSKSLATE_STAIRS);
                         entries.add(ModBlocks.POLISHED_DUSKSLATE_SLAB);
                         entries.add(ModBlocks.POLISHED_DUSKSLATE_WALL);
                         entries.add(ModBlocks.POLISHED_DUSKSLATE_BUTTON);
+                        entries.add(ModBlocks.POLISHED_DUSKSLATE_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.BLUESHIST);
                         entries.add(ModBlocks.BLUESHIST_STAIRS);
                         entries.add(ModBlocks.BLUESHIST_SLAB);
                         entries.add(ModBlocks.BLUESHIST_WALL);
                         entries.add(ModBlocks.BLUESHIST_BUTTON);
+                        entries.add(ModBlocks.BLUESHIST_PRESSURE_PLATE);
 
                         entries.add(ModBlocks.POLISHED_BLUESHIST);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_STAIRS);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_SLAB);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_WALL);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_BUTTON);
+                        entries.add(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE);
 
 
                     })).build());

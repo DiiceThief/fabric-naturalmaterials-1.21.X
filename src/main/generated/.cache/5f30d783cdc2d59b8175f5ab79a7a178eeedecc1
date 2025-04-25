@@ -1,6 +1,6 @@
-// 1.21	2025-04-24T18:36:39.496684	NaturalMaterials/Tags for minecraft:block
+// 1.21	2025-04-24T20:24:44.1075778	NaturalMaterials/Tags for minecraft:block
 286253d8d7159a6548e4127479599ea722bf4743 data\minecraft\tags\block\wooden_fences.json
-024e4f1b7e531a20080a4417dcf617a0b692774d data\minecraft\tags\block\mineable\pickaxe.json
+bb74a4d263fab66b57fd3f680345da6268ec7e7c data\minecraft\tags\block\mineable\pickaxe.json
 1655a00f79f624ffae87ccb24ef1fd15a8b8271b data\minecraft\tags\block\fence_gates.json
 130263cff56e405ea30ddb41cb098550c98e37a9 data\minecraft\tags\block\mineable\axe.json
 7ed976c6b6511a2489250e24cbed6507f0c0fe9f data\minecraft\tags\block\walls.json

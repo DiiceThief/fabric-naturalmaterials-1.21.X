@@ -46,22 +46,26 @@
   "block.naturalmaterials.duskslate_button": "Duskslate Button",
   "block.naturalmaterials.duskslate_wall": "Duskslate Wall",
   "block.naturalmaterials.duskslate_slab": "Duskslate Slab",
+  "block.naturalmaterials.duskslate_pressure_plate": "Duskslate Pressure Plate",
 
   "block.naturalmaterials.polished_duskslate": "Polished Duskslate",
   "block.naturalmaterials.polished_duskslate_stairs": "Polished Duskslate Stairs",
   "block.naturalmaterials.polished_duskslate_button": "Polished Duskslate Button",
   "block.naturalmaterials.polished_duskslate_wall": "Polished Duskslate Wall",
   "block.naturalmaterials.polished_duskslate_slab": "Polished Duskslate Slab",
+  "block.naturalmaterials.polished_duskslate_pressure_plate": "Polished Duskslate Pressure Plate",
 
   "block.naturalmaterials.blueshist": "Blueshist",
   "block.naturalmaterials.blueshist_stairs": "Blueshist Stairs",
   "block.naturalmaterials.blueshist_button": "Blueshist Button",
   "block.naturalmaterials.blueshist_wall": "Blueshist Wall",
   "block.naturalmaterials.blueshist_slab": "Blueshist Slab",
+  "block.naturalmaterials.blueshist_pressure_plate": "Blueshist Pressure Plate",
 
   "block.naturalmaterials.polished_blueshist": "Polished Blueshist",
   "block.naturalmaterials.polished_blueshist_stairs": "Polished Blueshist Stairs",
   "block.naturalmaterials.polished_blueshist_button": "Polished Blueshist Button",
   "block.naturalmaterials.polished_blueshist_wall": "Polished Blueshist Wall",
-  "block.naturalmaterials.polished_blueshist_slab": "Polished Blueshist Slab"
+  "block.naturalmaterials.polished_blueshist_slab": "Polished Blueshist Slab",
+  "block.naturalmaterials.polished_blueshist_pressure_plate": "Polished Blueshist Pressure Plate"
 }
