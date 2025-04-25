@@ -66,5 +66,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_DUSKSLATE_BUTTON);
         addDrop(ModBlocks.POLISHED_DUSKSLATE_WALL);
 
+        addDrop(ModBlocks.BLUESHIST);
+        addDrop(ModBlocks.BLUESHIST_STAIRS);
+        addDrop(ModBlocks.BLUESHIST_SLAB, slabDrops(ModBlocks.BLUESHIST_SLAB));
+        addDrop(ModBlocks.BLUESHIST_BUTTON);
+        addDrop(ModBlocks.BLUESHIST_WALL);
+
     }
 }

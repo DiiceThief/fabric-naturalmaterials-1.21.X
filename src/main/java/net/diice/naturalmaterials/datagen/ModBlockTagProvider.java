@@ -79,10 +79,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_DUSKSLATE_STAIRS)
                 .add(ModBlocks.POLISHED_DUSKSLATE_SLAB)
                 .add(ModBlocks.POLISHED_DUSKSLATE_BUTTON)
-                .add(ModBlocks.POLISHED_DUSKSLATE_WALL);
+                .add(ModBlocks.POLISHED_DUSKSLATE_WALL)
+                .add(ModBlocks.BLUESHIST)
+                .add(ModBlocks.BLUESHIST_STAIRS)
+                .add(ModBlocks.BLUESHIST_SLAB)
+                .add(ModBlocks.BLUESHIST_BUTTON)
+                .add(ModBlocks.BLUESHIST_WALL);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.DUSKSLATE_WALL)
-                .add(ModBlocks.POLISHED_DUSKSLATE_WALL);
+                .add(ModBlocks.POLISHED_DUSKSLATE_WALL)
+                .add(ModBlocks.BLUESHIST_WALL);
     }
 }

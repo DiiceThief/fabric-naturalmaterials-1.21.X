@@ -9,6 +9,11 @@
     "naturalmaterials:polished_duskslate_stairs",
     "naturalmaterials:polished_duskslate_slab",
     "naturalmaterials:polished_duskslate_button",
-    "naturalmaterials:polished_duskslate_wall"
+    "naturalmaterials:polished_duskslate_wall",
+    "naturalmaterials:blueshist",
+    "naturalmaterials:blueshist_stairs",
+    "naturalmaterials:blueshist_slab",
+    "naturalmaterials:blueshist_button",
+    "naturalmaterials:blueshist_wall"
   ]
 }

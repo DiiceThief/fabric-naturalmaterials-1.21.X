@@ -51,5 +51,11 @@
   "block.naturalmaterials.polished_duskslate_stairs": "Polished Duskslate Stairs",
   "block.naturalmaterials.polished_duskslate_button": "Polished Duskslate Button",
   "block.naturalmaterials.polished_duskslate_wall": "Polished Duskslate Wall",
-  "block.naturalmaterials.polished_duskslate_slab": "Polished Duskslate Slab"
+  "block.naturalmaterials.polished_duskslate_slab": "Polished Duskslate Slab",
+
+  "block.naturalmaterials.blueshist": "Blueshist",
+  "block.naturalmaterials.blueshist_stairs": "Blueshist Stairs",
+  "block.naturalmaterials.blueshist_button": "Blueshist Button",
+  "block.naturalmaterials.blueshist_wall": "Blueshist Wall",
+  "block.naturalmaterials.blueshist_slab": "Polished Blueshist Slab"
 }

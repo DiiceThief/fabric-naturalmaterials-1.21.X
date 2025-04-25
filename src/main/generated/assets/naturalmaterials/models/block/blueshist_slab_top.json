@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "naturalmaterials:block/blueshist",
+    "side": "naturalmaterials:block/blueshist",
+    "top": "naturalmaterials:block/blueshist"
+  }
+}
