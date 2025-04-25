@@ -68,6 +68,8 @@ public class ModBlocks {
     public static final Block REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
+ public static final Block CYPRESS_LEAVES = registerBlock("cypress_leaves",
+         new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block CYPRESS_LOG = registerBlock("cypress_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_CYPRESS_LOG = registerBlock("stripped_cypress_log",
