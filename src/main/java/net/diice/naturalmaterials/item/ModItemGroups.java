@@ -74,6 +74,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLUESHIST_WALL);
                         entries.add(ModBlocks.BLUESHIST_BUTTON);
 
+                        entries.add(ModBlocks.POLISHED_BLUESHIST);
+                        entries.add(ModBlocks.POLISHED_BLUESHIST_STAIRS);
+                        entries.add(ModBlocks.POLISHED_BLUESHIST_SLAB);
+                        entries.add(ModBlocks.POLISHED_BLUESHIST_WALL);
+                        entries.add(ModBlocks.POLISHED_BLUESHIST_BUTTON);
+
 
                     })).build());
 

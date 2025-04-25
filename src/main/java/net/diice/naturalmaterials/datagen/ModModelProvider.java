@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DUSKSLATE);
         BlockStateModelGenerator.BlockTexturePool POLISHED_DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DUSKSLATE);
         BlockStateModelGenerator.BlockTexturePool BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUESHIST);
+        BlockStateModelGenerator.BlockTexturePool POLISHED_BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BLUESHIST);
 
         PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
         PALM_POOL.slab(ModBlocks.PALM_SLAB);
@@ -77,6 +78,11 @@ public class ModModelProvider extends FabricModelProvider {
         BLUESHIST_POOL.slab(ModBlocks.BLUESHIST_SLAB);
         BLUESHIST_POOL.wall(ModBlocks.BLUESHIST_WALL);
         BLUESHIST_POOL.button(ModBlocks.BLUESHIST_BUTTON);
+
+        POLISHED_BLUESHIST_POOL.stairs(ModBlocks.POLISHED_BLUESHIST_STAIRS);
+        POLISHED_BLUESHIST_POOL.slab(ModBlocks.POLISHED_BLUESHIST_SLAB);
+        POLISHED_BLUESHIST_POOL.wall(ModBlocks.POLISHED_BLUESHIST_WALL);
+        POLISHED_BLUESHIST_POOL.button(ModBlocks.POLISHED_BLUESHIST_BUTTON);
 
     }
     @Override

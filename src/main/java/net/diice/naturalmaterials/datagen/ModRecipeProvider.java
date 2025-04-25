@@ -109,5 +109,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.BLUESHIST), conditionsFromItem(ModBlocks.BLUESHIST))
                 .offerTo(recipeExporter);
 
+        createStairsRecipe(ModBlocks.POLISHED_BLUESHIST_STAIRS, Ingredient.ofItems(ModBlocks.POLISHED_BLUESHIST));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLUESHIST_SLAB, Ingredient.ofItems(ModBlocks.POLISHED_BLUESHIST));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.POLISHED_BLUESHIST_BUTTON, 1)
+                .input(ModBlocks.POLISHED_BLUESHIST)
+                .criterion(hasItem(ModBlocks.POLISHED_BLUESHIST), conditionsFromItem(ModBlocks.POLISHED_BLUESHIST))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_BLUESHIST_WALL, 6)
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.POLISHED_BLUESHIST)
+                .criterion(hasItem(ModBlocks.POLISHED_BLUESHIST), conditionsFromItem(ModBlocks.POLISHED_BLUESHIST))
+                .offerTo(recipeExporter);
+
     }
 }

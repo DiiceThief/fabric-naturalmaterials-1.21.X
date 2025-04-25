@@ -129,6 +129,18 @@ public class ModBlocks {
     public static final Block BLUESHIST_WALL = registerBlock("blueshist_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
 
+    public static final Block POLISHED_BLUESHIST = registerBlock("polished_blueshist",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static final Block POLISHED_BLUESHIST_STAIRS = registerBlock("polished_blueshist_stairs",
+            new StairsBlock(ModBlocks.BLUESHIST.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
+    public static final Block POLISHED_BLUESHIST_SLAB = registerBlock("polished_blueshist_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+    public static final Block POLISHED_BLUESHIST_BUTTON = registerBlock("polished_blueshist_button",
+            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
+    public static final Block POLISHED_BLUESHIST_WALL = registerBlock("polished_blueshist_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -2,6 +2,7 @@
   "values": [
     "naturalmaterials:duskslate_wall",
     "naturalmaterials:polished_duskslate_wall",
-    "naturalmaterials:blueshist_wall"
+    "naturalmaterials:blueshist_wall",
+    "naturalmaterials:polished_blueshist_wall"
   ]
 }

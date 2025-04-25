@@ -14,6 +14,11 @@
     "naturalmaterials:blueshist_stairs",
     "naturalmaterials:blueshist_slab",
     "naturalmaterials:blueshist_button",
-    "naturalmaterials:blueshist_wall"
+    "naturalmaterials:blueshist_wall",
+    "naturalmaterials:polished_blueshist",
+    "naturalmaterials:polished_blueshist_stairs",
+    "naturalmaterials:polished_blueshist_slab",
+    "naturalmaterials:polished_blueshist_button",
+    "naturalmaterials:polished_blueshist_wall"
   ]
 }
