@@ -31,6 +31,9 @@ public class ModModelProvider extends FabricModelProvider {
         PALM_POOL.fence(ModBlocks.PALM_FENCE);
         PALM_POOL.fenceGate(ModBlocks.PALM_FENCE_GATE);
 
+        blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
+
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
@@ -40,6 +43,9 @@ public class ModModelProvider extends FabricModelProvider {
         REDWOOD_POOL.button(ModBlocks.REDWOOD_BUTTON);
         REDWOOD_POOL.fence(ModBlocks.REDWOOD_FENCE);
         REDWOOD_POOL.fenceGate(ModBlocks.REDWOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.REDWOOD_LOG).log(ModBlocks.REDWOOD_LOG).wood(ModBlocks.REDWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_REDWOOD_LOG).log(ModBlocks.STRIPPED_REDWOOD_LOG).wood(ModBlocks.STRIPPED_REDWOOD_WOOD);
 
         blockStateModelGenerator.registerDoor(ModBlocks.REDWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.REDWOOD_TRAPDOOR);
@@ -51,6 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
         CYPRESS_POOL.fence(ModBlocks.CYPRESS_FENCE);
         CYPRESS_POOL.fenceGate(ModBlocks.CYPRESS_FENCE_GATE);
 
+        blockStateModelGenerator.registerLog(ModBlocks.CYPRESS_LOG).log(ModBlocks.CYPRESS_LOG).wood(ModBlocks.CYPRESS_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CYPRESS_LOG).log(ModBlocks.STRIPPED_CYPRESS_LOG).wood(ModBlocks.STRIPPED_CYPRESS_WOOD);
+
         blockStateModelGenerator.registerDoor(ModBlocks.CYPRESS_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.CYPRESS_TRAPDOOR);
 
@@ -60,6 +69,9 @@ public class ModModelProvider extends FabricModelProvider {
         MANAWOOD_POOL.button(ModBlocks.MANAWOOD_BUTTON);
         MANAWOOD_POOL.fence(ModBlocks.MANAWOOD_FENCE);
         MANAWOOD_POOL.fenceGate(ModBlocks.MANAWOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.MANAWOOD_LOG).log(ModBlocks.MANAWOOD_LOG).wood(ModBlocks.MANAWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MANAWOOD_LOG).log(ModBlocks.STRIPPED_MANAWOOD_LOG).wood(ModBlocks.STRIPPED_MANAWOOD_WOOD);
 
         blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);

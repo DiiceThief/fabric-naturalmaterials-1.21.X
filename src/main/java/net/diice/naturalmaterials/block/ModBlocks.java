@@ -2,6 +2,7 @@ package net.diice.naturalmaterials.block;
 
 import net.diice.naturalmaterials.NaturalMaterials;
 import net.minecraft.block.*;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,6 +12,14 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+   public static final Block PALM_LOG = registerBlock("palm_log",
+           new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+   public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
+           new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+   public static final Block PALM_WOOD = registerBlock("palm_wood",
+           new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+   public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+           new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block PALM_PLANKS = registerBlock("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block PALM_STAIRS = registerBlock("palm_stairs",
@@ -31,6 +40,14 @@ public class ModBlocks {
     public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
+    public static final Block REDWOOD_LOG = registerBlock("redwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block REDWOOD_WOOD = registerBlock("redwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block REDWOOD_STAIRS = registerBlock("redwood_stairs",
@@ -51,6 +68,14 @@ public class ModBlocks {
     public static final Block REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
+    public static final Block CYPRESS_LOG = registerBlock("cypress_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_CYPRESS_LOG = registerBlock("stripped_cypress_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block CYPRESS_WOOD = registerBlock("cypress_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_CYPRESS_WOOD = registerBlock("stripped_cypress_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block CYPRESS_PLANKS = registerBlock("cypress_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block CYPRESS_STAIRS = registerBlock("cypress_stairs",
@@ -71,6 +96,14 @@ public class ModBlocks {
     public static final Block CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
 
+    public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_MANAWOOD_LOG = registerBlock("stripped_manawood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block MANAWOOD_WOOD = registerBlock("manawood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_MANAWOOD_WOOD = registerBlock("stripped_manawood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block MANAWOOD_PLANKS = registerBlock("manawood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block MANAWOOD_STAIRS = registerBlock("manawood_stairs",

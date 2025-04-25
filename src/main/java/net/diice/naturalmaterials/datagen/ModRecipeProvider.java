@@ -33,6 +33,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(ModBlocks.PALM_PLANKS)
                                 .criterion(hasItem(ModBlocks.PALM_PLANKS), conditionsFromItem(ModBlocks.PALM_PLANKS))
                                         .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.PALM_LOG)
+                .criterion(hasItem(ModBlocks.PALM_LOG), conditionsFromItem(ModBlocks.PALM_LOG))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_PALM_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.STRIPPED_PALM_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_PALM_LOG), conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
+                .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.REDWOOD_STAIRS, Ingredient.ofItems(ModBlocks.REDWOOD_PLANKS));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDWOOD_SLAB, Ingredient.ofItems(ModBlocks.REDWOOD_PLANKS));
@@ -44,6 +56,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.REDWOOD_BUTTON, 1)
                 .input(ModBlocks.REDWOOD_PLANKS)
             .criterion(hasItem(ModBlocks.REDWOOD_PLANKS), conditionsFromItem(ModBlocks.REDWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.REDWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.REDWOOD_LOG)
+                .criterion(hasItem(ModBlocks.REDWOOD_LOG), conditionsFromItem(ModBlocks.REDWOOD_LOG))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_REDWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.STRIPPED_REDWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_REDWOOD_LOG), conditionsFromItem(ModBlocks.STRIPPED_REDWOOD_LOG))
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.CYPRESS_STAIRS, Ingredient.ofItems(ModBlocks.CYPRESS_PLANKS));
@@ -57,6 +81,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.CYPRESS_PLANKS)
                 .criterion(hasItem(ModBlocks.CYPRESS_PLANKS), conditionsFromItem(ModBlocks.CYPRESS_PLANKS))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYPRESS_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.CYPRESS_LOG)
+                .criterion(hasItem(ModBlocks.CYPRESS_LOG), conditionsFromItem(ModBlocks.CYPRESS_LOG))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CYPRESS_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.STRIPPED_CYPRESS_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_CYPRESS_LOG), conditionsFromItem(ModBlocks.STRIPPED_CYPRESS_LOG))
+                .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.MANAWOOD_STAIRS, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANAWOOD_SLAB, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
@@ -68,6 +104,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.MANAWOOD_BUTTON, 1)
                 .input(ModBlocks.MANAWOOD_PLANKS)
                 .criterion(hasItem(ModBlocks.MANAWOOD_PLANKS), conditionsFromItem(ModBlocks.MANAWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANAWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.MANAWOOD_LOG)
+                .criterion(hasItem(ModBlocks.MANAWOOD_LOG), conditionsFromItem(ModBlocks.MANAWOOD_LOG))
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.DUSKSLATE_STAIRS, Ingredient.ofItems(ModBlocks.DUSKSLATE));

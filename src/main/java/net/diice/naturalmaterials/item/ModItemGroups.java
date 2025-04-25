@@ -16,6 +16,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PALM_PLANKS))
                     .displayName(Text.translatable("itemgroup.naturalmaterials.natural_materials_blocks"))
                     .entries(((displayContext, entries) -> {
+                        entries.add(ModBlocks.PALM_LOG);
+                        entries.add(ModBlocks.PALM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_PALM_LOG);
+                        entries.add(ModBlocks.STRIPPED_PALM_WOOD);
                         entries.add(ModBlocks.PALM_PLANKS);
                         entries.add(ModBlocks.PALM_STAIRS);
                         entries.add(ModBlocks.PALM_SLAB);
@@ -26,6 +30,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PALM_DOOR);
                         entries.add(ModBlocks.PALM_TRAPDOOR);
 
+                        entries.add(ModBlocks.REDWOOD_LOG);
+                        entries.add(ModBlocks.REDWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_REDWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_REDWOOD_WOOD);
                         entries.add(ModBlocks.REDWOOD_PLANKS);
                         entries.add(ModBlocks.REDWOOD_STAIRS);
                         entries.add(ModBlocks.REDWOOD_SLAB);
@@ -36,6 +44,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.REDWOOD_DOOR);
                         entries.add(ModBlocks.REDWOOD_TRAPDOOR);
 
+                        entries.add(ModBlocks.CYPRESS_LOG);
+                        entries.add(ModBlocks.CYPRESS_WOOD);
+                        entries.add(ModBlocks.STRIPPED_CYPRESS_LOG);
+                        entries.add(ModBlocks.STRIPPED_CYPRESS_WOOD);
                         entries.add(ModBlocks.CYPRESS_PLANKS);
                         entries.add(ModBlocks.CYPRESS_STAIRS);
                         entries.add(ModBlocks.CYPRESS_SLAB);
@@ -46,6 +58,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CYPRESS_DOOR);
                         entries.add(ModBlocks.CYPRESS_TRAPDOOR);
 
+                        entries.add(ModBlocks.MANAWOOD_LOG);
+                        entries.add(ModBlocks.MANAWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_MANAWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_MANAWOOD_WOOD);
                         entries.add(ModBlocks.MANAWOOD_PLANKS);
                         entries.add(ModBlocks.MANAWOOD_STAIRS);
                         entries.add(ModBlocks.MANAWOOD_SLAB);

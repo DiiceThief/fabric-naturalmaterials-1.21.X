@@ -23,6 +23,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_TRAPDOOR);
         addDrop(ModBlocks.PALM_FENCE);
         addDrop(ModBlocks.PALM_FENCE_GATE);
+        addDrop(ModBlocks.PALM_LOG);
+        addDrop(ModBlocks.STRIPPED_PALM_LOG);
+        addDrop(ModBlocks.PALM_WOOD);
+        addDrop(ModBlocks.STRIPPED_PALM_WOOD);
 
         addDrop(ModBlocks.REDWOOD_PLANKS);
         addDrop(ModBlocks.REDWOOD_STAIRS);
@@ -33,6 +37,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REDWOOD_TRAPDOOR);
         addDrop(ModBlocks.REDWOOD_FENCE);
         addDrop(ModBlocks.REDWOOD_FENCE_GATE);
+        addDrop(ModBlocks.REDWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_REDWOOD_LOG);
+        addDrop(ModBlocks.REDWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_REDWOOD_WOOD);
 
         addDrop(ModBlocks.CYPRESS_PLANKS);
         addDrop(ModBlocks.CYPRESS_STAIRS);
@@ -43,6 +51,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CYPRESS_TRAPDOOR);
         addDrop(ModBlocks.CYPRESS_FENCE);
         addDrop(ModBlocks.CYPRESS_FENCE_GATE);
+        addDrop(ModBlocks.CYPRESS_LOG);
+        addDrop(ModBlocks.STRIPPED_CYPRESS_LOG);
+        addDrop(ModBlocks.CYPRESS_WOOD);
+        addDrop(ModBlocks.STRIPPED_CYPRESS_WOOD);
 
         addDrop(ModBlocks.MANAWOOD_PLANKS);
         addDrop(ModBlocks.MANAWOOD_STAIRS);
@@ -53,6 +65,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MANAWOOD_TRAPDOOR);
         addDrop(ModBlocks.MANAWOOD_FENCE);
         addDrop(ModBlocks.MANAWOOD_FENCE_GATE);
+        addDrop(ModBlocks.MANAWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_MANAWOOD_LOG);
+        addDrop(ModBlocks.MANAWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_MANAWOOD_WOOD);
 
         addDrop(ModBlocks.DUSKSLATE);
         addDrop(ModBlocks.DUSKSLATE_STAIRS);

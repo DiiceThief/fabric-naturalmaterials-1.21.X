@@ -18,6 +18,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.PALM_LOG)
+                .add(ModBlocks.STRIPPED_PALM_LOG)
+                .add(ModBlocks.PALM_WOOD)
+                .add(ModBlocks.STRIPPED_PALM_WOOD)
                 .add(ModBlocks.PALM_PLANKS)
                 .add(ModBlocks.PALM_STAIRS)
                 .add(ModBlocks.PALM_SLAB)
@@ -28,6 +32,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PALM_FENCE)
                 .add(ModBlocks.PALM_FENCE_GATE)
 
+                .add(ModBlocks.REDWOOD_LOG)
+                .add(ModBlocks.STRIPPED_REDWOOD_LOG)
+                .add(ModBlocks.REDWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD)
                 .add(ModBlocks.REDWOOD_PLANKS)
                 .add(ModBlocks.REDWOOD_STAIRS)
                 .add(ModBlocks.REDWOOD_SLAB)
@@ -38,6 +46,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.REDWOOD_FENCE)
                 .add(ModBlocks.REDWOOD_FENCE_GATE)
 
+                .add(ModBlocks.CYPRESS_LOG)
+                .add(ModBlocks.STRIPPED_CYPRESS_LOG)
+                .add(ModBlocks.CYPRESS_WOOD)
+                .add(ModBlocks.STRIPPED_CYPRESS_WOOD)
                 .add(ModBlocks.CYPRESS_PLANKS)
                 .add(ModBlocks.CYPRESS_STAIRS)
                 .add(ModBlocks.CYPRESS_SLAB)
@@ -48,6 +60,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CYPRESS_FENCE)
                 .add(ModBlocks.CYPRESS_FENCE_GATE)
 
+                .add(ModBlocks.MANAWOOD_LOG)
+                .add(ModBlocks.STRIPPED_MANAWOOD_LOG)
+                .add(ModBlocks.MANAWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD)
                 .add(ModBlocks.MANAWOOD_PLANKS)
                 .add(ModBlocks.MANAWOOD_STAIRS)
                 .add(ModBlocks.MANAWOOD_SLAB)
