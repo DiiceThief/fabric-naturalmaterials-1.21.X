@@ -116,5 +116,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_DUSKSLATE_WALL)
                 .add(ModBlocks.BLUESHIST_WALL)
                 .add(ModBlocks.POLISHED_BLUESHIST_WALL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PALM_LOG)
+                .add(ModBlocks.PALM_WOOD)
+                .add(ModBlocks.STRIPPED_PALM_LOG)
+                .add(ModBlocks.STRIPPED_PALM_WOOD)
+                .add(ModBlocks.REDWOOD_LOG)
+                .add(ModBlocks.REDWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_REDWOOD_LOG)
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD)
+                .add(ModBlocks.CYPRESS_LOG)
+                .add(ModBlocks.CYPRESS_WOOD)
+                .add(ModBlocks.STRIPPED_CYPRESS_LOG)
+                .add(ModBlocks.STRIPPED_CYPRESS_WOOD)
+                .add(ModBlocks.MANAWOOD_LOG)
+                .add(ModBlocks.MANAWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_MANAWOOD_LOG)
+                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD);
     }
 }
