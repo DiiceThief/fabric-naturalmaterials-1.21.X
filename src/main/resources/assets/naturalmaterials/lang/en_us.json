@@ -91,9 +91,12 @@
 
   "item.naturalmaterials.hunter_armor_trim_smithing_template": "Hunter Smithing Template",
 
+  "item.naturalmaterials.amber_helmet": "Amber Helmet",
+  "item.naturalmaterials.amber_chestplate": "Amber Chestplate",
+  "item.naturalmaterials.amber_leggings": "Amber Leggings",
+  "item.naturalmaterials.amber_boots": "Amber Boots",
 
   "trim_material.naturalmaterials.amber": "Amber Material",
-
 
   "trim_pattern.naturalmaterials.hunter": "Hunter Trim Pattern"
 }

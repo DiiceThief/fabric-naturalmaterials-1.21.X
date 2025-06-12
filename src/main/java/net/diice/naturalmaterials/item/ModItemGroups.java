@@ -21,6 +21,11 @@ public class ModItemGroups {
 
                         entries.add(ModItems.HUNTER_SMITHING_TEMPLATE);
 
+                        entries.add(ModItems.AMBER_HELMET);
+                        entries.add(ModItems.AMBER_CHESTPLATE);
+                        entries.add(ModItems.AMBER_LEGGINGS);
+                        entries.add(ModItems.AMBER_BOOTS);
+
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),

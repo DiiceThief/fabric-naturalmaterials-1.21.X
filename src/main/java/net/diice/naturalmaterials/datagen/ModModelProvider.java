@@ -8,6 +8,7 @@ import net.minecraft.block.*;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -107,5 +108,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_HELMET));
     }
 }

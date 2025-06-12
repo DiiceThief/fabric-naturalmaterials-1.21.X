@@ -41,5 +41,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.STRIPPED_MANAWOOD_LOG.asItem())
                 .add(ModBlocks.STRIPPED_MANAWOOD_WOOD.asItem());
 
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.AMBER_BOOTS)
+                .add(ModItems.AMBER_LEGGINGS)
+                .add(ModItems.AMBER_CHESTPLATE)
+                .add(ModItems.AMBER_HELMET);
+
     }
 }
