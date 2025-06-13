@@ -25,7 +25,7 @@ public class ModItems {
     public static final Item AMBER_LEGGINGS = registerItem("amber_leggings",
             new ArmorItem(ModArmorMaterials.AMBER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
-    public static final Item AMBER_BOOTS = registerItem("amber_helmet",
+    public static final Item AMBER_BOOTS = registerItem("amber_boots",
             new ArmorItem(ModArmorMaterials.AMBER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
 
