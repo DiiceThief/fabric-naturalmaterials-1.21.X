@@ -26,6 +26,12 @@ public class ModItemGroups {
                         entries.add(ModItems.AMBER_LEGGINGS);
                         entries.add(ModItems.AMBER_BOOTS);
 
+                        entries.add(ModItems.AMBER_SWORD);
+                        entries.add(ModItems.AMBER_AXE);
+                        entries.add(ModItems.AMBER_PICKAXE);
+                        entries.add(ModItems.AMBER_SHOVEL);
+                        entries.add(ModItems.AMBER_HOE);
+
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),

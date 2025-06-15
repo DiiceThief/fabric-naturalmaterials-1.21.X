@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "naturalmaterials:amber"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturalmaterials:amber_sword"
+  }
+}

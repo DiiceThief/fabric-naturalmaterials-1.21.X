@@ -1,6 +1,7 @@
 package net.diice.naturalmaterials.datagen;
 
 import net.diice.naturalmaterials.block.ModBlocks;
+import net.diice.naturalmaterials.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -134,5 +135,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANAWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_MANAWOOD_LOG)
                 .add(ModBlocks.STRIPPED_MANAWOOD_WOOD);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AMBER_TOOL)
+                .forceAddTag(BlockTags.NEEDS_STONE_TOOL);
     }
 }

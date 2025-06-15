@@ -4,6 +4,7 @@ import net.diice.naturalmaterials.block.ModBlocks;
 import net.diice.naturalmaterials.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
@@ -46,6 +47,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.AMBER_LEGGINGS)
                 .add(ModItems.AMBER_CHESTPLATE)
                 .add(ModItems.AMBER_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.AMBER_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.AMBER_AXE);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.AMBER_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.AMBER_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.AMBER_HOE);
 
     }
 }
