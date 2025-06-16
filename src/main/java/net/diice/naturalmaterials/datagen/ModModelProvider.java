@@ -8,6 +8,7 @@ import net.minecraft.block.*;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -39,6 +40,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.PALM_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         REDWOOD_POOL.stairs(ModBlocks.REDWOOD_STAIRS);
         REDWOOD_POOL.slab(ModBlocks.REDWOOD_SLAB);

@@ -51,6 +51,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PALM_FENCE_GATE);
                         entries.add(ModBlocks.PALM_DOOR);
                         entries.add(ModBlocks.PALM_TRAPDOOR);
+                        entries.add(ModBlocks.PALM_LEAVES);
+                        entries.add(ModBlocks.PALM_SAPLING);
 
                         entries.add(ModBlocks.REDWOOD_LOG);
                         entries.add(ModBlocks.REDWOOD_WOOD);
@@ -65,6 +67,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.REDWOOD_FENCE_GATE);
                         entries.add(ModBlocks.REDWOOD_DOOR);
                         entries.add(ModBlocks.REDWOOD_TRAPDOOR);
+                        entries.add(ModBlocks.REDWOOD_LEAVES);
+                        entries.add(ModBlocks.REDWOOD_SAPLING);
 
                         entries.add(ModBlocks.CYPRESS_LOG);
                         entries.add(ModBlocks.CYPRESS_WOOD);
@@ -79,6 +83,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CYPRESS_FENCE_GATE);
                         entries.add(ModBlocks.CYPRESS_DOOR);
                         entries.add(ModBlocks.CYPRESS_TRAPDOOR);
+                        entries.add(ModBlocks.CYPRESS_LEAVES);
+                        entries.add(ModBlocks.CYPRESS_SAPLING);
 
                         entries.add(ModBlocks.MANAWOOD_LOG);
                         entries.add(ModBlocks.MANAWOOD_WOOD);
@@ -93,6 +99,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MANAWOOD_FENCE_GATE);
                         entries.add(ModBlocks.MANAWOOD_DOOR);
                         entries.add(ModBlocks.MANAWOOD_TRAPDOOR);
+                        entries.add(ModBlocks.MANAWOOD_LEAVES);
+                        entries.add(ModBlocks.MANAWOOD_SAPLING);
 
                         entries.add(ModBlocks.DUSKSLATE);
                         entries.add(ModBlocks.DUSKSLATE_STAIRS);

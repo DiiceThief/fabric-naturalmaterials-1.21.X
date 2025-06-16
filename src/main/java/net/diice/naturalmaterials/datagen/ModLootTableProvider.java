@@ -27,6 +27,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_PALM_LOG);
         addDrop(ModBlocks.PALM_WOOD);
         addDrop(ModBlocks.STRIPPED_PALM_WOOD);
+        addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.0635f));
+        addDrop(ModBlocks.PALM_SAPLING);
 
         addDrop(ModBlocks.REDWOOD_PLANKS);
         addDrop(ModBlocks.REDWOOD_STAIRS);
@@ -41,6 +43,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_REDWOOD_LOG);
         addDrop(ModBlocks.REDWOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_REDWOOD_WOOD);
+        addDrop(ModBlocks.REDWOOD_LEAVES, leavesDrops(ModBlocks.REDWOOD_LEAVES, ModBlocks.REDWOOD_SAPLING, 0.0625f));
+        addDrop(ModBlocks.REDWOOD_SAPLING);
 
         addDrop(ModBlocks.CYPRESS_PLANKS);
         addDrop(ModBlocks.CYPRESS_STAIRS);
@@ -55,6 +59,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_CYPRESS_LOG);
         addDrop(ModBlocks.CYPRESS_WOOD);
         addDrop(ModBlocks.STRIPPED_CYPRESS_WOOD);
+        addDrop(ModBlocks.CYPRESS_LEAVES, leavesDrops(ModBlocks.CYPRESS_LEAVES, ModBlocks.CYPRESS_SAPLING, 0.0625f));
 
         addDrop(ModBlocks.MANAWOOD_PLANKS);
         addDrop(ModBlocks.MANAWOOD_STAIRS);
@@ -69,6 +74,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_MANAWOOD_LOG);
         addDrop(ModBlocks.MANAWOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_MANAWOOD_WOOD);
+        addDrop(ModBlocks.MANAWOOD_SAPLING);
+        addDrop(ModBlocks.MANAWOOD_LEAVES, leavesDrops(ModBlocks.MANAWOOD_LEAVES, ModBlocks.MANAWOOD_SAPLING, 0.0625f));
 
         addDrop(ModBlocks.DUSKSLATE);
         addDrop(ModBlocks.DUSKSLATE_STAIRS);

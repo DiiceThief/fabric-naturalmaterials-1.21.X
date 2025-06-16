@@ -15,6 +15,8 @@
   "block.naturalmaterials.palm_trapdoor": "Palm Trapdoor",
   "block.naturalmaterials.palm_fence": "Palm Fence",
   "block.naturalmaterials.palm_fence_gate": "Palm Fence Gate",
+  "block.naturalmaterials.palm_leaves": "Palm Leaves",
+  "block.naturalmaterials.palm_sapling": "Palm Sapling",
 
   "block.naturalmaterials.redwood_log": "Redwood Log",
   "block.naturalmaterials.redwood_wood": "Redwood Wood",
@@ -29,6 +31,8 @@
   "block.naturalmaterials.redwood_trapdoor": "Redwood Trapdoor",
   "block.naturalmaterials.redwood_fence": "Redwood Fence",
   "block.naturalmaterials.redwood_fence_gate": "Redwood Fence Gate",
+  "block.naturalmaterials.redwood_leaves": "Redwood Leaves",
+  "block.naturalmaterials.redwood_sapling": "Redwood Sapling",
 
   "block.naturalmaterials.cypress_log": "Cypress Log",
   "block.naturalmaterials.cypress_wood": "Cypress Wood",
@@ -43,6 +47,8 @@
   "block.naturalmaterials.cypress_trapdoor": "Cypress Trapdoor",
   "block.naturalmaterials.cypress_fence": "Cypress Fence",
   "block.naturalmaterials.cypress_fence_gate": "Cypress Fence Gate",
+  "block.naturalmaterials.cypress_leaves": "Cypress Leaves",
+  "block.naturalmaterials.cypress_sapling": "Cypress Sapling",
 
   "block.naturalmaterials.manawood_log": "Manawood Log",
   "block.naturalmaterials.manawood_wood": "Manawood Wood",
@@ -57,6 +63,8 @@
   "block.naturalmaterials.manawood_trapdoor": "Manawood Trapdoor",
   "block.naturalmaterials.manawood_fence": "Manawood Fence",
   "block.naturalmaterials.manawood_fence_gate": "Manawood Fence Gate",
+  "block.naturalmaterials.manawood_leaves": "Manawood Leaves",
+  "block.naturalmaterials.manawood_sapling": "Manawood Sapling",
 
   "block.naturalmaterials.duskslate": "Duskslate",
   "block.naturalmaterials.duskslate_stairs": "Duskslate Stairs",
