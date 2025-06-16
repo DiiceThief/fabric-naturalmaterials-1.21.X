@@ -39,7 +39,7 @@ public class ModConfiguredFeatures {
 
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new TrunkPlacer(5, 2, 2) {
+                new StraightTrunkPlacer(5, 2, 2) {
                     @Override
                     protected TrunkPlacerType<?> getType() {
                         return null;
@@ -58,10 +58,22 @@ public class ModConfiguredFeatures {
 
         register(context, CYPRESS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.CYPRESS_LOG),
-                new StraightTrunkPlacer(2, 2 ,2),
+                new StraightTrunkPlacer(2, 2 ,2) {
+                    @Override
+                    protected TrunkPlacerType<?> getType() {
+                        return null;
+                    }
+
+                    @Override
+                    public List<FoliagePlacer.TreeNode>
+                    generate(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random,
+                             int height, BlockPos startPos, TreeFeatureConfig config) {
+                        return null;
+                    }
+                    },
                 BlockStateProvider.of(ModBlocks.CYPRESS_LEAVES),
-                new PineFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(1), UniformIntProvider.create(1, 1)),
-                new TwoLayersFeatureSize(1, 0, 1)
+                new SpruceFoliagePlacer(UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2)),
+                new TwoLayersFeatureSize(2, 0, 2)
         )
                 .ignoreVines()
                 .build());
