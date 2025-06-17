@@ -39,38 +39,15 @@ public class ModConfiguredFeatures {
 
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new StraightTrunkPlacer(5, 2, 2) {
-                    @Override
-                    protected TrunkPlacerType<?> getType() {
-                        return null;
-                    }
-
-                    @Override
-                    public List<FoliagePlacer.TreeNode>
-                    generate(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random,
-                             int height, BlockPos startPos, TreeFeatureConfig config) {
-                        return null;
-                    }
-                },
+                new StraightTrunkPlacer(5, 2, 2) {},
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
+
         register(context, CYPRESS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.CYPRESS_LOG),
-                new StraightTrunkPlacer(2, 2 ,2) {
-                    @Override
-                    protected TrunkPlacerType<?> getType() {
-                        return null;
-                    }
-
-                    @Override
-                    public List<FoliagePlacer.TreeNode>
-                    generate(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random,
-                             int height, BlockPos startPos, TreeFeatureConfig config) {
-                        return null;
-                    }
-                    },
+                new StraightTrunkPlacer(2, 2 ,2) {},
                 BlockStateProvider.of(ModBlocks.CYPRESS_LEAVES),
                 new SpruceFoliagePlacer(UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2)),
                 new TwoLayersFeatureSize(2, 0, 2)

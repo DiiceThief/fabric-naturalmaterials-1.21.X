@@ -23,7 +23,5 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
     }
 
     @Override
-    public String getName() {
-        return null;
-    }
+    public String getName() {return "";}
 }

@@ -70,6 +70,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.CYPRESS_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.CYPRESS_TRAPDOOR);
 
+        blockStateModelGenerator.registerSingleton(ModBlocks.CYPRESS_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CYPRESS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         MANAWOOD_POOL.stairs(ModBlocks.MANAWOOD_STAIRS);
         MANAWOOD_POOL.slab(ModBlocks.MANAWOOD_SLAB);
         MANAWOOD_POOL.pressurePlate(ModBlocks.MANAWOOD_PRESSURE_PLATE);
