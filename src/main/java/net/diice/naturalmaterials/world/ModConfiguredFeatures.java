@@ -50,7 +50,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(2, 2 ,2) {},
                 BlockStateProvider.of(ModBlocks.CYPRESS_LEAVES),
                 new SpruceFoliagePlacer(UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2)),
-                new TwoLayersFeatureSize(2, 0, 2)
+                new TwoLayersFeatureSize(1, 0, 1)
         )
                 .ignoreVines()
                 .build());
