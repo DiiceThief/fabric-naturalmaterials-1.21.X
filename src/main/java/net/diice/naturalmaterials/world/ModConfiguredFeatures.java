@@ -3,6 +3,7 @@ package net.diice.naturalmaterials.world;
 import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.block.ModBlocks;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -50,10 +51,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(2, 2 ,2) {},
                 BlockStateProvider.of(ModBlocks.CYPRESS_LEAVES),
                 new SpruceFoliagePlacer(UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2)),
-                new TwoLayersFeatureSize(1, 0, 1)
-        )
-                .ignoreVines()
-                .build());
+                new TwoLayersFeatureSize(1, 0, 1)).dirtProvider(BlockStateProvider.of(Blocks.DIRT)).build());
     }
 
 

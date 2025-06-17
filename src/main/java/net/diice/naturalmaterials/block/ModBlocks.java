@@ -1,6 +1,7 @@
 package net.diice.naturalmaterials.block;
 
 import net.diice.naturalmaterials.NaturalMaterials;
+import net.diice.naturalmaterials.block.custom.ModSaplingBlock;
 import net.diice.naturalmaterials.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.client.color.block.BlockColors;
@@ -43,7 +44,7 @@ public class ModBlocks {
     public static final Block PALM_LEAVES = registerBlock("palm_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new SaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
 
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
