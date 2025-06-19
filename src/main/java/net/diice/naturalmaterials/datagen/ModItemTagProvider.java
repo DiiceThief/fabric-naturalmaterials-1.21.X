@@ -63,5 +63,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.AMBER_HOE);
 
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.PALM_PLANKS.asItem())
+                .add(ModBlocks.CYPRESS_PLANKS.asItem())
+                .add(ModBlocks.REDWOOD_PLANKS.asItem())
+                .add(ModBlocks.MANAWOOD_PLANKS.asItem());
+
     }
 }

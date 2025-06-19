@@ -40,9 +40,9 @@ public class ModConfiguredFeatures {
 
         register(context, PALM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
-                new StraightTrunkPlacer(5, 2, 2) {},
+                new BendingTrunkPlacer(5, 2, 2, 6, UniformIntProvider.create(1, 2)),
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 1),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
 

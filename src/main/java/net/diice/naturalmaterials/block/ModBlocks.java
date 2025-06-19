@@ -44,7 +44,7 @@ public class ModBlocks {
     public static final Block PALM_LEAVES = registerBlock("palm_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
+            new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SAND));
 
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
@@ -109,7 +109,7 @@ public class ModBlocks {
     public static final Block CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
     public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
-            new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
 
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
