@@ -43,7 +43,7 @@ public class ModConfiguredFeatures {
                 new BendingTrunkPlacer(5, 2, 2, 6, UniformIntProvider.create(1, 2)),
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 1),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SAND)).build());
 
 
         register(context, CYPRESS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
