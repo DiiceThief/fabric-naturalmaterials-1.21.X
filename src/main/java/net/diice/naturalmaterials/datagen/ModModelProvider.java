@@ -57,6 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.REDWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.REDWOOD_TRAPDOOR);
 
+        blockStateModelGenerator.registerSingleton(ModBlocks.REDWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.REDWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         CYPRESS_POOL.stairs(ModBlocks.CYPRESS_STAIRS);
         CYPRESS_POOL.slab(ModBlocks.CYPRESS_SLAB);
         CYPRESS_POOL.pressurePlate(ModBlocks.CYPRESS_PRESSURE_PLATE);
@@ -85,6 +88,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.MANAWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         DUSKSLATE_POOL.stairs(ModBlocks.DUSKSLATE_STAIRS);
         DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
