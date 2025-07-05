@@ -1,4 +1,4 @@
-// 1.21	2025-07-03T17:34:26.9005278	NaturalMaterials/Tags for minecraft:item
+// 1.21	2025-07-04T21:55:08.7257373	NaturalMaterials/Tags for minecraft:item
 97e08fd4ea088ee48a409a73dac36355a27ebf04 data\minecraft\tags\item\planks.json
 f1aa35965f8c5fa84328c297ea233aeb2c853afd data\minecraft\tags\item\logs_that_burn.json
 98002d0188a141341aa35cbc1bf79476c8dcec11 data\minecraft\tags\item\trim_materials.json
@@ -7,5 +7,5 @@ f1aa35965f8c5fa84328c297ea233aeb2c853afd data\minecraft\tags\item\logs_that_burn
 24811a1ba8bb5bd4159f2ce45fc8f940eb18f079 data\minecraft\tags\item\pickaxes.json
 274b8f80cfd8c169e268859a802d649f31ad41b4 data\minecraft\tags\item\trim_templates.json
 798bd7a175ec700250a5c318970ea715532c5bbd data\minecraft\tags\item\swords.json
-7eddc3d3648d1fe46514705d4a034688010a096d data\minecraft\tags\item\axes.json
 659663a13af16f84f2e5b474a3234e5bc74dc419 data\minecraft\tags\item\shovels.json
+7eddc3d3648d1fe46514705d4a034688010a096d data\minecraft\tags\item\axes.json
