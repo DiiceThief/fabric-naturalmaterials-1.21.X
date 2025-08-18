@@ -18,8 +18,9 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> CYPRESS_PLACED_KEY = registerKey("cypress_placed");
     public static final RegistryKey<PlacedFeature> PALM_PLACED_KEY = registerKey("palm_placed");
-
     public static final RegistryKey<PlacedFeature> REDWOOD_PLACED_KEY = registerKey("redwood_placed");
+
+    public static final RegistryKey<PlacedFeature> MANAWOOD_PLACED_KEY = registerKey("manawood_placed");
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -34,6 +35,10 @@ public class ModPlacedFeatures {
         register(context, REDWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.REDWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
                         ModBlocks.REDWOOD_SAPLING));
+
+        register(context, MANAWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MANAWOOD_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(2, 0.1f, 2),
+                        ModBlocks.MANAWOOD_SAPLING));
 
     }
     public static RegistryKey<PlacedFeature> registerKey (String name) {

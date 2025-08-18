@@ -28,6 +28,7 @@ import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
 import net.minecraft.world.gen.trunk.*;
 
 import java.util.List;
+import java.util.OptionalInt;
 import java.util.function.BiConsumer;
 
 public class ModConfiguredFeatures {
@@ -63,6 +64,16 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 1, 2)
         )
                 .decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
+                .build());
+
+        register(context, MANAWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.MANAWOOD_LOG),
+                new LargeOakTrunkPlacer(3, 11, 0) {},
+                BlockStateProvider.of(ModBlocks.MANAWOOD_LEAVES),
+                new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))
+        )
+                .ignoreVines()
                 .build());
     }
 
