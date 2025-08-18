@@ -90,6 +90,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYPRESS_WOOD, 3)
                 .pattern("##")
                 .pattern("##")
+
                 .input('#', ModBlocks.CYPRESS_LOG)
                 .criterion(hasItem(ModBlocks.CYPRESS_LOG), conditionsFromItem(ModBlocks.CYPRESS_LOG))
                 .offerTo(recipeExporter);
