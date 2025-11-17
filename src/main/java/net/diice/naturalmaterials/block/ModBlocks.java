@@ -112,6 +112,7 @@ public class ModBlocks {
             new ModSaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
 
 
+
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_MANAWOOD_LOG = registerBlock("stripped_manawood_log",

@@ -1,3 +1,6 @@
 {
-  "parent": "naturalmaterials:block/redwood_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "naturalmaterials:item/redwood_sapling"
+  }
 }

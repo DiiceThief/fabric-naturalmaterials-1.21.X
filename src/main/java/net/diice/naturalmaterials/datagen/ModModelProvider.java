@@ -121,6 +121,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModBlocks.CYPRESS_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.REDWOOD_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.MANAWOOD_SAPLING.asItem(), Models.GENERATED);
+
 
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
