@@ -1,4 +1,4 @@
-// 1.21	2025-11-18T18:54:05.0490233	NaturalMaterials/
+// 1.21	2025-11-18T19:11:16.8866351	NaturalMaterials/
 a5b7dba8ca1eca84bfb2182466329767c221a088 data\naturalmaterials\worldgen\placed_feature\palm_placed.json
 d8f6c73efd0dcfffef727be4f5a85e4c839df7bd data\naturalmaterials\worldgen\configured_feature\palm.json
 fc88adc72527c4a6e95aeb8c3ab506ae81300d27 data\naturalmaterials\worldgen\placed_feature\redwood_placed.json
@@ -10,4 +10,4 @@ fc88adc72527c4a6e95aeb8c3ab506ae81300d27 data\naturalmaterials\worldgen\placed_f
 5be2815a061892ad73079523872c033c1fa0e7d9 data\naturalmaterials\worldgen\placed_feature\gloomwood_placed.json
 a9361feab763db476190c132df3d7163d22a7b49 data\naturalmaterials\worldgen\configured_feature\redwood.json
 e8a87e420658ddcbd31ef016f10ce941bc7f94c4 data\naturalmaterials\worldgen\configured_feature\manawood.json
-5014264bb15c6a333849afa925677a437112f200 data\naturalmaterials\worldgen\configured_feature\gloomwood.json
+7db0dd90dddeb5f91270324c355ceb3a1ec9c0e2 data\naturalmaterials\worldgen\configured_feature\gloomwood.json
