@@ -11,6 +11,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item AMBER = registerItem("amber", new Item(new Item.Settings()));
+    public static final Item RAW_VIRIDIUM = registerItem("raw_viridium", new Item(new Item.Settings()));
+    public static final Item VIRIDIUM_INGOT = registerItem("viridium_ingot", new Item(new Item.Settings()));
 
     public static final Item HUNTER_SMITHING_TEMPLATE = registerItem("hunter_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(NaturalMaterials.MOD_ID, "hunter"), FeatureFlags.VANILLA));

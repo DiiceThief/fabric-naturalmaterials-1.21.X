@@ -32,6 +32,9 @@ public class ModItemGroups {
                         entries.add(ModItems.AMBER_SHOVEL);
                         entries.add(ModItems.AMBER_HOE);
 
+                        entries.add(ModItems.RAW_VIRIDIUM);
+                        entries.add(ModItems.VIRIDIUM_INGOT);
+
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),
@@ -145,6 +148,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.POLISHED_BLUESHIST_WALL);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_BUTTON);
                         entries.add(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.RAW_VIRIDIUM_BLOCK);
+                        entries.add(ModBlocks.VIRIDIUM_BLOCK);
+                        entries.add(ModBlocks.VIRIDIUM_STAIRS);
+                        entries.add(ModBlocks.VIRIDIUM_SLAB);
+                        entries.add(ModBlocks.VIRIDIUM_WALL);
+                        entries.add(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
 
 
                     })).build());

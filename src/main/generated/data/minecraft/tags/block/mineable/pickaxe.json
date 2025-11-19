@@ -23,6 +23,12 @@
     "naturalmaterials:polished_blueshist_slab",
     "naturalmaterials:polished_blueshist_button",
     "naturalmaterials:polished_blueshist_wall",
-    "naturalmaterials:polished_blueshist_pressure_plate"
+    "naturalmaterials:polished_blueshist_pressure_plate",
+    "naturalmaterials:viridium_block",
+    "naturalmaterials:viridium_stairs",
+    "naturalmaterials:viridium_slab",
+    "naturalmaterials:viridium_wall",
+    "naturalmaterials:raw_viridium_block",
+    "naturalmaterials:viridium_pressure_plate"
   ]
 }

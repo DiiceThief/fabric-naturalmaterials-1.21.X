@@ -121,5 +121,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_BLUESHIST_WALL);
         addDrop(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE);
 
+        addDrop(ModBlocks.VIRIDIUM_BLOCK);
+        addDrop(ModBlocks.RAW_VIRIDIUM_BLOCK);
+        addDrop(ModBlocks.VIRIDIUM_STAIRS);
+        addDrop(ModBlocks.VIRIDIUM_SLAB, slabDrops(ModBlocks.VIRIDIUM_SLAB));
+        addDrop(ModBlocks.VIRIDIUM_WALL);
+        addDrop(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
+
     }
 }

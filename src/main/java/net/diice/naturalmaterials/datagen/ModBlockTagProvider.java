@@ -127,13 +127,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_BLUESHIST_SLAB)
                 .add(ModBlocks.POLISHED_BLUESHIST_BUTTON)
                 .add(ModBlocks.POLISHED_BLUESHIST_WALL)
-                .add(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE);
+                .add(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE)
+                .add(ModBlocks.VIRIDIUM_BLOCK)
+                .add(ModBlocks.VIRIDIUM_STAIRS)
+                .add(ModBlocks.VIRIDIUM_SLAB)
+                .add(ModBlocks.VIRIDIUM_WALL)
+                .add(ModBlocks.RAW_VIRIDIUM_BLOCK)
+                .add(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.DUSKSLATE_WALL)
                 .add(ModBlocks.POLISHED_DUSKSLATE_WALL)
                 .add(ModBlocks.BLUESHIST_WALL)
-                .add(ModBlocks.POLISHED_BLUESHIST_WALL);
+                .add(ModBlocks.POLISHED_BLUESHIST_WALL)
+                .add(ModBlocks.VIRIDIUM_WALL);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG)

@@ -111,8 +111,17 @@
   "block.naturalmaterials.polished_blueshist_slab": "Polished Blueshist Slab",
   "block.naturalmaterials.polished_blueshist_pressure_plate": "Polished Blueshist Pressure Plate",
 
+  "block.naturalmaterials.raw_viridium_block": "Raw Viridium Block",
+  "block.naturalmaterials.viridium_block": "Viridium Block",
+  "block.naturalmaterials.viridium_stairs": "Viridium Stairs",
+  "block.naturalmaterials.viridium_slab": "Viridium Slab",
+  "block.naturalmaterials.viridium_wall": "Viridium Wall",
+  "block.naturalmaterials.viridium_pressure_plate": "Viridium Pressure Plate",
+
 
   "item.naturalmaterials.amber": "Amber",
+  "item.naturalmaterials.raw_viridium": "Raw Viridium",
+  "item.naturalmaterials.viridium_ingot": "Viridium Ingot",
 
   "item.naturalmaterials.hunter_armor_trim_smithing_template": "Hunter Smithing Template",
 

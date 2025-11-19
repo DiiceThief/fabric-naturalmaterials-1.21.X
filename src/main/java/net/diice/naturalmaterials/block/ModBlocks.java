@@ -243,6 +243,20 @@ public class ModBlocks {
     public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerBlock("polished_blueshist_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
+    public static final Block VIRIDIUM_BLOCK = registerBlock("viridium_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+    public static final Block RAW_VIRIDIUM_BLOCK = registerBlock("raw_viridium_block",
+           new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK)));
+    public static final Block VIRIDIUM_STAIRS = registerBlock("viridium_stairs",
+            new StairsBlock(ModBlocks.VIRIDIUM_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
+    public static final Block VIRIDIUM_SLAB = registerBlock("viridium_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+    public static final Block VIRIDIUM_WALL = registerBlock("viridium_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+    public static final Block VIRIDIUM_PRESSURE_PLATE = registerBlock("viridium_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)));
+
 
 
     private static Block registerBlock(String name, Block block) {

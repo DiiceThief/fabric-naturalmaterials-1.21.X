@@ -195,6 +195,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.POLISHED_BLUESHIST), conditionsFromItem(ModBlocks.POLISHED_BLUESHIST))
                 .offerTo(recipeExporter);
 
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.RAW_VIRIDIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_VIRIDIUM_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.VIRIDIUM_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_BLOCK);
+        createStairsRecipe(ModBlocks.VIRIDIUM_STAIRS, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_SLAB, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.VIRIDIUM_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_WALL, 6)
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.VIRIDIUM_BLOCK)
+                .criterion(hasItem(ModBlocks.VIRIDIUM_BLOCK), conditionsFromItem(ModBlocks.VIRIDIUM_BLOCK))
+                .offerTo(recipeExporter);
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_PICKAXE, 1)
                 .pattern("###")
                 .pattern(" s ")
