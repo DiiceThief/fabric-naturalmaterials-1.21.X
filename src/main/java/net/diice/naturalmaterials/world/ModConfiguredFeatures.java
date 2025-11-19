@@ -81,7 +81,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.GLOOMWOOD_LOG),
                 new DarkOakTrunkPlacer(5, 6, 3) {},
                 BlockStateProvider.of(ModBlocks.GLOOMWOOD_LEAVES),
-                new DarkOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4)),
+                new DarkOakFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(0)),
                 new TwoLayersFeatureSize(1, 0, 2, OptionalInt.of(3))
         )
                 .ignoreVines()
