@@ -113,7 +113,6 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
     public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
             new ModSaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
-    public static final Block POTTED_CYPRESS_SAPLING = registerBlock("potted_cypress_sapling", createFlowerPotBlock(CYPRESS_SAPLING));
 
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",

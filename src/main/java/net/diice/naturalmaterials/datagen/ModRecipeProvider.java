@@ -90,7 +90,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYPRESS_WOOD, 3)
                 .pattern("##")
                 .pattern("##")
-
                 .input('#', ModBlocks.CYPRESS_LOG)
                 .criterion(hasItem(ModBlocks.CYPRESS_LOG), conditionsFromItem(ModBlocks.CYPRESS_LOG))
                 .offerTo(recipeExporter);
@@ -100,6 +99,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModBlocks.STRIPPED_CYPRESS_LOG)
                 .criterion(hasItem(ModBlocks.STRIPPED_CYPRESS_LOG), conditionsFromItem(ModBlocks.STRIPPED_CYPRESS_LOG))
                 .offerTo(recipeExporter);
+
 
         createStairsRecipe(ModBlocks.MANAWOOD_STAIRS, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANAWOOD_SLAB, Ingredient.ofItems(ModBlocks.MANAWOOD_PLANKS));

@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"net.diice.naturalmaterials.NaturalMaterialsClient"
+		],
+		"rei_client": [
+			"net.diice.naturalmaterials.compat.NaturalMaterialsREIVClient"
 		]
 	},
 	"mixins": [

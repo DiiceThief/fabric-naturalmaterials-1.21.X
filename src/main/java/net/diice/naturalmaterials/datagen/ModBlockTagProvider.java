@@ -5,6 +5,7 @@ import net.diice.naturalmaterials.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -103,6 +104,62 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANAWOOD_FENCE_GATE)
                 .add(ModBlocks.GLOOMWOOD_FENCE_GATE);
 
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(ModBlocks.GLOOMWOOD_DOOR)
+                .add(ModBlocks.REDWOOD_DOOR)
+                .add(ModBlocks.CYPRESS_DOOR)
+                .add(ModBlocks.MANAWOOD_DOOR)
+                .add(ModBlocks.PALM_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.PALM_PLANKS)
+                .add(ModBlocks.REDWOOD_PLANKS)
+                .add(ModBlocks.CYPRESS_PLANKS)
+                .add(ModBlocks.MANAWOOD_PLANKS)
+                .add(ModBlocks.GLOOMWOOD_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.PALM_STAIRS)
+                .add(ModBlocks.REDWOOD_STAIRS)
+                .add(ModBlocks.MANAWOOD_STAIRS)
+                .add(ModBlocks.CYPRESS_STAIRS)
+                .add(ModBlocks.GLOOMWOOD_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.PALM_SLAB)
+                .add(ModBlocks.REDWOOD_SLAB)
+                .add(ModBlocks.MANAWOOD_SLAB)
+                .add(ModBlocks.CYPRESS_SLAB)
+                .add(ModBlocks.GLOOMWOOD_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.CYPRESS_SAPLING)
+                .add(ModBlocks.REDWOOD_SAPLING)
+                .add(ModBlocks.PALM_SAPLING)
+                .add(ModBlocks.MANAWOOD_SAPLING)
+                .add(ModBlocks.GLOOMWOOD_SAPLING);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.PALM_PRESSURE_PLATE)
+                .add(ModBlocks.REDWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.MANAWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.CYPRESS_PRESSURE_PLATE)
+                .add(ModBlocks.GLOOMWOOD_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.PALM_LEAVES)
+                .add(ModBlocks.REDWOOD_LEAVES)
+                .add(ModBlocks.CYPRESS_LEAVES)
+                .add(ModBlocks.MANAWOOD_LEAVES)
+                .add(ModBlocks.GLOOMWOOD_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.PALM_TRAPDOOR)
+                .add(ModBlocks.REDWOOD_TRAPDOOR)
+                .add(ModBlocks.MANAWOOD_TRAPDOOR)
+                .add(ModBlocks.CYPRESS_TRAPDOOR)
+                .add(ModBlocks.GLOOMWOOD_TRAPDOOR);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DUSKSLATE)
                 .add(ModBlocks.DUSKSLATE_STAIRS)
@@ -162,6 +219,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_BLUESHIST_WALL)
                 .add(ModBlocks.VIRIDIUM_WALL)
                 .add(ModBlocks.THALRENITE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.PALM_LEAVES)
+                .add(ModBlocks.CYPRESS_LEAVES)
+                .add(ModBlocks.MANAWOOD_LEAVES)
+                .add(ModBlocks.REDWOOD_LEAVES)
+                .add(ModBlocks.GLOOMWOOD_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG)
