@@ -1,9 +1,9 @@
-// 1.21	2025-11-19T11:06:47.4667044	NaturalMaterials/Tags for minecraft:block
+// 1.21	2025-11-19T11:15:50.2784658	NaturalMaterials/Tags for minecraft:block
 bd7e3fea85ffed32e794ef36acbe84bf1a56e365 data\minecraft\tags\block\logs_that_burn.json
 c4719f21eaa8beeaa5597cf162ab644a595213a4 data\minecraft\tags\block\wooden_fences.json
 781d959bb6bbea7b36ae6b2d4a71ced43fd662b9 data\naturalmaterials\tags\block\needs_amber_tool.json
-430205891d8fe89fe41b4755e8377b7308a40d49 data\minecraft\tags\block\mineable\pickaxe.json
+3f0a24ce2d38b2cc4bfd6df69dd5936be98b9c60 data\minecraft\tags\block\mineable\pickaxe.json
 f218d2b6b9c927d646f9d7433c1baa15ec3045f8 data\minecraft\tags\block\fence_gates.json
 34f3d49e34ad83b34ace2a8132f6f98bc826debb data\minecraft\tags\block\mineable\axe.json
 7d7af47c585b0188af9b7681bd7612cd00911682 data\minecraft\tags\block\walls.json
-672c54dbfb747a4b9fab07761e41c21191c93f2b data\minecraft\tags\block\needs_iron_tool.json
+f3195283e1da16cdafe44c3dcafe5827c84f23a5 data\minecraft\tags\block\needs_iron_tool.json

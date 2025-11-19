@@ -264,12 +264,12 @@ public class ModBlocks {
     public static final Block THALRENITE_STAIRS = registerBlock("thalrenite_stairs",
             new StairsBlock(ModBlocks.THALRENITE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
-    public static final Block THALRENITE_SLAB = registerBlock("thalrentite_slab",
+    public static final Block THALRENITE_SLAB = registerBlock("thalrenite_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
     public static final Block THALRENITE_WALL = registerBlock("thalrenite_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
     public static final Block THALRENITE_PRESSURE_PLATE = registerBlock("thalrenite_pressure_plate",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)));
 
 
 

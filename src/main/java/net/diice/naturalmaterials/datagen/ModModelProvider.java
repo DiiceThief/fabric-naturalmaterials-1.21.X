@@ -29,6 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUESHIST);
         BlockStateModelGenerator.BlockTexturePool POLISHED_BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BLUESHIST);
         BlockStateModelGenerator.BlockTexturePool VIRIDIUM_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VIRIDIUM_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool THALRENITE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THALRENITE_BLOCK);
 
         PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
         PALM_POOL.slab(ModBlocks.PALM_SLAB);
@@ -140,6 +141,13 @@ public class ModModelProvider extends FabricModelProvider {
         VIRIDIUM_POOL.pressurePlate(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VIRIDIUM_BLOCK);
+
+        THALRENITE_POOL.stairs(ModBlocks.THALRENITE_STAIRS);
+        THALRENITE_POOL.slab(ModBlocks.THALRENITE_SLAB);
+        THALRENITE_POOL.wall(ModBlocks.THALRENITE_WALL);
+        THALRENITE_POOL.pressurePlate(ModBlocks.THALRENITE_PRESSURE_PLATE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_THALRENITE_BLOCK);
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
