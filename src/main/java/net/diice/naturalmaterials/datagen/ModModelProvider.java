@@ -139,6 +139,7 @@ public class ModModelProvider extends FabricModelProvider {
         VIRIDIUM_POOL.wall(ModBlocks.VIRIDIUM_WALL);
         VIRIDIUM_POOL.pressurePlate(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VIRIDIUM_BLOCK);
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -150,6 +151,8 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_VIRIDIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VIRIDIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_BOOTS));

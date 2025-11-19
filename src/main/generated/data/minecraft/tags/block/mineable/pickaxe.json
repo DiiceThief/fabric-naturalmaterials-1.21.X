@@ -29,6 +29,12 @@
     "naturalmaterials:viridium_slab",
     "naturalmaterials:viridium_wall",
     "naturalmaterials:raw_viridium_block",
-    "naturalmaterials:viridium_pressure_plate"
+    "naturalmaterials:viridium_pressure_plate",
+    "naturalmaterials:thalrenite_block",
+    "naturalmaterials:thalrenite_stairs",
+    "naturalmaterials:thalrentite_slab",
+    "naturalmaterials:thalrenite_wall",
+    "naturalmaterials:thalrenite_pressure_plate",
+    "naturalmaterials:raw_thalrenite_block"
   ]
 }

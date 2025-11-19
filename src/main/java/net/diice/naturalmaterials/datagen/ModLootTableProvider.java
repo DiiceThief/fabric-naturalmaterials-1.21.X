@@ -128,5 +128,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VIRIDIUM_WALL);
         addDrop(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
 
+        addDrop(ModBlocks.THALRENITE_BLOCK);
+        addDrop(ModBlocks.RAW_THALRENITE_BLOCK);
+        addDrop(ModBlocks.THALRENITE_STAIRS);
+        addDrop(ModBlocks.THALRENITE_SLAB, slabDrops(ModBlocks.THALRENITE_SLAB));
+        addDrop(ModBlocks.THALRENITE_WALL);
+        addDrop(ModBlocks.THALRENITE_PRESSURE_PLATE);
+
     }
 }

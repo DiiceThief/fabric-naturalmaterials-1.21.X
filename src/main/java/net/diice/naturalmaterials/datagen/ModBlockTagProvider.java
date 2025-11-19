@@ -133,14 +133,35 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VIRIDIUM_SLAB)
                 .add(ModBlocks.VIRIDIUM_WALL)
                 .add(ModBlocks.RAW_VIRIDIUM_BLOCK)
-                .add(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
+                .add(ModBlocks.VIRIDIUM_PRESSURE_PLATE)
+                .add(ModBlocks.THALRENITE_BLOCK)
+                .add(ModBlocks.THALRENITE_STAIRS)
+                .add(ModBlocks.THALRENITE_SLAB)
+                .add(ModBlocks.THALRENITE_WALL)
+                .add(ModBlocks.THALRENITE_PRESSURE_PLATE)
+                .add(ModBlocks.RAW_THALRENITE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.VIRIDIUM_BLOCK)
+                .add(ModBlocks.VIRIDIUM_STAIRS)
+                .add(ModBlocks.VIRIDIUM_SLAB)
+                .add(ModBlocks.VIRIDIUM_WALL)
+                .add(ModBlocks.RAW_VIRIDIUM_BLOCK)
+                .add(ModBlocks.VIRIDIUM_PRESSURE_PLATE)
+                .add(ModBlocks.THALRENITE_BLOCK)
+                .add(ModBlocks.THALRENITE_STAIRS)
+                .add(ModBlocks.THALRENITE_SLAB)
+                .add(ModBlocks.THALRENITE_WALL)
+                .add(ModBlocks.THALRENITE_PRESSURE_PLATE)
+                .add(ModBlocks.RAW_THALRENITE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.DUSKSLATE_WALL)
                 .add(ModBlocks.POLISHED_DUSKSLATE_WALL)
                 .add(ModBlocks.BLUESHIST_WALL)
                 .add(ModBlocks.POLISHED_BLUESHIST_WALL)
-                .add(ModBlocks.VIRIDIUM_WALL);
+                .add(ModBlocks.VIRIDIUM_WALL)
+                .add(ModBlocks.THALRENITE_WALL);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG)

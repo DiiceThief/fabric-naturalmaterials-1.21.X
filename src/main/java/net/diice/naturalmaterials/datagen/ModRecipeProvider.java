@@ -201,12 +201,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModItems.VIRIDIUM_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_BLOCK);
         createStairsRecipe(ModBlocks.VIRIDIUM_STAIRS, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_SLAB, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
-        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.VIRIDIUM_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.VIRIDIUM_PRESSURE_PLATE, Ingredient.ofItems(ModItems.VIRIDIUM_INGOT));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_WALL, 6)
                 .pattern("###")
                 .pattern("###")
-                .input('#', ModBlocks.VIRIDIUM_BLOCK)
-                .criterion(hasItem(ModBlocks.VIRIDIUM_BLOCK), conditionsFromItem(ModBlocks.VIRIDIUM_BLOCK))
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.RAW_THALRENITE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_THALRENITE_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.THALRENITE_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_BLOCK);
+        createStairsRecipe(ModBlocks.THALRENITE_STAIRS, Ingredient.ofItems(ModBlocks.THALRENITE_BLOCK));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_SLAB, Ingredient.ofItems(ModBlocks.THALRENITE_BLOCK));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.THALRENITE_PRESSURE_PLATE, Ingredient.ofItems(ModItems.THALRENITE_INGOT));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_WALL, 6)
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
                 .offerTo(recipeExporter);
 
 

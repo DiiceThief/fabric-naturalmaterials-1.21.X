@@ -35,6 +35,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_VIRIDIUM);
                         entries.add(ModItems.VIRIDIUM_INGOT);
 
+                        entries.add(ModItems.RAW_THALRENITE);
+                        entries.add(ModItems.THALRENITE_INGOT);
+
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),
@@ -155,6 +158,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VIRIDIUM_SLAB);
                         entries.add(ModBlocks.VIRIDIUM_WALL);
                         entries.add(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.RAW_THALRENITE_BLOCK);
+                        entries.add(ModBlocks.THALRENITE_BLOCK);
+                        entries.add(ModBlocks.THALRENITE_STAIRS);
+                        entries.add(ModBlocks.THALRENITE_SLAB);
+                        entries.add(ModBlocks.THALRENITE_WALL);
+                        entries.add(ModBlocks.THALRENITE_PRESSURE_PLATE);
 
 
                     })).build());

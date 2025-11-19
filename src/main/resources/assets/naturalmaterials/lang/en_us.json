@@ -118,10 +118,19 @@
   "block.naturalmaterials.viridium_wall": "Viridium Wall",
   "block.naturalmaterials.viridium_pressure_plate": "Viridium Pressure Plate",
 
+  "block.naturalmaterials.raw_thalrenite_block": "Raw Thalrenite Block",
+  "block.naturalmaterials.thalrenite_block": "Thalrenite Block",
+  "block.naturalmaterials.thalrenite_stairs": "Thalrenite Stairs",
+  "block.naturalmaterials.thalrenite_slab": "Thalrenite Slab",
+  "block.naturalmaterials.thalrenite_wall": "Thalrenite Wall",
+  "block.naturalmaterials.thalrenite_pressure_plate": "Thalrenite Pressure Plate",
+
 
   "item.naturalmaterials.amber": "Amber",
   "item.naturalmaterials.raw_viridium": "Raw Viridium",
   "item.naturalmaterials.viridium_ingot": "Viridium Ingot",
+  "item.naturalmaterials.raw_thalrenite_": "Raw Thalrenite",
+  "item.naturalmaterials.thalrenite_ingot": "Thalrenite Ingot",
 
   "item.naturalmaterials.hunter_armor_trim_smithing_template": "Hunter Smithing Template",
 
