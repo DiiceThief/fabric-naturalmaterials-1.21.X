@@ -39,6 +39,9 @@ public class NaturalMaterials implements ModInitializer {
 		StrippableBlockRegistry.register(ModBlocks.MANAWOOD_LOG, ModBlocks.STRIPPED_MANAWOOD_LOG);
 		StrippableBlockRegistry.register(ModBlocks.MANAWOOD_WOOD, ModBlocks.STRIPPED_MANAWOOD_WOOD);
 
+		StrippableBlockRegistry.register(ModBlocks.GLOOMWOOD_LOG, ModBlocks.STRIPPED_GLOOMWOOD_LOG);
+		StrippableBlockRegistry.register(ModBlocks.GLOOMWOOD_WOOD, ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_PALM_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALM_WOOD, 5, 5);
@@ -66,6 +69,13 @@ public class NaturalMaterials implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_MANAWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MANAWOOD_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MANAWOOD_LEAVES, 30, 60);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GLOOMWOOD_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_GLOOMWOOD_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GLOOMWOOD_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GLOOMWOOD_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GLOOMWOOD_LEAVES, 30, 60);
 
 	}
 }

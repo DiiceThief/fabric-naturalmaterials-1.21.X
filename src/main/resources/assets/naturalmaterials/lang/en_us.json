@@ -66,6 +66,23 @@
   "block.naturalmaterials.manawood_leaves": "Manawood Leaves",
   "block.naturalmaterials.manawood_sapling": "Manawood Sapling",
 
+  "block.naturalmaterials.gloomwood_log": "Gloomwood Log",
+  "block.naturalmaterials.gloomwood_wood": "Gloomwood Wood",
+  "block.naturalmaterials.stripped_gloomwood_log": "Stripped Gloomwood Log",
+  "block.naturalmaterials.stripped_gloomwood_wood": "Stripped Gloomwood Wood",
+  "block.naturalmaterials.gloomwood_planks": "Gloomwood Planks",
+  "block.naturalmaterials.gloomwood_stairs": "Gloomwood Stairs",
+  "block.naturalmaterials.gloomwood_slab": "Manawood Slab",
+  "block.naturalmaterials.gloomwood_button": "Gloomwood Button",
+  "block.naturalmaterials.gloomwood_pressure_plate": "Gloomwood Pressure Plate",
+  "block.naturalmaterials.gloomwood_door": "Gloomwood Door",
+  "block.naturalmaterials.gloomwood_trapdoor": "Gloomwood Trapdoor",
+  "block.naturalmaterials.gloomwood_fence": "Gloomwood Fence",
+  "block.naturalmaterials.gloomwood_fence_gate": "Gloomwood Fence Gate",
+  "block.naturalmaterials.gloomwood_leaves": "Gloomwood Leaves",
+  "block.naturalmaterials.gloomwood_sapling": "Gloomwood Sapling",
+
+
   "block.naturalmaterials.duskslate": "Duskslate",
   "block.naturalmaterials.duskslate_stairs": "Duskslate Stairs",
   "block.naturalmaterials.duskslate_button": "Duskslate Button",

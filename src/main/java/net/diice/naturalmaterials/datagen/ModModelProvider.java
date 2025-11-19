@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool REDWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool CYPRESS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYPRESS_PLANKS);
         BlockStateModelGenerator.BlockTexturePool MANAWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANAWOOD_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool GLOOMWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMWOOD_PLANKS);
         BlockStateModelGenerator.BlockTexturePool DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DUSKSLATE);
         BlockStateModelGenerator.BlockTexturePool POLISHED_DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DUSKSLATE);
         BlockStateModelGenerator.BlockTexturePool BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUESHIST);
@@ -92,6 +93,22 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.MANAWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        GLOOMWOOD_POOL.stairs(ModBlocks.GLOOMWOOD_STAIRS);
+        GLOOMWOOD_POOL.slab(ModBlocks.GLOOMWOOD_SLAB);
+        GLOOMWOOD_POOL.pressurePlate(ModBlocks.GLOOMWOOD_PRESSURE_PLATE);
+        GLOOMWOOD_POOL.button(ModBlocks.GLOOMWOOD_BUTTON);
+        GLOOMWOOD_POOL.fence(ModBlocks.GLOOMWOOD_FENCE);
+        GLOOMWOOD_POOL.fenceGate(ModBlocks.GLOOMWOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.GLOOMWOOD_LOG).log(ModBlocks.GLOOMWOOD_LOG).wood(ModBlocks.GLOOMWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GLOOMWOOD_LOG).log(ModBlocks.STRIPPED_GLOOMWOOD_LOG).wood(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.GLOOMWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.GLOOMWOOD_TRAPDOOR);
+
+        blockStateModelGenerator.registerSingleton(ModBlocks.GLOOMWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         DUSKSLATE_POOL.stairs(ModBlocks.DUSKSLATE_STAIRS);
         DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
         DUSKSLATE_POOL.wall(ModBlocks.DUSKSLATE_WALL);
@@ -123,6 +140,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.REDWOOD_SAPLING.asItem(), Models.GENERATED);
         itemModelGenerator.register(ModBlocks.MANAWOOD_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.GLOOMWOOD_SAPLING.asItem(), Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);

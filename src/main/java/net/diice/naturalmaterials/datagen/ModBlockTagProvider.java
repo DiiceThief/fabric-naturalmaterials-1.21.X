@@ -73,19 +73,35 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANAWOOD_DOOR)
                 .add(ModBlocks.MANAWOOD_TRAPDOOR)
                 .add(ModBlocks.MANAWOOD_FENCE)
-                .add(ModBlocks.MANAWOOD_FENCE_GATE);
+                .add(ModBlocks.MANAWOOD_FENCE_GATE)
+
+                .add(ModBlocks.GLOOMWOOD_LOG)
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_LOG)
+                .add(ModBlocks.GLOOMWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD)
+                .add(ModBlocks.GLOOMWOOD_PLANKS)
+                .add(ModBlocks.GLOOMWOOD_STAIRS)
+                .add(ModBlocks.GLOOMWOOD_SLAB)
+                .add(ModBlocks.GLOOMWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.GLOOMWOOD_BUTTON)
+                .add(ModBlocks.GLOOMWOOD_DOOR)
+                .add(ModBlocks.GLOOMWOOD_TRAPDOOR)
+                .add(ModBlocks.GLOOMWOOD_FENCE)
+                .add(ModBlocks.GLOOMWOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.PALM_FENCE)
                 .add(ModBlocks.REDWOOD_FENCE)
                 .add(ModBlocks.CYPRESS_FENCE)
-                .add(ModBlocks.MANAWOOD_FENCE);
+                .add(ModBlocks.MANAWOOD_FENCE)
+                .add(ModBlocks.GLOOMWOOD_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.PALM_FENCE_GATE)
                 .add(ModBlocks.REDWOOD_FENCE_GATE)
                 .add(ModBlocks.CYPRESS_FENCE_GATE)
-                .add(ModBlocks.MANAWOOD_FENCE_GATE);
+                .add(ModBlocks.MANAWOOD_FENCE_GATE)
+                .add(ModBlocks.GLOOMWOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DUSKSLATE)
@@ -135,7 +151,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MANAWOOD_LOG)
                 .add(ModBlocks.MANAWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_MANAWOOD_LOG)
-                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD);
+                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD)
+                .add(ModBlocks.GLOOMWOOD_LOG)
+                .add(ModBlocks.GLOOMWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_LOG)
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AMBER_TOOL)
                 .forceAddTag(BlockTags.NEEDS_STONE_TOOL);

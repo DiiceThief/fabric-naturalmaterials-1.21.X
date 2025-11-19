@@ -40,7 +40,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MANAWOOD_LOG.asItem())
                 .add(ModBlocks.MANAWOOD_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_MANAWOOD_LOG.asItem())
-                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD.asItem());
+                .add(ModBlocks.STRIPPED_MANAWOOD_WOOD.asItem())
+                .add(ModBlocks.GLOOMWOOD_LOG.asItem())
+                .add(ModBlocks.GLOOMWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.AMBER_BOOTS)
@@ -67,7 +71,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.PALM_PLANKS.asItem())
                 .add(ModBlocks.CYPRESS_PLANKS.asItem())
                 .add(ModBlocks.REDWOOD_PLANKS.asItem())
-                .add(ModBlocks.MANAWOOD_PLANKS.asItem());
+                .add(ModBlocks.MANAWOOD_PLANKS.asItem())
+                .add(ModBlocks.GLOOMWOOD_PLANKS.asItem());
 
     }
 }

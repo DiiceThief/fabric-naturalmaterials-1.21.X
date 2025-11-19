@@ -51,6 +51,19 @@
     "naturalmaterials:manawood_door",
     "naturalmaterials:manawood_trapdoor",
     "naturalmaterials:manawood_fence",
-    "naturalmaterials:manawood_fence_gate"
+    "naturalmaterials:manawood_fence_gate",
+    "naturalmaterials:gloomwood_log",
+    "naturalmaterials:stripped_gloomwood_log",
+    "naturalmaterials:gloomwood_wood",
+    "naturalmaterials:stripped_gloomwood_wood",
+    "naturalmaterials:gloomwood_planks",
+    "naturalmaterials:gloomwood_stairs",
+    "naturalmaterials:gloomwood_slab",
+    "naturalmaterials:gloomwood_pressure_plate",
+    "naturalmaterials:gloomwood_button",
+    "naturalmaterials:gloomwood_door",
+    "naturalmaterials:gloomwood_trapdoor",
+    "naturalmaterials:gloomwood_fence",
+    "naturalmaterials:gloomwood_fence_gate"
   ]
 }

@@ -59,7 +59,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_CYPRESS_LOG);
         addDrop(ModBlocks.CYPRESS_WOOD);
         addDrop(ModBlocks.STRIPPED_CYPRESS_WOOD);
-        addDrop(ModBlocks.CYPRESS_LEAVES, leavesDrops(ModBlocks.CYPRESS_LEAVES, ModBlocks.CYPRESS_SAPLING, 0.0625f));
+        addDrop(ModBlocks.CYPRESS_LEAVES, leavesDrops(ModBlocks.CYPRESS_LEAVES, ModBlocks.CYPRESS_SAPLING, 0.1250f));
 
         addDrop(ModBlocks.MANAWOOD_PLANKS);
         addDrop(ModBlocks.MANAWOOD_STAIRS);
@@ -76,6 +76,22 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_MANAWOOD_WOOD);
         addDrop(ModBlocks.MANAWOOD_SAPLING);
         addDrop(ModBlocks.MANAWOOD_LEAVES, leavesDrops(ModBlocks.MANAWOOD_LEAVES, ModBlocks.MANAWOOD_SAPLING, 0.0625f));
+
+        addDrop(ModBlocks.GLOOMWOOD_PLANKS);
+        addDrop(ModBlocks.GLOOMWOOD_STAIRS);
+        addDrop(ModBlocks.GLOOMWOOD_SLAB, slabDrops(ModBlocks.GLOOMWOOD_SLAB));
+        addDrop(ModBlocks.GLOOMWOOD_BUTTON);
+        addDrop(ModBlocks.GLOOMWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.GLOOMWOOD_DOOR, doorDrops(ModBlocks.GLOOMWOOD_DOOR));
+        addDrop(ModBlocks.GLOOMWOOD_TRAPDOOR);
+        addDrop(ModBlocks.GLOOMWOOD_FENCE);
+        addDrop(ModBlocks.GLOOMWOOD_FENCE_GATE);
+        addDrop(ModBlocks.GLOOMWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_GLOOMWOOD_LOG);
+        addDrop(ModBlocks.GLOOMWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+        addDrop(ModBlocks.GLOOMWOOD_SAPLING);
+        addDrop(ModBlocks.GLOOMWOOD_LEAVES, leavesDrops(ModBlocks.GLOOMWOOD_LEAVES, ModBlocks.GLOOMWOOD_SAPLING, 0.0625f));
 
         addDrop(ModBlocks.DUSKSLATE);
         addDrop(ModBlocks.DUSKSLATE_STAIRS);

@@ -36,6 +36,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_KEY = registerKey("palm");
     public static final RegistryKey<ConfiguredFeature<?, ?>> REDWOOD_KEY = registerKey("redwood");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MANAWOOD_KEY = registerKey("manawood");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GLOOMWOOD_KEY = registerKey("gloomwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -72,6 +73,16 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.MANAWOOD_LEAVES),
                 new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))
+        )
+                .ignoreVines()
+                .build());
+
+        register(context, GLOOMWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.GLOOMWOOD_LOG),
+                new DarkOakTrunkPlacer(5, 6, 3) {},
+                BlockStateProvider.of(ModBlocks.GLOOMWOOD_LEAVES),
+                new DarkOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4)),
+                new TwoLayersFeatureSize(1, 0, 2, OptionalInt.of(3))
         )
                 .ignoreVines()
                 .build());

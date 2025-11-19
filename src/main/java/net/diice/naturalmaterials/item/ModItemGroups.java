@@ -102,6 +102,22 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MANAWOOD_LEAVES);
                         entries.add(ModBlocks.MANAWOOD_SAPLING);
 
+                        entries.add(ModBlocks.GLOOMWOOD_LOG);
+                        entries.add(ModBlocks.GLOOMWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_GLOOMWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+                        entries.add(ModBlocks.GLOOMWOOD_PLANKS);
+                        entries.add(ModBlocks.GLOOMWOOD_STAIRS);
+                        entries.add(ModBlocks.GLOOMWOOD_SLAB);
+                        entries.add(ModBlocks.GLOOMWOOD_BUTTON);
+                        entries.add(ModBlocks.GLOOMWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.GLOOMWOOD_FENCE);
+                        entries.add(ModBlocks.GLOOMWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.GLOOMWOOD_DOOR);
+                        entries.add(ModBlocks.GLOOMWOOD_TRAPDOOR);
+                        entries.add(ModBlocks.GLOOMWOOD_LEAVES);
+                        entries.add(ModBlocks.GLOOMWOOD_SAPLING);
+
                         entries.add(ModBlocks.DUSKSLATE);
                         entries.add(ModBlocks.DUSKSLATE_STAIRS);
                         entries.add(ModBlocks.DUSKSLATE_SLAB);

@@ -119,6 +119,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MANAWOOD_LOG), conditionsFromItem(ModBlocks.MANAWOOD_LOG))
                 .offerTo(recipeExporter);
 
+        createStairsRecipe(ModBlocks.GLOOMWOOD_STAIRS, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOOMWOOD_SLAB, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.GLOOMWOOD_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PRESSURE_PLATE));
+        createDoorRecipe(ModBlocks.GLOOMWOOD_DOOR, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        createTrapdoorRecipe(ModBlocks.GLOOMWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        createFenceRecipe(ModBlocks.GLOOMWOOD_FENCE, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        createFenceGateRecipe(ModBlocks.GLOOMWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.GLOOMWOOD_PLANKS));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.GLOOMWOOD_PLANKS, 1)
+                .input(ModBlocks.GLOOMWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.GLOOMWOOD_PLANKS), conditionsFromItem(ModBlocks.GLOOMWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOOMWOOD_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.GLOOMWOOD_LOG)
+                .criterion(hasItem(ModBlocks.GLOOMWOOD_LOG), conditionsFromItem(ModBlocks.GLOOMWOOD_LOG))
+                .offerTo(recipeExporter);
+
         createStairsRecipe(ModBlocks.DUSKSLATE_STAIRS, Ingredient.ofItems(ModBlocks.DUSKSLATE));
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DUSKSLATE_SLAB, Ingredient.ofItems(ModBlocks.DUSKSLATE));
         createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.DUSKSLATE_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.DUSKSLATE));

@@ -3,6 +3,7 @@ package net.diice.naturalmaterials.world.tree;
 import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.world.ModConfiguredFeatures;
 import net.minecraft.block.SaplingGenerator;
+import net.minecraft.world.gen.feature.util.CaveSurface;
 
 import java.util.Optional;
 
@@ -15,5 +16,7 @@ import java.util.Optional;
                 Optional.empty(), Optional.of(ModConfiguredFeatures.PALM_KEY), Optional.empty());
         public static final SaplingGenerator MANAWOOD = new SaplingGenerator(NaturalMaterials.MOD_ID + ":manawood",
                 Optional.empty(), Optional.of(ModConfiguredFeatures.MANAWOOD_KEY), Optional.empty());
+        public static final SaplingGenerator GLOOMWOOD = new SaplingGenerator(NaturalMaterials.MOD_ID + ":gloomwood",
+                Optional.of(ModConfiguredFeatures.GLOOMWOOD_KEY), Optional.empty(), Optional.empty());
 
     }

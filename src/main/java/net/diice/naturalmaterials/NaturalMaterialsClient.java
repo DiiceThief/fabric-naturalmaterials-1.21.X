@@ -21,5 +21,8 @@ public class NaturalMaterialsClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MANAWOOD_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MANAWOOD_SAPLING, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOOMWOOD_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOOMWOOD_SAPLING, RenderLayer.getCutout());
+
     }
 }

@@ -12,6 +12,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
+import static net.minecraft.block.Blocks.createFlowerPotBlock;
+import static net.minecraft.block.Blocks.register;
+
 public class ModBlocks {
 
    public static final Block PALM_LOG = registerBlock("palm_log",
@@ -110,7 +113,7 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
     public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
             new ModSaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
-
+    public static final Block POTTED_CYPRESS_SAPLING = registerBlock("potted_cypress_sapling", createFlowerPotBlock(CYPRESS_SAPLING));
 
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
@@ -144,6 +147,39 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block MANAWOOD_SAPLING = registerBlock("manawood_sapling",
             new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+
+
+    public static final Block GLOOMWOOD_LOG = registerBlock("gloomwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block STRIPPED_GLOOMWOOD_LOG = registerBlock("stripped_gloomwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block GLOOMWOOD_WOOD = registerBlock("gloomwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_GLOOMWOOD_WOOD = registerBlock("stripped_gloomwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block GLOOMWOOD_PLANKS = registerBlock("gloomwood_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block GLOOMWOOD_STAIRS = registerBlock("gloomwood_stairs",
+            new StairsBlock(ModBlocks.GLOOMWOOD_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    public static final Block GLOOMWOOD_SLAB = registerBlock("gloomwood_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+    public static final Block GLOOMWOOD_BUTTON = registerBlock("gloomwood_button",
+            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+    public static final Block GLOOMWOOD_PRESSURE_PLATE = registerBlock("gloomwood_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final Block GLOOMWOOD_FENCE = registerBlock("gloomwood_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+    public static final Block GLOOMWOOD_FENCE_GATE = registerBlock("gloomwood_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+    public static final Block GLOOMWOOD_DOOR = registerBlock("gloomwood_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+    public static final Block GLOOMWOOD_TRAPDOOR = registerBlock("gloomwood_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+    public static final Block GLOOMWOOD_LEAVES = registerBlock("gloomwood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block GLOOMWOOD_SAPLING = registerBlock("gloomwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
 
     public static final Block DUSKSLATE = registerBlock("duskslate",

@@ -15,6 +15,10 @@
     "naturalmaterials:manawood_log",
     "naturalmaterials:manawood_wood",
     "naturalmaterials:stripped_manawood_log",
-    "naturalmaterials:stripped_manawood_wood"
+    "naturalmaterials:stripped_manawood_wood",
+    "naturalmaterials:gloomwood_log",
+    "naturalmaterials:gloomwood_wood",
+    "naturalmaterials:stripped_gloomwood_log",
+    "naturalmaterials:stripped_gloomwood_wood"
   ]
 }
