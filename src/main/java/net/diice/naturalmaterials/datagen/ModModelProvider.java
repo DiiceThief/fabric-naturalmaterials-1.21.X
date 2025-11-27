@@ -170,10 +170,32 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_HELMET));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VIRIDIUM_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VIRIDIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VIRIDIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VIRIDIUM_HELMET));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_HELMET));
+
         itemModelGenerator.register(ModItems.AMBER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.VIRIDIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VIRIDIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VIRIDIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VIRIDIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VIRIDIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.THALRENITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THALRENITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THALRENITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THALRENITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THALRENITE_HOE, Models.HANDHELD);
     }
 }

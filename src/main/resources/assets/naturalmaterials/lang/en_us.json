@@ -139,11 +139,33 @@
   "item.naturalmaterials.amber_leggings": "Amber Leggings",
   "item.naturalmaterials.amber_boots": "Amber Boots",
 
+  "item.naturalmaterials.viridium_helmet": "Viridium Helmet",
+  "item.naturalmaterials.viridium_chestplate": "Viridium Chestplate",
+  "item.naturalmaterials.viridium_leggings": "Viridium Leggings",
+  "item.naturalmaterials.viridium_boots": "Viridium Boots",
+
+  "item.naturalmaterials.thalrenite_helmet": "Thalrenite Helmet",
+  "item.naturalmaterials.thalrenite_chestplate": "Thalrenite Chestplate",
+  "item.naturalmaterials.thalrenite_leggings": "Thalrenite Leggings",
+  "item.naturalmaterials.thalrenite_boots": "Thalrenite Boots",
+
   "item.naturalmaterials.amber_sword": "Amber Sword",
   "item.naturalmaterials.amber_axe": "Amber Axe",
   "item.naturalmaterials.amber_pickaxe": "Amber Pickaxe",
   "item.naturalmaterials.amber_shovel": "Amber Shovel",
   "item.naturalmaterials.amber_hoe": "Amber Hoe",
+
+  "item.naturalmaterials.viridium_sword": "Viridium Sword",
+  "item.naturalmaterials.viridium_axe": "Viridium Axe",
+  "item.naturalmaterials.viridium_pickaxe": "Viridium Pickaxe",
+  "item.naturalmaterials.viridium_shovel": "Viridium Shovel",
+  "item.naturalmaterials.viridium_hoe": "Viridium Hoe",
+
+  "item.naturalmaterials.thalrenite_sword": "Thalrenite Sword",
+  "item.naturalmaterials.thalrenite_axe": "Thalrenite Axe",
+  "item.naturalmaterials.thalrenite_pickaxe": "Thalrenite Pickaxe",
+  "item.naturalmaterials.thalrenite_shovel": "Thalrenite Shovel",
+  "item.naturalmaterials.thalrenite_hoe": "Thalrenite Hoe",
 
   "trim_material.naturalmaterials.amber": "Amber Material",
 

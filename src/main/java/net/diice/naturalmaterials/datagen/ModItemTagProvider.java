@@ -50,22 +50,40 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.AMBER_BOOTS)
                 .add(ModItems.AMBER_LEGGINGS)
                 .add(ModItems.AMBER_CHESTPLATE)
-                .add(ModItems.AMBER_HELMET);
+                .add(ModItems.AMBER_HELMET)
+                .add(ModItems.VIRIDIUM_BOOTS)
+                .add(ModItems.VIRIDIUM_CHESTPLATE)
+                .add(ModItems.VIRIDIUM_LEGGINGS)
+                .add(ModItems.VIRIDIUM_HELMET)
+                .add(ModItems.THALRENITE_BOOTS)
+                .add(ModItems.THALRENITE_CHESTPLATE)
+                .add(ModItems.THALRENITE_LEGGINGS)
+                .add(ModItems.THALRENITE_HELMET);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.AMBER_SWORD);
+                .add(ModItems.AMBER_SWORD)
+                .add(ModItems.VIRIDIUM_SWORD)
+                .add(ModItems.THALRENITE_SWORD);
 
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.AMBER_AXE);
+                .add(ModItems.AMBER_AXE)
+                .add(ModItems.VIRIDIUM_AXE)
+                .add(ModItems.THALRENITE_AXE);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.AMBER_PICKAXE);
+                .add(ModItems.AMBER_PICKAXE)
+                .add(ModItems.VIRIDIUM_PICKAXE)
+                .add(ModItems.THALRENITE_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.AMBER_SHOVEL);
+                .add(ModItems.AMBER_SHOVEL)
+                .add(ModItems.VIRIDIUM_SHOVEL)
+                .add(ModItems.THALRENITE_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.AMBER_HOE);
+                .add(ModItems.AMBER_HOE)
+                .add(ModItems.VIRIDIUM_HOE)
+                .add(ModItems.THALRENITE_HOE);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.PALM_PLANKS.asItem())

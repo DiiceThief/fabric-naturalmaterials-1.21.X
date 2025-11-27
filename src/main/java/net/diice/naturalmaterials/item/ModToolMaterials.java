@@ -14,7 +14,12 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    AMBER(ModTags.Blocks.INCORRECT_FOR_AMBER_TOOL, 190, 5.0F, 3.0F, 10, () -> Ingredient.ofItems(ModItems.AMBER));
+    AMBER(ModTags.Blocks.INCORRECT_FOR_AMBER_TOOL, 190, 5.0F, 3.0F, 13,
+            () -> Ingredient.ofItems(ModItems.AMBER)),
+    VIRIDIUM(ModTags.Blocks.INCORRECT_FOR_VIRIDIUM_TOOL, 906, 7.0f, 3.0f, 12,
+            () -> Ingredient.ofItems(ModItems.VIRIDIUM_INGOT)),
+    THALRENITE(ModTags.Blocks.INCORRECT_FOR_THALRENITE_TOOL, 1800, 9.0f, 4.0f, 13,
+            () -> Ingredient.ofItems(ModItems.THALRENITE_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

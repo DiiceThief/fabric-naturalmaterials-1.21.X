@@ -44,7 +44,63 @@ public class ModItems {
                     (ModToolMaterials.AMBER, 6, -3.2f))));
     public static final Item AMBER_HOE = registerItem("amber_hoe",
             new HoeItem(ModToolMaterials.AMBER, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers
-                    (ModToolMaterials.AMBER, 0, -3f))));
+                    (ModToolMaterials.AMBER, 0, -3.0f))));
+
+    public static final Item VIRIDIUM_HELMET = registerItem("viridium_helmet",
+            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(24))));
+    public static final Item VIRIDIUM_CHESTPLATE = registerItem("viridium_chestplate",
+            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(24))));
+    public static final Item VIRIDIUM_LEGGINGS = registerItem("viridium_leggings",
+            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(24))));
+    public static final Item VIRIDIUM_BOOTS = registerItem("viridium_boots",
+            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(24))));
+    public static final Item VIRIDIUM_SWORD = registerItem("viridium_sword",
+            new SwordItem(ModToolMaterials.VIRIDIUM, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers
+                    (ModToolMaterials.VIRIDIUM, 3, -2.4f))));
+    public static final Item VIRIDIUM_PICKAXE = registerItem("viridium_pickaxe",
+            new PickaxeItem(ModToolMaterials.VIRIDIUM, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers
+                    (ModToolMaterials.VIRIDIUM, 1, -2.8f))));
+    public static final Item VIRIDIUM_SHOVEL = registerItem("viridium_shovel",
+            new ShovelItem(ModToolMaterials.VIRIDIUM, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers
+                    (ModToolMaterials.VIRIDIUM, 1.5f, -3.0f))));
+    public static final Item VIRIDIUM_AXE = registerItem("viridium_axe",
+            new AxeItem(ModToolMaterials.VIRIDIUM, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers
+                    (ModToolMaterials.VIRIDIUM, 6, -3.0f))));
+    public static final Item VIRIDIUM_HOE = registerItem("viridium_hoe",
+            new HoeItem(ModToolMaterials.VIRIDIUM, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers
+                    (ModToolMaterials.VIRIDIUM, 1, -2.0f))));
+
+    public static final Item THALRENITE_HELMET = registerItem("thalrenite_helmet",
+            new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
+    public static final Item THALRENITE_CHESTPLATE = registerItem("thalrenite_chestplate",
+            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(35))));
+    public static final Item THALRENITE_LEGGINGS = registerItem("thalrenite_leggings",
+            new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(35))));
+    public static final Item THALRENITE_BOOTS = registerItem("thalrenite_boots",
+            new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(35))));
+    public static final Item THALRENITE_SWORD = registerItem("thalrenite_sword",
+            new SwordItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 3, -2.4f))));
+    public static final Item THALRENITE_PICKAXE = registerItem("thalrenite_pickaxe",
+            new PickaxeItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 1, -2.8f))));
+    public static final Item THALRENITE_SHOVEL = registerItem("thalrenite_shovel",
+            new ShovelItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 1.5f, -3.0f))));
+    public static final Item THALRENITE_AXE = registerItem("thalrenite_axe",
+            new AxeItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 6, -3.0f))));
+    public static final Item THALRENITE_HOE = registerItem("thalrenite_hoe",
+            new HoeItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 4, -0.0f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NaturalMaterials.MOD_ID, name), item);

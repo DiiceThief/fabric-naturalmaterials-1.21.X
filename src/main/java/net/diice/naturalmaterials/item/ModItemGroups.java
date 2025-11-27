@@ -35,8 +35,30 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_VIRIDIUM);
                         entries.add(ModItems.VIRIDIUM_INGOT);
 
+                        entries.add(ModItems.VIRIDIUM_HELMET);
+                        entries.add(ModItems.VIRIDIUM_CHESTPLATE);
+                        entries.add(ModItems.VIRIDIUM_LEGGINGS);
+                        entries.add(ModItems.VIRIDIUM_BOOTS);
+
+                        entries.add(ModItems.VIRIDIUM_SWORD);
+                        entries.add(ModItems.VIRIDIUM_AXE);
+                        entries.add(ModItems.VIRIDIUM_PICKAXE);
+                        entries.add(ModItems.VIRIDIUM_SHOVEL);
+                        entries.add(ModItems.VIRIDIUM_HOE);
+
                         entries.add(ModItems.RAW_THALRENITE);
                         entries.add(ModItems.THALRENITE_INGOT);
+
+                        entries.add(ModItems.THALRENITE_HELMET);
+                        entries.add(ModItems.THALRENITE_CHESTPLATE);
+                        entries.add(ModItems.THALRENITE_LEGGINGS);
+                        entries.add(ModItems.THALRENITE_BOOTS);
+
+                        entries.add(ModItems.THALRENITE_SWORD);
+                        entries.add(ModItems.THALRENITE_AXE);
+                        entries.add(ModItems.THALRENITE_PICKAXE);
+                        entries.add(ModItems.THALRENITE_SHOVEL);
+                        entries.add(ModItems.THALRENITE_HOE);
 
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

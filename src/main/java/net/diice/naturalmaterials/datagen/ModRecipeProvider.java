@@ -234,39 +234,129 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_SWORD, 1)
-                .pattern(" # ")
-                .pattern(" # ")
-                .pattern(" s ")
+                .pattern("#")
+                .pattern("#")
+                .pattern("s")
                 .input('#', ModItems.AMBER)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_AXE, 1)
-                .pattern(" ##")
-                .pattern(" s#")
-                .pattern(" s ")
+                .pattern("##")
+                .pattern("s#")
+                .pattern("s ")
                 .input('#', ModItems.AMBER)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_SHOVEL, 1)
-                .pattern(" # ")
-                .pattern(" s ")
-                .pattern(" s ")
+                .pattern("#")
+                .pattern("s")
+                .pattern("s")
                 .input('#', ModItems.AMBER)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.AMBER_HOE, 1)
-                .pattern("## ")
-                .pattern(" s ")
-                .pattern(" s ")
+                .pattern("##")
+                .pattern(" s")
+                .pattern(" s")
                 .input('#', ModItems.AMBER)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_PICKAXE, 1)
+                .pattern("###")
+                .pattern(" s ")
+                .pattern(" s ")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_SWORD, 1)
+                .pattern("#")
+                .pattern("#")
+                .pattern("s")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_AXE, 1)
+                .pattern("##")
+                .pattern("s#")
+                .pattern("s ")
+                .input('#', ModItems.AMBER)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_SHOVEL, 1)
+                .pattern("#")
+                .pattern("s")
+                .pattern("s")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_HOE, 1)
+                .pattern("##")
+                .pattern(" s")
+                .pattern(" s")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_PICKAXE, 1)
+                .pattern("###")
+                .pattern(" s ")
+                .pattern(" s ")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_SWORD, 1)
+                .pattern("#")
+                .pattern("#")
+                .pattern("s")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_AXE, 1)
+                .pattern("##")
+                .pattern("s#")
+                .pattern("s ")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_SHOVEL, 1)
+                .pattern("#")
+                .pattern("s")
+                .pattern("s")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_HOE, 1)
+                .pattern("##")
+                .pattern(" s")
+                .pattern(" s")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
                 .offerTo(recipeExporter);
     }
 }
