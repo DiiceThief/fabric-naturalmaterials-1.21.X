@@ -199,8 +199,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModItems.RAW_VIRIDIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_VIRIDIUM_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.VIRIDIUM_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_BLOCK);
-        createStairsRecipe(ModBlocks.VIRIDIUM_STAIRS, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_SLAB, Ingredient.ofItems(ModBlocks.VIRIDIUM_BLOCK));
+        createStairsRecipe(ModBlocks.VIRIDIUM_STAIRS, Ingredient.ofItems(ModItems.VIRIDIUM_INGOT));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_SLAB, Ingredient.ofItems(ModItems.VIRIDIUM_INGOT));
         createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.VIRIDIUM_PRESSURE_PLATE, Ingredient.ofItems(ModItems.VIRIDIUM_INGOT));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VIRIDIUM_WALL, 6)
                 .pattern("###")
@@ -213,8 +213,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModItems.RAW_THALRENITE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_THALRENITE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.THALRENITE_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_BLOCK);
-        createStairsRecipe(ModBlocks.THALRENITE_STAIRS, Ingredient.ofItems(ModBlocks.THALRENITE_BLOCK));
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_SLAB, Ingredient.ofItems(ModBlocks.THALRENITE_BLOCK));
+        createStairsRecipe(ModBlocks.THALRENITE_STAIRS, Ingredient.ofItems(ModItems.THALRENITE_INGOT));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_SLAB, Ingredient.ofItems(ModItems.THALRENITE_INGOT));
         createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.THALRENITE_PRESSURE_PLATE, Ingredient.ofItems(ModItems.THALRENITE_INGOT));
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.THALRENITE_WALL, 6)
                 .pattern("###")
