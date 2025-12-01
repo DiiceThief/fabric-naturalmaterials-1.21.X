@@ -16,10 +16,12 @@ public class ModItems {
     public static final Item RAW_THALRENITE = registerItem("raw_thalrenite", new Item(new Item.Settings()));
     public static final Item THALRENITE_INGOT = registerItem("thalrenite_ingot", new Item(new Item.Settings()));
     public static final Item ENDRITE_INGOT = registerItem("endrite_ingot", new Item(new Item.Settings()));
-    public static final Item ENDRITE_SHARDS = registerItem("endrite_shards", new Item(new Item.Settings()));
+    public static final Item ENDRITE_SHARD = registerItem("endrite_shard", new Item(new Item.Settings()));
 
     public static final Item HUNTER_SMITHING_TEMPLATE = registerItem("hunter_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(NaturalMaterials.MOD_ID, "hunter"), FeatureFlags.VANILLA));
+    public static final Item ENDRITE_UPGRADE_SMITHING_TEMPLATE = registerItem("endrite_upgrade_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(NaturalMaterials.MOD_ID, "endrite"), FeatureFlags.VANILLA));
     public static final Item AMBER_HELMET = registerItem("amber_helmet",
             new ArmorItem(ModArmorMaterials.AMBER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));

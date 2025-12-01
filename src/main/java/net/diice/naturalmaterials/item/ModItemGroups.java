@@ -60,7 +60,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THALRENITE_SHOVEL);
                         entries.add(ModItems.THALRENITE_HOE);
 
-                        entries.add(ModItems.ENDRITE_SHARDS);
+                        entries.add(ModItems.ENDRITE_SHARD);
                         entries.add(ModItems.ENDRITE_INGOT);
 
                         entries.add(ModItems.ENDRITE_HELMET);

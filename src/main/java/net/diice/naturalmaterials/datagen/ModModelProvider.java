@@ -166,7 +166,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_THALRENITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.THALRENITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENDRITE_SHARDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDRITE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDRITE_INGOT, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_BOOTS));

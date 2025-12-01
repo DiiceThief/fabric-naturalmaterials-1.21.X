@@ -1,4 +1,4 @@
-// 1.21	2025-11-30T21:14:13.1307517	NaturalMaterials/Block Loot Tables
+// 1.21	2025-11-30T21:23:26.0256033	NaturalMaterials/Block Loot Tables
 194ca840aa9e6d09ae19678595c4d9f229417875 data\naturalmaterials\loot_table\blocks\redwood_pressure_plate.json
 756d194b3657c6f5f7ac9a521adf87ddadbf7da2 data\naturalmaterials\loot_table\blocks\duskslate_wall.json
 ebba6fceca253b2b0527a5af355555c2e95a8bc2 data\naturalmaterials\loot_table\blocks\manawood_fence_gate.json
@@ -43,8 +43,8 @@ f108f4d629b65c1cc4c2e79a2b595b21a41c13d5 data\naturalmaterials\loot_table\blocks
 b6e0686ef64b43db1311fd059a25dd1b74fc729e data\naturalmaterials\loot_table\blocks\manawood_log.json
 fe548dcced688b6fb63c5eaad12d411b691b2b5c data\naturalmaterials\loot_table\blocks\stripped_gloomwood_log.json
 a20486923158b7890c6da3b7fa597296ccbf0931 data\naturalmaterials\loot_table\blocks\viridium_stairs.json
-b4903797570c86acd7b776b3743bfe0a375991cd data\naturalmaterials\loot_table\blocks\cypress_pressure_plate.json
 327415bf06b46c6431b914dddeaf1e67d250f75b data\naturalmaterials\loot_table\blocks\stripped_redwood_wood.json
+b4903797570c86acd7b776b3743bfe0a375991cd data\naturalmaterials\loot_table\blocks\cypress_pressure_plate.json
 cd0879f707bd951b2ca0e96b79637e81763b501b data\naturalmaterials\loot_table\blocks\palm_sapling.json
 b97b372d423df7c74daf1cb6736b886ff7974e48 data\naturalmaterials\loot_table\blocks\gloomwood_button.json
 ccf92b6782854128cb1821a6ad614cf075f11a4c data\naturalmaterials\loot_table\blocks\duskslate.json
