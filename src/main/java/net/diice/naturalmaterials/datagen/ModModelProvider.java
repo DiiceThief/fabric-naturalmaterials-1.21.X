@@ -148,6 +148,8 @@ public class ModModelProvider extends FabricModelProvider {
         THALRENITE_POOL.pressurePlate(ModBlocks.THALRENITE_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_THALRENITE_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDRITE_BLOCK);
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -164,6 +166,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_THALRENITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.THALRENITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDRITE_SHARDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDRITE_INGOT, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_CHESTPLATE));
@@ -179,6 +183,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THALRENITE_HELMET));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDRITE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDRITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDRITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDRITE_HELMET));
 
         itemModelGenerator.register(ModItems.AMBER_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AMBER_AXE, Models.HANDHELD);
@@ -197,5 +206,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THALRENITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THALRENITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THALRENITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.ENDRITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDRITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDRITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDRITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDRITE_HOE, Models.HANDHELD);
     }
 }

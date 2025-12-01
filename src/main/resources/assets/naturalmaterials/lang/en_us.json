@@ -125,12 +125,16 @@
   "block.naturalmaterials.thalrenite_wall": "Thalrenite Wall",
   "block.naturalmaterials.thalrenite_pressure_plate": "Thalrenite Pressure Plate",
 
+  "block.naturalmaterials.endrite_block": "Endrite Block",
+
 
   "item.naturalmaterials.amber": "Amber",
   "item.naturalmaterials.raw_viridium": "Raw Viridium",
   "item.naturalmaterials.viridium_ingot": "Viridium Ingot",
   "item.naturalmaterials.raw_thalrenite": "Raw Thalrenite",
   "item.naturalmaterials.thalrenite_ingot": "Thalrenite Ingot",
+  "item.naturalmaterials.endrite_shards": "Endrite Shards",
+  "item.naturalmaterials.endrite_ingot": "Endrite ingot",
 
   "item.naturalmaterials.hunter_armor_trim_smithing_template": "Hunter Smithing Template",
 
@@ -149,6 +153,11 @@
   "item.naturalmaterials.thalrenite_leggings": "Thalrenite Leggings",
   "item.naturalmaterials.thalrenite_boots": "Thalrenite Boots",
 
+  "item.naturalmaterials.endrite_helmet": "Endrite Helmet",
+  "item.naturalmaterials.endrite_chestplate": "Endrite Chestplate",
+  "item.naturalmaterials.endrite_leggings": "Endrite Leggings",
+  "item.naturalmaterials.endrite_boots": "Endrite Boots",
+
   "item.naturalmaterials.amber_sword": "Amber Sword",
   "item.naturalmaterials.amber_axe": "Amber Axe",
   "item.naturalmaterials.amber_pickaxe": "Amber Pickaxe",
@@ -166,6 +175,13 @@
   "item.naturalmaterials.thalrenite_pickaxe": "Thalrenite Pickaxe",
   "item.naturalmaterials.thalrenite_shovel": "Thalrenite Shovel",
   "item.naturalmaterials.thalrenite_hoe": "Thalrenite Hoe",
+
+  "item.naturalmaterials.endrite_sword": "Endrite Sword",
+  "item.naturalmaterials.endrite_axe": "Endrite Axe",
+  "item.naturalmaterials.endrite_pickaxe": "Endrite Pickaxe",
+  "item.naturalmaterials.endrite_shovel": "Endrite Shovel",
+  "item.naturalmaterials.endrite_hoe": "Endrite Hoe",
+
 
   "trim_material.naturalmaterials.amber": "Amber Material",
 

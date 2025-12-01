@@ -58,32 +58,41 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.THALRENITE_BOOTS)
                 .add(ModItems.THALRENITE_CHESTPLATE)
                 .add(ModItems.THALRENITE_LEGGINGS)
-                .add(ModItems.THALRENITE_HELMET);
+                .add(ModItems.THALRENITE_HELMET)
+                .add(ModItems.ENDRITE_BOOTS)
+                .add(ModItems.ENDRITE_LEGGINGS)
+                .add(ModItems.ENDRITE_CHESTPLATE)
+                .add(ModItems.ENDRITE_HELMET);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.AMBER_SWORD)
                 .add(ModItems.VIRIDIUM_SWORD)
-                .add(ModItems.THALRENITE_SWORD);
+                .add(ModItems.THALRENITE_SWORD)
+                .add(ModItems.ENDRITE_SWORD);
 
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.AMBER_AXE)
                 .add(ModItems.VIRIDIUM_AXE)
-                .add(ModItems.THALRENITE_AXE);
+                .add(ModItems.THALRENITE_AXE)
+                .add(ModItems.ENDRITE_AXE);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.AMBER_PICKAXE)
                 .add(ModItems.VIRIDIUM_PICKAXE)
-                .add(ModItems.THALRENITE_PICKAXE);
+                .add(ModItems.THALRENITE_PICKAXE)
+                .add(ModItems.ENDRITE_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(ModItems.AMBER_SHOVEL)
                 .add(ModItems.VIRIDIUM_SHOVEL)
-                .add(ModItems.THALRENITE_SHOVEL);
+                .add(ModItems.THALRENITE_SHOVEL)
+                .add(ModItems.ENDRITE_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.AMBER_HOE)
                 .add(ModItems.VIRIDIUM_HOE)
-                .add(ModItems.THALRENITE_HOE);
+                .add(ModItems.THALRENITE_HOE)
+                .add(ModItems.ENDRITE_HOE);
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.PALM_PLANKS.asItem())

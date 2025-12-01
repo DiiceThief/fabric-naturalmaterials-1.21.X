@@ -269,6 +269,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AMBER_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.AMBER)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AMBER_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.AMBER)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AMBER_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.AMBER)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.AMBER_BOOTS, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.AMBER)
+                .criterion(hasItem(ModItems.AMBER), conditionsFromItem(ModItems.AMBER))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VIRIDIUM_PICKAXE, 1)
                 .pattern("###")
                 .pattern(" s ")
@@ -312,6 +342,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModItems.VIRIDIUM_INGOT)
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VIRIDIUM_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VIRIDIUM_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VIRIDIUM_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VIRIDIUM_BOOTS, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.VIRIDIUM_INGOT)
+                .criterion(hasItem(ModItems.VIRIDIUM_INGOT), conditionsFromItem(ModItems.VIRIDIUM_BOOTS))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.THALRENITE_PICKAXE, 1)
@@ -358,5 +418,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('s', Items.STICK)
                 .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALRENITE_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALRENITE_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALRENITE_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.THALRENITE_BOOTS, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.THALRENITE_INGOT)
+                .criterion(hasItem(ModItems.THALRENITE_INGOT), conditionsFromItem(ModItems.THALRENITE_INGOT))
+                .offerTo(recipeExporter);
+
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS,
+                ModItems.ENDRITE_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDRITE_BLOCK);
     }
 }

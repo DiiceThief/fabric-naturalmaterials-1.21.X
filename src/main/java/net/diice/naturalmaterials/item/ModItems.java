@@ -15,6 +15,8 @@ public class ModItems {
     public static final Item VIRIDIUM_INGOT = registerItem("viridium_ingot", new Item(new Item.Settings()));
     public static final Item RAW_THALRENITE = registerItem("raw_thalrenite", new Item(new Item.Settings()));
     public static final Item THALRENITE_INGOT = registerItem("thalrenite_ingot", new Item(new Item.Settings()));
+    public static final Item ENDRITE_INGOT = registerItem("endrite_ingot", new Item(new Item.Settings()));
+    public static final Item ENDRITE_SHARDS = registerItem("endrite_shards", new Item(new Item.Settings()));
 
     public static final Item HUNTER_SMITHING_TEMPLATE = registerItem("hunter_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(NaturalMaterials.MOD_ID, "hunter"), FeatureFlags.VANILLA));
@@ -78,7 +80,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
     public static final Item THALRENITE_CHESTPLATE = registerItem("thalrenite_chestplate",
-            new ArmorItem(ModArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(35))));
     public static final Item THALRENITE_LEGGINGS = registerItem("thalrenite_leggings",
             new ArmorItem(ModArmorMaterials.THALRENITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
@@ -101,6 +103,34 @@ public class ModItems {
     public static final Item THALRENITE_HOE = registerItem("thalrenite_hoe",
             new HoeItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers
                     (ModToolMaterials.THALRENITE, 4, -0.0f))));
+
+    public static final Item ENDRITE_HELMET = registerItem("endrite_helmet",
+            new ArmorItem(ModArmorMaterials.ENDRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+    public static final Item ENDRITE_CHESTPLATE = registerItem("endrite_chestplate",
+            new ArmorItem(ModArmorMaterials.ENDRITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+    public static final Item ENDRITE_LEGGINGS = registerItem("endrite_leggings",
+            new ArmorItem(ModArmorMaterials.ENDRITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+    public static final Item ENDRITE_BOOTS = registerItem("endrite_boots",
+            new ArmorItem(ModArmorMaterials.ENDRITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+    public static final Item ENDRITE_SWORD = registerItem("endrite_sword",
+            new SwordItem(ModToolMaterials.ENDRITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers
+                    (ModToolMaterials.ENDRITE, 5, -2.0f))));
+    public static final Item ENDRITE_PICKAXE = registerItem("endrite_pickaxe",
+            new PickaxeItem(ModToolMaterials.ENDRITE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers
+                    (ModToolMaterials.ENDRITE, 2, -2.4f))));
+    public static final Item ENDRITE_SHOVEL = registerItem("endrite_shovel",
+            new ShovelItem(ModToolMaterials.THALRENITE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers
+                    (ModToolMaterials.THALRENITE, 2.5f, -2.6f))));
+    public static final Item ENDRITE_AXE = registerItem("endrite_axe",
+            new AxeItem(ModToolMaterials.ENDRITE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers
+                    (ModToolMaterials.ENDRITE, 8, -2.6f))));
+    public static final Item ENDRITE_HOE = registerItem("endrite_hoe",
+            new HoeItem(ModToolMaterials.ENDRITE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers
+                    (ModToolMaterials.ENDRITE, 5, -0.0f))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NaturalMaterials.MOD_ID, name), item);

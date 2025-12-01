@@ -60,6 +60,20 @@ public class ModItemGroups {
                         entries.add(ModItems.THALRENITE_SHOVEL);
                         entries.add(ModItems.THALRENITE_HOE);
 
+                        entries.add(ModItems.ENDRITE_SHARDS);
+                        entries.add(ModItems.ENDRITE_INGOT);
+
+                        entries.add(ModItems.ENDRITE_HELMET);
+                        entries.add(ModItems.ENDRITE_CHESTPLATE);
+                        entries.add(ModItems.ENDRITE_LEGGINGS);
+                        entries.add(ModItems.ENDRITE_BOOTS);
+
+                        entries.add(ModItems.ENDRITE_SWORD);
+                        entries.add(ModItems.ENDRITE_AXE);
+                        entries.add(ModItems.ENDRITE_PICKAXE);
+                        entries.add(ModItems.ENDRITE_SHOVEL);
+                        entries.add(ModItems.ENDRITE_HOE);
+
                     }).build());
     public static final ItemGroup NATURAL_MATERIALS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NaturalMaterials.MOD_ID, "natural_materials_blocks"),
@@ -187,6 +201,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.THALRENITE_SLAB);
                         entries.add(ModBlocks.THALRENITE_WALL);
                         entries.add(ModBlocks.THALRENITE_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.ENDRITE_BLOCK);
 
 
                     })).build());

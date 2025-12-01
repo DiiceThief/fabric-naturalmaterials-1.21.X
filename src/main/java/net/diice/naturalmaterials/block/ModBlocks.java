@@ -270,6 +270,9 @@ public class ModBlocks {
     public static final Block THALRENITE_PRESSURE_PLATE = registerBlock("thalrenite_pressure_plate",
             new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)));
 
+    public static final Block ENDRITE_BLOCK = registerBlock("endrite_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK)));
+
 
 
     private static Block registerBlock(String name, Block block) {

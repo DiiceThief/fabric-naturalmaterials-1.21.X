@@ -8,6 +8,8 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.BlockCollisionSpliterator;
 
+import javax.swing.text.html.HTML;
+
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_AMBER_TOOL = createtag("needs_amber_tool");
@@ -16,6 +18,8 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_VIRIDIUM_TOOL = createtag("incorrect_for_viridium_tool");
         public static final TagKey<Block> NEEDS_THALRENITE_TOOL = createtag("needs_thalrenite_tool");
         public static final TagKey<Block> INCORRECT_FOR_THALRENITE_TOOL = createtag("incorrect_for_thalrenite_tool");
+        public static final TagKey<Block> NEEDS_ENDRITE_TOOL = createtag("needs_endrite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENDRITE_TOOL = createtag("incorrect_for_endrite_tool");
 
         private static TagKey<Block> createtag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(NaturalMaterials.MOD_ID, name));

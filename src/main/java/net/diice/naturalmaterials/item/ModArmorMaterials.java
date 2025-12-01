@@ -34,7 +34,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
                 map.put(ArmorItem.Type.BODY, 8);
             }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () ->Ingredient.ofItems(ModItems.VIRIDIUM_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(NaturalMaterials.MOD_ID, "viridium"))), 0, 0));
+                    List.of(new ArmorMaterial.Layer(Identifier.of(NaturalMaterials.MOD_ID, "viridium"))), 2.0f, 0));
 
     public static final RegistryEntry<ArmorMaterial> THALRENITE_ARMOR_MATERIAL = registerArmorMaterial("thalrenite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map ->{
@@ -44,7 +44,17 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
                 map.put(ArmorItem.Type.BODY, 11);
             }), 13, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () ->Ingredient.ofItems(ModItems.THALRENITE_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(NaturalMaterials.MOD_ID, "thalrenite"))), 0, 0));
+                    List.of(new ArmorMaterial.Layer(Identifier.of(NaturalMaterials.MOD_ID, "thalrenite"))), 2.0f, 0));
+
+    public static final RegistryEntry<ArmorMaterial> ENDRITE_ARMOR_MATERIAL = registerArmorMaterial("endrite",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map ->{
+                map.put(ArmorItem.Type.BOOTS, 5);
+                map.put(ArmorItem.Type.LEGGINGS, 7);
+                map.put(ArmorItem.Type.CHESTPLATE, 10);
+                map.put(ArmorItem.Type.HELMET, 5);
+                map.put(ArmorItem.Type.BODY, 13);
+            }), 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () ->Ingredient.ofItems(ModItems.ENDRITE_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(NaturalMaterials.MOD_ID, "endrite"))), 4.0f, 0.3f));
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(NaturalMaterials.MOD_ID, name), material.get());

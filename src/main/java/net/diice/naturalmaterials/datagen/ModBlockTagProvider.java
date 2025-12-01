@@ -257,5 +257,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_THALRENITE_TOOL)
                 .forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ENDRITE_TOOL)
+                .forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }

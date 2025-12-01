@@ -1,4 +1,4 @@
-// 1.21	2025-11-19T20:51:08.3030954	NaturalMaterials/Tags for minecraft:block
+// 1.21	2025-11-30T21:14:13.1170668	NaturalMaterials/Tags for minecraft:block
 82267ff03773aa05169b19f6a42c3f387ee2b57d data\minecraft\tags\block\saplings.json
 2a1bb12ee6ee9067115173f1b140c916fea9d035 data\minecraft\tags\block\wooden_pressure_plates.json
 37f81cdec1b8bf7859b898a065e3fba6f5d61efd data\minecraft\tags\block\leaves.json
@@ -11,6 +11,7 @@ f218d2b6b9c927d646f9d7433c1baa15ec3045f8 data\minecraft\tags\block\fence_gates.j
 a249c46329a41538f49a564e1f14338aaf1be5a0 data\naturalmaterials\tags\block\needs_thalrenite_tool.json
 ba4dcdfba019ab878e0a932a1749b8ff6f12111a data\minecraft\tags\block\wooden_doors.json
 f3195283e1da16cdafe44c3dcafe5827c84f23a5 data\minecraft\tags\block\needs_iron_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\naturalmaterials\tags\block\needs_endrite_tool.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\naturalmaterials\tags\block\needs_viridium_tool.json
 c4719f21eaa8beeaa5597cf162ab644a595213a4 data\minecraft\tags\block\wooden_fences.json
 781d959bb6bbea7b36ae6b2d4a71ced43fd662b9 data\naturalmaterials\tags\block\needs_amber_tool.json
