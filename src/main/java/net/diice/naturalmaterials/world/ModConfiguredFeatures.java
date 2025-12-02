@@ -54,8 +54,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(2, 2 ,2) {},
                 BlockStateProvider.of(ModBlocks.CYPRESS_LEAVES),
                 new SpruceFoliagePlacer(UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2), UniformIntProvider.create(1, 2)),
-                new TwoLayersFeatureSize(1, 0, 1)).dirtProvider(BlockStateProvider.of(Blocks.DIRT))
-                .dirtProvider(BlockStateProvider.of(Blocks.DIRT)).build());
+                new TwoLayersFeatureSize(1, 0, 1)).build());
 
         register(context, REDWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.REDWOOD_LOG),
