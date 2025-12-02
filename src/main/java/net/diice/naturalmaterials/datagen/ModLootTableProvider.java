@@ -30,6 +30,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.0635f));
         addDrop(ModBlocks.PALM_SAPLING);
 
+        addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
+
         addDrop(ModBlocks.REDWOOD_PLANKS);
         addDrop(ModBlocks.REDWOOD_STAIRS);
         addDrop(ModBlocks.REDWOOD_SLAB, slabDrops(ModBlocks.REDWOOD_SLAB));
@@ -46,6 +48,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REDWOOD_LEAVES, leavesDrops(ModBlocks.REDWOOD_LEAVES, ModBlocks.REDWOOD_SAPLING, 0.0625f));
         addDrop(ModBlocks.REDWOOD_SAPLING);
 
+        addPottedPlantDrops(ModBlocks.POTTED_REDWOOD_SAPLING);
+
         addDrop(ModBlocks.CYPRESS_PLANKS);
         addDrop(ModBlocks.CYPRESS_STAIRS);
         addDrop(ModBlocks.CYPRESS_SLAB, slabDrops(ModBlocks.CYPRESS_SLAB));
@@ -60,6 +64,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CYPRESS_WOOD);
         addDrop(ModBlocks.STRIPPED_CYPRESS_WOOD);
         addDrop(ModBlocks.CYPRESS_LEAVES, leavesDrops(ModBlocks.CYPRESS_LEAVES, ModBlocks.CYPRESS_SAPLING, 0.1250f));
+        addDrop(ModBlocks.CYPRESS_SAPLING);
+
+        addPottedPlantDrops(ModBlocks.POTTED_CYPRESS_SAPLING);
 
         addDrop(ModBlocks.MANAWOOD_PLANKS);
         addDrop(ModBlocks.MANAWOOD_STAIRS);
@@ -77,6 +84,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MANAWOOD_SAPLING);
         addDrop(ModBlocks.MANAWOOD_LEAVES, leavesDrops(ModBlocks.MANAWOOD_LEAVES, ModBlocks.MANAWOOD_SAPLING, 0.0625f));
 
+        addPottedPlantDrops(ModBlocks.POTTED_MANAWOOD_SAPLING);
+
         addDrop(ModBlocks.GLOOMWOOD_PLANKS);
         addDrop(ModBlocks.GLOOMWOOD_STAIRS);
         addDrop(ModBlocks.GLOOMWOOD_SLAB, slabDrops(ModBlocks.GLOOMWOOD_SLAB));
@@ -92,6 +101,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
         addDrop(ModBlocks.GLOOMWOOD_SAPLING);
         addDrop(ModBlocks.GLOOMWOOD_LEAVES, leavesDrops(ModBlocks.GLOOMWOOD_LEAVES, ModBlocks.GLOOMWOOD_SAPLING, 0.0625f));
+
+        addPottedPlantDrops(ModBlocks.POTTED_GLOOMWOOD_SAPLING);
 
         addDrop(ModBlocks.DUSKSLATE);
         addDrop(ModBlocks.DUSKSLATE_STAIRS);

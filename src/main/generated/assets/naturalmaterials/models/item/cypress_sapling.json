@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "naturalmaterials:item/cypress_sapling"
+    "layer0": "naturalmaterials:block/cypress_sapling"
   }
 }

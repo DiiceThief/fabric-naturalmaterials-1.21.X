@@ -45,7 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.PALM_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING, ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         REDWOOD_POOL.stairs(ModBlocks.REDWOOD_STAIRS);
         REDWOOD_POOL.slab(ModBlocks.REDWOOD_SLAB);
@@ -61,7 +61,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.REDWOOD_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.REDWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.REDWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.REDWOOD_SAPLING, ModBlocks.POTTED_REDWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         CYPRESS_POOL.stairs(ModBlocks.CYPRESS_STAIRS);
         CYPRESS_POOL.slab(ModBlocks.CYPRESS_SLAB);
@@ -77,7 +77,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.CYPRESS_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.CYPRESS_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CYPRESS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CYPRESS_SAPLING, ModBlocks.POTTED_CYPRESS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         MANAWOOD_POOL.stairs(ModBlocks.MANAWOOD_STAIRS);
         MANAWOOD_POOL.slab(ModBlocks.MANAWOOD_SLAB);
@@ -93,7 +93,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.MANAWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MANAWOOD_SAPLING, ModBlocks.POTTED_MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         GLOOMWOOD_POOL.stairs(ModBlocks.GLOOMWOOD_STAIRS);
         GLOOMWOOD_POOL.slab(ModBlocks.GLOOMWOOD_SLAB);
@@ -104,12 +104,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(ModBlocks.GLOOMWOOD_LOG).log(ModBlocks.GLOOMWOOD_LOG).wood(ModBlocks.GLOOMWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GLOOMWOOD_LOG).log(ModBlocks.STRIPPED_GLOOMWOOD_LOG).wood(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GLOOMWOOD_SAPLING, ModBlocks.POTTED_GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerDoor(ModBlocks.GLOOMWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.GLOOMWOOD_TRAPDOOR);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.GLOOMWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         DUSKSLATE_POOL.stairs(ModBlocks.DUSKSLATE_STAIRS);
         DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
@@ -153,12 +154,6 @@ public class ModModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModBlocks.CYPRESS_SAPLING.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.PALM_SAPLING.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.REDWOOD_SAPLING.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.MANAWOOD_SAPLING.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.GLOOMWOOD_SAPLING.asItem(), Models.GENERATED);
-
 
         itemModelGenerator.register(ModItems.AMBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_VIRIDIUM, Models.GENERATED);

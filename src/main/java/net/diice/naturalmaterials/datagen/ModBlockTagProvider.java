@@ -249,6 +249,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_GLOOMWOOD_LOG)
                 .add(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
 
+        getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
+                .add(ModBlocks.POTTED_PALM_SAPLING)
+                .add(ModBlocks.POTTED_REDWOOD_SAPLING)
+                .add(ModBlocks.POTTED_CYPRESS_SAPLING)
+                .add(ModBlocks.POTTED_MANAWOOD_SAPLING)
+                .add(ModBlocks.POTTED_GLOOMWOOD_SAPLING);
+
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AMBER_TOOL)
                 .forceAddTag(BlockTags.NEEDS_STONE_TOOL);
 

@@ -1,5 +1,7 @@
 package net.diice.naturalmaterials.block;
 
+import com.mojang.datafixers.kinds.IdF;
+import com.mojang.datafixers.util.Pair;
 import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.block.custom.ModSaplingBlock;
 import net.diice.naturalmaterials.world.tree.ModSaplingGenerators;
@@ -11,6 +13,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import org.intellij.lang.annotations.Flow;
 
 import static net.minecraft.block.Blocks.createFlowerPotBlock;
 import static net.minecraft.block.Blocks.register;
@@ -48,7 +51,8 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
             new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SAND));
-
+    public static final Block POTTED_PALM_SAPLING = register("potted_palm_sapling",
+            Blocks.createFlowerPotBlock(PALM_SAPLING));
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
@@ -80,6 +84,8 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
             new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_REDWOOD_SAPLING = register("potted_redwood_sapling",
+            Blocks.createFlowerPotBlock(REDWOOD_SAPLING));
 
 
  public static final Block CYPRESS_LEAVES = registerBlock("cypress_leaves",
@@ -113,6 +119,8 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
     public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
             new ModSaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.MUD));
+    public static final Block POTTED_CYPRESS_SAPLING = register("potted_cypress_sapling",
+            Blocks.createFlowerPotBlock(CYPRESS_SAPLING));
 
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
@@ -146,6 +154,8 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block MANAWOOD_SAPLING = registerBlock("manawood_sapling",
             new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_MANAWOOD_SAPLING = register("potted_manawood_sapling",
+            Blocks.createFlowerPotBlock(MANAWOOD_SAPLING));
 
 
     public static final Block GLOOMWOOD_LOG = registerBlock("gloomwood_log",
@@ -179,6 +189,8 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block GLOOMWOOD_SAPLING = registerBlock("gloomwood_sapling",
             new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_GLOOMWOOD_SAPLING = register("potted_gloomwood_sapling",
+            Blocks.createFlowerPotBlock(GLOOMWOOD_SAPLING));
 
 
     public static final Block DUSKSLATE = registerBlock("duskslate",
