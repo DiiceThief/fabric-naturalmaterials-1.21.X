@@ -42,7 +42,7 @@ public class ModBlocks {
                    .burnable()));
     public static final Block PALM_PLANKS = registerWithItem("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.OAK_TAN)));
-    public static final StairsBlock PALM_STAIRS = registerBlock("palm_stairs",
+    public static final StairsBlock PALM_STAIRS = registerWithItem("palm_stairs",
             new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
     public static final Block PALM_SLAB = registerWithItem("palm_slab",
             new SlabBlock(AbstractBlock.Settings.create()
@@ -69,14 +69,14 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.WOOD)
                     .burnable()));
-    public static final FenceGateBlock PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+    public static final FenceGateBlock PALM_FENCE_GATE = registerWithItem("palm_fence_gate",
             new FenceGateBlock(WoodTypeList.PALM, AbstractBlock.Settings.create()
                     .mapColor(PALM_PLANKS.getDefaultMapColor())
                     .solid()
                     .instrument(NoteBlockInstrument.BANJO)
                     .strength(2.0F, 3.0F)
                     .burnable()));
-    public static final DoorBlock PALM_DOOR = registerBlock("palm_door",
+    public static final DoorBlock PALM_DOOR = registerWithItem("palm_door",
             new DoorBlock(BlockSetTypeList.PALM, AbstractBlock.Settings.create()
                     .mapColor(PALM_PLANKS.getDefaultMapColor())
                     .instrument(NoteBlockInstrument.BANJO)
@@ -116,13 +116,13 @@ public class ModBlocks {
                     .burnable()
                     .pistonBehavior(PistonBehavior.DESTROY)
                     .solidBlock(Blocks::never), Blocks.SAND));
-    public static final Block POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
+    public static final Block POTTED_PALM_SAPLING = registerWithItem("potted_palm_sapling",
             Blocks.createFlowerPotBlock(PALM_SAPLING));
 
     private static final Identifier PALM_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/palm");
     private static final Identifier PALM_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/palm");
     private static final Identifier PALM_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/palm");
-    public static final TerraformSignBlock PALM_SIGN = registerBlock("palm_sign",
+    public static final TerraformSignBlock PALM_SIGN = registerWithItem("palm_sign",
             new TerraformSignBlock(PALM_SIGN_TEXTURE, AbstractBlock.Settings.create()
                     .mapColor(MapColor.OAK_TAN)
                     .solid()
@@ -139,7 +139,7 @@ public class ModBlocks {
                             .noCollision()
                             .burnable()
                             .strength(1.0F)));
-    public static final TerraformHangingSignBlock PALM_HANGING_SIGN = registerBlock("palm_hanging_sign",
+    public static final TerraformHangingSignBlock PALM_HANGING_SIGN = registerWithItem("palm_hanging_sign",
             new TerraformHangingSignBlock(PALM_HANGING_SIGN_TEXTURE, PALM_HANGING_SIGN_GUI_TEXTURE,
                     AbstractBlock.Settings.create()
                             .mapColor(PALM_PLANKS.getDefaultMapColor())
@@ -160,44 +160,44 @@ public class ModBlocks {
 
 
 
-    public static final Block REDWOOD_LOG = registerBlock("redwood_log",
+    public static final Block REDWOOD_LOG = registerWithItem("redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-    public static final Block STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
+public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final Block REDWOOD_WOOD = registerBlock("redwood_wood",
+    public static final Block REDWOOD_WOOD = registerWithItem("redwood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-    public static final Block STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
+    public static final Block STRIPPED_REDWOOD_WOOD = registerWithItem("stripped_redwood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
+    public static final Block REDWOOD_PLANKS = registerWithItem("redwood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block REDWOOD_STAIRS = registerBlock("redwood_stairs",
             new StairsBlock(ModBlocks.REDWOOD_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    public static final Block REDWOOD_SLAB = registerBlock("redwood_slab",
+    public static final Block REDWOOD_SLAB = registerWithItem("redwood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    public static final Block REDWOOD_BUTTON = registerBlock("redwood_button",
+    public static final Block REDWOOD_BUTTON = registerWithItem("redwood_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block REDWOOD_PRESSURE_PLATE = registerBlock("redwood_pressure_plate",
+    public static final Block REDWOOD_PRESSURE_PLATE = registerWithItem("redwood_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final Block REDWOOD_FENCE = registerBlock("redwood_fence",
+    public static final Block REDWOOD_FENCE = registerWithItem("redwood_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    public static final Block REDWOOD_FENCE_GATE = registerBlock("redwood_fence_gate",
+    public static final Block REDWOOD_FENCE_GATE = registerWithItem("redwood_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    public static final Block REDWOOD_DOOR = registerBlock("redwood_door",
+    public static final Block REDWOOD_DOOR = registerWithItem("redwood_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
-    public static final Block REDWOOD_TRAPDOOR = registerBlock("redwood_trapdoor",
+    public static final Block REDWOOD_TRAPDOOR = registerWithItem("redwood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
-    public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
+    public static final Block REDWOOD_LEAVES = registerWithItem("redwood_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
+    public static final Block REDWOOD_SAPLING = registerWithItem("redwood_sapling",
             new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_REDWOOD_SAPLING = registerBlock("potted_redwood_sapling",
+    public static final Block POTTED_REDWOOD_SAPLING = registerWithItem("potted_redwood_sapling",
             Blocks.createFlowerPotBlock(REDWOOD_SAPLING));
 
     private static final Identifier REDWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/redwood");
     private static final Identifier REDWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/redwood");
     private static final Identifier REDWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/redwood");
-    public static final TerraformSignBlock REDWOOD_SIGN = registerBlock("redwood_sign",
+    public static final TerraformSignBlock REDWOOD_SIGN = registerWithItem("redwood_sign",
             new TerraformSignBlock(REDWOOD_SIGN_TEXTURE, AbstractBlock.Settings.create()
                     .mapColor(MapColor.RED)
                     .solid()
@@ -214,7 +214,7 @@ public class ModBlocks {
                             .noCollision()
                             .burnable()
                             .strength(1.0F)));
-    public static final TerraformHangingSignBlock REDWOOD_HANGING_SIGN = registerBlock("redwood_hanging_sign",
+    public static final TerraformHangingSignBlock REDWOOD_HANGING_SIGN = registerWithItem("redwood_hanging_sign",
             new TerraformHangingSignBlock(REDWOOD_HANGING_SIGN_TEXTURE, REDWOOD_HANGING_SIGN_GUI_TEXTURE,
                     AbstractBlock.Settings.create()
                             .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
@@ -234,44 +234,44 @@ public class ModBlocks {
                             .burnable()));
 
 
- public static final Block CYPRESS_LEAVES = registerBlock("cypress_leaves",
+ public static final Block CYPRESS_LEAVES = registerWithItem("cypress_leaves",
          new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    public static final Block CYPRESS_LOG = registerBlock("cypress_log",
+    public static final Block CYPRESS_LOG = registerWithItem("cypress_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-    public static final Block STRIPPED_CYPRESS_LOG = registerBlock("stripped_cypress_log",
+    public static final Block STRIPPED_CYPRESS_LOG = registerWithItem("stripped_cypress_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final Block CYPRESS_WOOD = registerBlock("cypress_wood",
+    public static final Block CYPRESS_WOOD = registerWithItem("cypress_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-    public static final Block STRIPPED_CYPRESS_WOOD = registerBlock("stripped_cypress_wood",
+    public static final Block STRIPPED_CYPRESS_WOOD = registerWithItem("stripped_cypress_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block CYPRESS_PLANKS = registerBlock("cypress_planks",
+    public static final Block CYPRESS_PLANKS = registerWithItem("cypress_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CYPRESS_STAIRS = registerBlock("cypress_stairs",
+    public static final Block CYPRESS_STAIRS = registerWithItem("cypress_stairs",
             new StairsBlock(ModBlocks.CYPRESS_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    public static final Block CYPRESS_SLAB = registerBlock("cypress_slab",
+    public static final Block CYPRESS_SLAB = registerWithItem("cypress_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    public static final Block CYPRESS_BUTTON = registerBlock("cypress_button",
+    public static final Block CYPRESS_BUTTON = registerWithItem("cypress_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block CYPRESS_PRESSURE_PLATE = registerBlock("cypress_pressure_plate",
+    public static final Block CYPRESS_PRESSURE_PLATE = registerWithItem("cypress_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final Block CYPRESS_FENCE = registerBlock("cypress_fence",
+    public static final Block CYPRESS_FENCE = registerWithItem("cypress_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    public static final Block CYPRESS_FENCE_GATE = registerBlock("cypress_fence_gate",
+    public static final Block CYPRESS_FENCE_GATE = registerWithItem("cypress_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    public static final Block CYPRESS_DOOR = registerBlock("cypress_door",
+    public static final Block CYPRESS_DOOR = registerWithItem("cypress_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
-    public static final Block CYPRESS_TRAPDOOR = registerBlock("cypress_trapdoor",
+    public static final Block CYPRESS_TRAPDOOR = registerWithItem("cypress_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
-    public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
+    public static final Block CYPRESS_SAPLING = registerWithItem("cypress_sapling",
             new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_CYPRESS_SAPLING = registerBlock("potted_cypress_sapling",
+    public static final Block POTTED_CYPRESS_SAPLING = registerWithItem("potted_cypress_sapling",
             Blocks.createFlowerPotBlock(CYPRESS_SAPLING));
 
     private static final Identifier CYPRESS_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/cypress");
     private static final Identifier CYPRESS_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/cypress");
     private static final Identifier CYPRESS_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/cypress");
-    public static final TerraformSignBlock CYPRESS_SIGN = registerBlock("cypress_sign",
+    public static final TerraformSignBlock CYPRESS_SIGN = registerWithItem("cypress_sign",
             new TerraformSignBlock(CYPRESS_SIGN_TEXTURE, AbstractBlock.Settings.create()
                     .mapColor(MapColor.PALE_GREEN)
                     .solid()
@@ -288,7 +288,7 @@ public class ModBlocks {
                             .noCollision()
                             .burnable()
                             .strength(1.0F)));
-    public static final TerraformHangingSignBlock CYPRESS_HANGING_SIGN = registerBlock("cypress_hanging_sign",
+    public static final TerraformHangingSignBlock CYPRESS_HANGING_SIGN = registerWithItem("cypress_hanging_sign",
             new TerraformHangingSignBlock(CYPRESS_HANGING_SIGN_TEXTURE, CYPRESS_HANGING_SIGN_GUI_TEXTURE,
                     AbstractBlock.Settings.create()
                             .mapColor(PALM_PLANKS.getDefaultMapColor())
@@ -308,44 +308,44 @@ public class ModBlocks {
                             .burnable()));
 
 
-    public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
+    public static final Block MANAWOOD_LOG = registerWithItem("manawood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-    public static final Block STRIPPED_MANAWOOD_LOG = registerBlock("stripped_manawood_log",
+    public static final Block STRIPPED_MANAWOOD_LOG = registerWithItem("stripped_manawood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final Block MANAWOOD_WOOD = registerBlock("manawood_wood",
+    public static final Block MANAWOOD_WOOD = registerWithItem("manawood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-    public static final Block STRIPPED_MANAWOOD_WOOD = registerBlock("stripped_manawood_wood",
+    public static final Block STRIPPED_MANAWOOD_WOOD = registerWithItem("stripped_manawood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block MANAWOOD_PLANKS = registerBlock("manawood_planks",
+    public static final Block MANAWOOD_PLANKS = registerWithItem("manawood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-    public static final Block MANAWOOD_STAIRS = registerBlock("manawood_stairs",
+    public static final Block MANAWOOD_STAIRS = registerWithItem("manawood_stairs",
             new StairsBlock(ModBlocks.MANAWOOD_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    public static final Block MANAWOOD_SLAB = registerBlock("manawood_slab",
+    public static final Block MANAWOOD_SLAB = registerWithItem("manawood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    public static final Block MANAWOOD_BUTTON = registerBlock("manawood_button",
+    public static final Block MANAWOOD_BUTTON = registerWithItem("manawood_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block MANAWOOD_PRESSURE_PLATE = registerBlock("manawood_pressure_plate",
+    public static final Block MANAWOOD_PRESSURE_PLATE = registerWithItem("manawood_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final Block MANAWOOD_FENCE = registerBlock("manawood_fence",
+    public static final Block MANAWOOD_FENCE = registerWithItem("manawood_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    public static final Block MANAWOOD_FENCE_GATE = registerBlock("manawood_fence_gate",
+    public static final Block MANAWOOD_FENCE_GATE = registerWithItem("manawood_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    public static final Block MANAWOOD_DOOR = registerBlock("manawood_door",
+    public static final Block MANAWOOD_DOOR = registerWithItem("manawood_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
-    public static final Block MANAWOOD_TRAPDOOR = registerBlock("manawood_trapdoor",
+    public static final Block MANAWOOD_TRAPDOOR = registerWithItem("manawood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
-    public static final Block MANAWOOD_LEAVES = registerBlock("manawood_leaves",
+    public static final Block MANAWOOD_LEAVES = registerWithItem("manawood_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    public static final Block MANAWOOD_SAPLING = registerBlock("manawood_sapling",
+    public static final Block MANAWOOD_SAPLING = registerWithItem("manawood_sapling",
             new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_MANAWOOD_SAPLING = registerBlock("potted_manawood_sapling",
+    public static final Block POTTED_MANAWOOD_SAPLING = registerWithItem("potted_manawood_sapling",
             Blocks.createFlowerPotBlock(MANAWOOD_SAPLING));
 
     private static final Identifier MANAWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/manawoood");
     private static final Identifier MANAWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/manawood");
     private static final Identifier MANAWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/manawood");
-    public static final TerraformSignBlock MANAWOOD_SIGN = registerBlock("manawood_sign",
+    public static final TerraformSignBlock MANAWOOD_SIGN = registerWithItem("manawood_sign",
             new TerraformSignBlock(PALM_SIGN_TEXTURE, AbstractBlock.Settings.create()
                     .mapColor(MapColor.OAK_TAN)
                     .solid()
@@ -362,7 +362,7 @@ public class ModBlocks {
                             .noCollision()
                             .burnable()
                             .strength(1.0F)));
-    public static final TerraformHangingSignBlock MANAWOOD_HANGING_SIGN = registerBlock("manawood_hanging_sign",
+    public static final TerraformHangingSignBlock MANAWOOD_HANGING_SIGN = registerWithItem("manawood_hanging_sign",
             new TerraformHangingSignBlock(MANAWOOD_HANGING_SIGN_TEXTURE, MANAWOOD_HANGING_SIGN_GUI_TEXTURE,
                     AbstractBlock.Settings.create()
                             .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
@@ -382,36 +382,36 @@ public class ModBlocks {
                             .burnable()));
 
 
-    public static final Block GLOOMWOOD_LOG = registerBlock("gloomwood_log",
+    public static final Block GLOOMWOOD_LOG = registerWithItem("gloomwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-    public static final Block STRIPPED_GLOOMWOOD_LOG = registerBlock("stripped_gloomwood_log",
+    public static final Block STRIPPED_GLOOMWOOD_LOG = registerWithItem("stripped_gloomwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-    public static final Block GLOOMWOOD_WOOD = registerBlock("gloomwood_wood",
+    public static final Block GLOOMWOOD_WOOD = registerWithItem("gloomwood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-    public static final Block STRIPPED_GLOOMWOOD_WOOD = registerBlock("stripped_gloomwood_wood",
+    public static final Block STRIPPED_GLOOMWOOD_WOOD = registerWithItem("stripped_gloomwood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block GLOOMWOOD_PLANKS = registerBlock("gloomwood_planks",
+    public static final Block GLOOMWOOD_PLANKS = registerWithItem("gloomwood_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-    public static final Block GLOOMWOOD_STAIRS = registerBlock("gloomwood_stairs",
+    public static final Block GLOOMWOOD_STAIRS = registerWithItem("gloomwood_stairs",
             new StairsBlock(ModBlocks.GLOOMWOOD_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    public static final Block GLOOMWOOD_SLAB = registerBlock("gloomwood_slab",
+    public static final Block GLOOMWOOD_SLAB = registerWithItem("gloomwood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    public static final Block GLOOMWOOD_BUTTON = registerBlock("gloomwood_button",
+    public static final Block GLOOMWOOD_BUTTON = registerWithItem("gloomwood_button",
             new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block GLOOMWOOD_PRESSURE_PLATE = registerBlock("gloomwood_pressure_plate",
+    public static final Block GLOOMWOOD_PRESSURE_PLATE = registerWithItem("gloomwood_pressure_plate",
             new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final Block GLOOMWOOD_FENCE = registerBlock("gloomwood_fence",
+    public static final Block GLOOMWOOD_FENCE = registerWithItem("gloomwood_fence",
             new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    public static final Block GLOOMWOOD_FENCE_GATE = registerBlock("gloomwood_fence_gate",
+    public static final Block GLOOMWOOD_FENCE_GATE = registerWithItem("gloomwood_fence_gate",
             new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    public static final Block GLOOMWOOD_DOOR = registerBlock("gloomwood_door",
+    public static final Block GLOOMWOOD_DOOR = registerWithItem("gloomwood_door",
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
-    public static final Block GLOOMWOOD_TRAPDOOR = registerBlock("gloomwood_trapdoor",
+    public static final Block GLOOMWOOD_TRAPDOOR = registerWithItem("gloomwood_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
-    public static final Block GLOOMWOOD_LEAVES = registerBlock("gloomwood_leaves",
+    public static final Block GLOOMWOOD_LEAVES = registerWithItem("gloomwood_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    public static final Block GLOOMWOOD_SAPLING = registerBlock("gloomwood_sapling",
+    public static final Block GLOOMWOOD_SAPLING = registerWithItem("gloomwood_sapling",
             new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block POTTED_GLOOMWOOD_SAPLING = registerBlock("potted_gloomwood_sapling",
             Blocks.createFlowerPotBlock(GLOOMWOOD_SAPLING));
@@ -419,7 +419,7 @@ public class ModBlocks {
     private static final Identifier GLOOMWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/gloomwood");
     private static final Identifier GLOOMWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/gloomwood");
     private static final Identifier GLOOMWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/gloomwood");
-    public static final TerraformSignBlock GLOOMWOOD_SIGN = registerBlock("gloomwood_sign",
+    public static final TerraformSignBlock GLOOMWOOD_SIGN = registerWithItem("gloomwood_sign",
             new TerraformSignBlock(GLOOMWOOD_SIGN_TEXTURE, AbstractBlock.Settings.create()
                     .mapColor(MapColor.GRAY)
                     .solid()
@@ -436,7 +436,7 @@ public class ModBlocks {
                             .noCollision()
                             .burnable()
                             .strength(1.0F)));
-    public static final TerraformHangingSignBlock GLOOMWOOD_HANGING_SIGN = registerBlock("gloomwood_hanging_sign",
+    public static final TerraformHangingSignBlock GLOOMWOOD_HANGING_SIGN = registerWithItem("gloomwood_hanging_sign",
             new TerraformHangingSignBlock(GLOOMWOOD_HANGING_SIGN_TEXTURE, GLOOMWOOD_HANGING_SIGN_GUI_TEXTURE,
                     AbstractBlock.Settings.create()
                             .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
@@ -456,96 +456,96 @@ public class ModBlocks {
                             .burnable()));
 
 
-    public static final Block DUSKSLATE = registerBlock("duskslate",
+    public static final Block DUSKSLATE = registerWithItem("duskslate",
             new Block(AbstractBlock.Settings.create().requiresTool()
                     .strength(3.0f, 6.0f)
                     .sounds(BlockSoundGroup.DEEPSLATE)));
-    public static final Block DUSKSLATE_STAIRS = registerBlock("duskslate_stairs",
+    public static final Block DUSKSLATE_STAIRS = registerWithItem("duskslate_stairs",
             new StairsBlock(ModBlocks.DUSKSLATE.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_STAIRS)));
-    public static final Block DUSKSLATE_SLAB = registerBlock("duskslate_slab",
+    public static final Block DUSKSLATE_SLAB = registerWithItem("duskslate_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_SLAB)));
-    public static final Block DUSKSLATE_BUTTON = registerBlock("duskslate_button",
+    public static final Block DUSKSLATE_BUTTON = registerWithItem("duskslate_button",
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block DUSKSLATE_WALL = registerBlock("duskslate_wall",
+    public static final Block DUSKSLATE_WALL = registerWithItem("duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_WALL)));
-    public static final Block DUSKSLATE_PRESSURE_PLATE = registerBlock("duskslate_pressure_plate",
+    public static final Block DUSKSLATE_PRESSURE_PLATE = registerWithItem("duskslate_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
 
-    public static final Block POLISHED_DUSKSLATE = registerBlock("polished_duskslate",
+    public static final Block POLISHED_DUSKSLATE = registerWithItem("polished_duskslate",
             new Block(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE)));
-    public static final Block POLISHED_DUSKSLATE_STAIRS = registerBlock("polished_duskslate_stairs",
+    public static final Block POLISHED_DUSKSLATE_STAIRS = registerWithItem("polished_duskslate_stairs",
             new StairsBlock(ModBlocks.POLISHED_DUSKSLATE.getDefaultState(),
                     AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_STAIRS)));
-    public static final Block POLISHED_DUSKSLATE_SLAB = registerBlock("polished_duskslate_slab",
+    public static final Block POLISHED_DUSKSLATE_SLAB = registerWithItem("polished_duskslate_slab",
             new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_SLAB)));
-    public static final Block POLISHED_DUSKSLATE_BUTTON = registerBlock("polished_duskslate_button",
+    public static final Block POLISHED_DUSKSLATE_BUTTON = registerWithItem("polished_duskslate_button",
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_BUTTON)));
-    public static final Block POLISHED_DUSKSLATE_WALL = registerBlock("polished_duskslate_wall",
+    public static final Block POLISHED_DUSKSLATE_WALL = registerWithItem("polished_duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_WALL)));
-    public static final Block POLISHED_DUSKSLATE_PRESSURE_PLATE = registerBlock("polished_duskslate_pressure_plate",
+    public static final Block POLISHED_DUSKSLATE_PRESSURE_PLATE = registerWithItem("polished_duskslate_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
 
-    public static final Block BLUESHIST = registerBlock("blueshist",
+    public static final Block BLUESHIST = registerWithItem("blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
-    public static final Block BLUESHIST_STAIRS = registerBlock("blueshist_stairs",
+    public static final Block BLUESHIST_STAIRS = registerWithItem("blueshist_stairs",
             new StairsBlock(ModBlocks.BLUESHIST.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
-    public static final Block BLUESHIST_SLAB = registerBlock("blueshist_slab",
+    public static final Block BLUESHIST_SLAB = registerWithItem("blueshist_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
-    public static final Block BLUESHIST_BUTTON = registerBlock("blueshist_button",
+    public static final Block BLUESHIST_BUTTON = registerWithItem("blueshist_button",
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block BLUESHIST_WALL = registerBlock("blueshist_wall",
+    public static final Block BLUESHIST_WALL = registerWithItem("blueshist_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
-    public static final Block BLUESHIST_PRESSURE_PLATE = registerBlock("blueshist_pressure_plate",
+    public static final Block BLUESHIST_PRESSURE_PLATE = registerWithItem("blueshist_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
 
-    public static final Block POLISHED_BLUESHIST = registerBlock("polished_blueshist",
+    public static final Block POLISHED_BLUESHIST = registerWithItem("polished_blueshist",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
-    public static final Block POLISHED_BLUESHIST_STAIRS = registerBlock("polished_blueshist_stairs",
+    public static final Block POLISHED_BLUESHIST_STAIRS = registerWithItem("polished_blueshist_stairs",
             new StairsBlock(ModBlocks.BLUESHIST.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
-    public static final Block POLISHED_BLUESHIST_SLAB = registerBlock("polished_blueshist_slab",
+    public static final Block POLISHED_BLUESHIST_SLAB = registerWithItem("polished_blueshist_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
-    public static final Block POLISHED_BLUESHIST_BUTTON = registerBlock("polished_blueshist_button",
+    public static final Block POLISHED_BLUESHIST_BUTTON = registerWithItem("polished_blueshist_button",
             new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
-    public static final Block POLISHED_BLUESHIST_WALL = registerBlock("polished_blueshist_wall",
+    public static final Block POLISHED_BLUESHIST_WALL = registerWithItem("polished_blueshist_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
-    public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerBlock("polished_blueshist_pressure_plate",
+    public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerWithItem("polished_blueshist_pressure_plate",
             new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
-    public static final Block VIRIDIUM_BLOCK = registerBlock("viridium_block",
+    public static final Block VIRIDIUM_BLOCK = registerWithItem("viridium_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-    public static final Block RAW_VIRIDIUM_BLOCK = registerBlock("raw_viridium_block",
+    public static final Block RAW_VIRIDIUM_BLOCK = registerWithItem("raw_viridium_block",
            new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK)));
-    public static final Block VIRIDIUM_STAIRS = registerBlock("viridium_stairs",
+    public static final Block VIRIDIUM_STAIRS = registerWithItem("viridium_stairs",
             new StairsBlock(ModBlocks.VIRIDIUM_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
-    public static final Block VIRIDIUM_SLAB = registerBlock("viridium_slab",
+    public static final Block VIRIDIUM_SLAB = registerWithItem("viridium_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
-    public static final Block VIRIDIUM_WALL = registerBlock("viridium_wall",
+    public static final Block VIRIDIUM_WALL = registerWithItem("viridium_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
-    public static final Block VIRIDIUM_PRESSURE_PLATE = registerBlock("viridium_pressure_plate",
+    public static final Block VIRIDIUM_PRESSURE_PLATE = registerWithItem("viridium_pressure_plate",
             new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)));
 
-    public static final Block THALRENITE_BLOCK = registerBlock("thalrenite_block",
+    public static final Block THALRENITE_BLOCK = registerWithItem("thalrenite_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-    public static final Block RAW_THALRENITE_BLOCK = registerBlock("raw_thalrenite_block",
+    public static final Block RAW_THALRENITE_BLOCK = registerWithItem("raw_thalrenite_block",
             new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK)));
-    public static final Block THALRENITE_STAIRS = registerBlock("thalrenite_stairs",
+    public static final Block THALRENITE_STAIRS = registerWithItem("thalrenite_stairs",
             new StairsBlock(ModBlocks.THALRENITE_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
-    public static final Block THALRENITE_SLAB = registerBlock("thalrenite_slab",
+    public static final Block THALRENITE_SLAB = registerWithItem("thalrenite_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
-    public static final Block THALRENITE_WALL = registerBlock("thalrenite_wall",
+    public static final Block THALRENITE_WALL = registerWithItem("thalrenite_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
-    public static final Block THALRENITE_PRESSURE_PLATE = registerBlock("thalrenite_pressure_plate",
+    public static final Block THALRENITE_PRESSURE_PLATE = registerWithItem("thalrenite_pressure_plate",
             new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)));
 
-    public static final Block ENDRITE_BLOCK = registerBlock("endrite_block",
+    public static final Block ENDRITE_BLOCK = registerWithItem("endrite_block",
             new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK)));
 
 
@@ -555,7 +555,7 @@ public class ModBlocks {
     }
     public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
         T registered = registerBlock(name, block);
-        ModItems.register(name, new BlockItem(registered, settings));
+        ModItems.registerItem(name, new BlockItem(registered, settings));
         return registered;
     }
     public static <T extends Block> T registerWithItem(String name, T block) {

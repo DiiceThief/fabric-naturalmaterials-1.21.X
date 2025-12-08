@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "naturalmaterials:block/gloomwood_planks",
+    "side": "naturalmaterials:block/gloomwood_planks",
+    "top": "naturalmaterials:block/gloomwood_planks"
+  }
+}

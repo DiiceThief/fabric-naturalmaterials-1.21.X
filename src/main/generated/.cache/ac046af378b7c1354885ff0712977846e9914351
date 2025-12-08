@@ -1,0 +1,15 @@
+// 1.21	2025-12-08T15:21:06.5297262	NaturalMaterials/Tags for minecraft:item
+b6a9f7d25cbbe7246988378a34243d93c8ecb978 data\minecraft\tags\item\planks.json
+08ea4414ec79250576f63775891907bf33eb5089 data\minecraft\tags\item\hanging_signs.json
+a61decef2a4d5c92f22f807e0a2310d13c42f42e data\minecraft\tags\item\boats.json
+6c32251380739c113712918ce083ddaa6c7e7e69 data\minecraft\tags\item\chest_boats.json
+e8c560e38a5d58d86265b5fc1ae9032eab82cef5 data\minecraft\tags\item\hoes.json
+3a2c3687bcf3dcb4c3ffeca14201fc1477f3348c data\minecraft\tags\item\signs.json
+c6d486c41e689b088b53fa9c4d0b4effd69ccddb data\minecraft\tags\item\pickaxes.json
+274b8f80cfd8c169e268859a802d649f31ad41b4 data\minecraft\tags\item\trim_templates.json
+8be8aa7e2599c328ed7d841bcc7f78dbf8fff7ad data\minecraft\tags\item\swords.json
+7c1b500f7aee00185dd2f0c388c7c4acaeb4d1aa data\minecraft\tags\item\axes.json
+70a670b9894cf11518929e007e297daf65652cb2 data\minecraft\tags\item\shovels.json
+bd7e3fea85ffed32e794ef36acbe84bf1a56e365 data\minecraft\tags\item\logs_that_burn.json
+98002d0188a141341aa35cbc1bf79476c8dcec11 data\minecraft\tags\item\trim_materials.json
+56ab40daf44ad40e36682205e0104f231243e658 data\minecraft\tags\item\trimmable_armor.json

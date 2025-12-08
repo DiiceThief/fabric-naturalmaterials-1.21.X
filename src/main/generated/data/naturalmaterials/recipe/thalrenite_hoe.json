@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "naturalmaterials:thalrenite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    " s",
+    " s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturalmaterials:thalrenite_hoe"
+  }
+}

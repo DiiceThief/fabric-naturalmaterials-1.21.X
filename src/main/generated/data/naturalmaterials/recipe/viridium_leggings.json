@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "naturalmaterials:viridium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "naturalmaterials:viridium_leggings"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "naturalmaterials:block/manawood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "naturalmaterials:block/manawood_log"
+    },
+    "axis=z": {
+      "model": "naturalmaterials:block/manawood_log_horizontal",
+      "x": 90
+    }
+  }
+}

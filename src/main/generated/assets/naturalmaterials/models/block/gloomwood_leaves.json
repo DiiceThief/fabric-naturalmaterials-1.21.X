@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "naturalmaterials:block/gloomwood_leaves"
+  }
+}

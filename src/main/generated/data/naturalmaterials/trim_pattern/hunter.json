@@ -1,0 +1,8 @@
+{
+  "asset_id": "naturalmaterials:hunter",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.naturalmaterials.hunter"
+  },
+  "template_item": "naturalmaterials:hunter_armor_trim_smithing_template"
+}

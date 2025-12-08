@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "naturalmaterials:thalrenite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "naturalmaterials:thalrenite_ingot"
+  }
+}

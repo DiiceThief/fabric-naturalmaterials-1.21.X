@@ -1,0 +1,26 @@
+// 1.21	2025-12-08T15:21:06.5202376	NaturalMaterials/Tags for minecraft:block
+37f81cdec1b8bf7859b898a065e3fba6f5d61efd data\minecraft\tags\block\leaves.json
+bd7e3fea85ffed32e794ef36acbe84bf1a56e365 data\minecraft\tags\block\logs_that_burn.json
+b654a126ca5b98ccf05813885bfc84a552a3f144 data\minecraft\tags\block\wooden_slabs.json
+98d42c85b5a9d86f062a5555a11676fae07f4001 data\minecraft\tags\block\wooden_stairs.json
+08ea4414ec79250576f63775891907bf33eb5089 data\minecraft\tags\block\ceiling_hanging_signs.json
+ba4dcdfba019ab878e0a932a1749b8ff6f12111a data\minecraft\tags\block\wooden_doors.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\naturalmaterials\tags\block\needs_viridium_tool.json
+3f0a24ce2d38b2cc4bfd6df69dd5936be98b9c60 data\minecraft\tags\block\mineable\pickaxe.json
+781d959bb6bbea7b36ae6b2d4a71ced43fd662b9 data\naturalmaterials\tags\block\needs_amber_tool.json
+feedb189cca6b5566925547ceb497513602bf457 data\minecraft\tags\block\wall_hanging_signs.json
+13f0b257ee7955931e9e1c7c819db1134f692189 data\minecraft\tags\block\planks.json
+4677f83a91d8e77f6791a8296dc7c0ef3383e6fb data\minecraft\tags\block\mineable\hoe.json
+1f192d6637efc2c62fffdddb2dcaf6d76abebbff data\minecraft\tags\block\flower_pots.json
+82267ff03773aa05169b19f6a42c3f387ee2b57d data\minecraft\tags\block\saplings.json
+2a1bb12ee6ee9067115173f1b140c916fea9d035 data\minecraft\tags\block\wooden_pressure_plates.json
+f218d2b6b9c927d646f9d7433c1baa15ec3045f8 data\minecraft\tags\block\fence_gates.json
+5a9e84f62277d9880ec82c7f40fa00fb9a01e026 data\minecraft\tags\block\wooden_trapdoors.json
+7d7af47c585b0188af9b7681bd7612cd00911682 data\minecraft\tags\block\walls.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\naturalmaterials\tags\block\needs_thalrenite_tool.json
+f3195283e1da16cdafe44c3dcafe5827c84f23a5 data\minecraft\tags\block\needs_iron_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\naturalmaterials\tags\block\needs_endrite_tool.json
+c4719f21eaa8beeaa5597cf162ab644a595213a4 data\minecraft\tags\block\wooden_fences.json
+3a2c3687bcf3dcb4c3ffeca14201fc1477f3348c data\minecraft\tags\block\standing_signs.json
+34f3d49e34ad83b34ace2a8132f6f98bc826debb data\minecraft\tags\block\mineable\axe.json
+469d97140f108965d726333974b8299ab5e1a204 data\minecraft\tags\block\wall_signs.json
