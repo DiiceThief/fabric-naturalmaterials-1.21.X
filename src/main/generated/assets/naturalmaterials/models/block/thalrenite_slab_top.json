@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "naturalmaterials:block/thalrenite_block",
-    "side": "naturalmaterials:block/thalrenite_block",
-    "top": "naturalmaterials:block/thalrenite_block"
-  }
-}

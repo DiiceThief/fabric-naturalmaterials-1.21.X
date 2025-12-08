@@ -101,5 +101,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.MANAWOOD_PLANKS.asItem())
                 .add(ModBlocks.GLOOMWOOD_PLANKS.asItem());
 
+        getOrCreateTagBuilder(ItemTags.SIGNS)
+                .add(ModItems.PALM_SIGN);
+
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS)
+                .add(ModItems.PALM_HANGING_SIGN);
+
+        getOrCreateTagBuilder(ItemTags.BOATS)
+                .add(ModItems.PALM_BOAT);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
+                .add(ModItems.PALM_CHEST_BOAT);
+
     }
 }

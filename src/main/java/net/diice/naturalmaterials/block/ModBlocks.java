@@ -1,58 +1,163 @@
 package net.diice.naturalmaterials.block;
 
-import com.mojang.datafixers.kinds.IdF;
-import com.mojang.datafixers.util.Pair;
+import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.block.custom.ModSaplingBlock;
+import net.diice.naturalmaterials.item.ModItems;
+import net.diice.naturalmaterials.util.BlockSetTypeList;
+import net.diice.naturalmaterials.util.WoodTypeList;
 import net.diice.naturalmaterials.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
-import net.minecraft.client.color.block.BlockColors;
+import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import org.intellij.lang.annotations.Flow;
-
-import static net.minecraft.block.Blocks.createFlowerPotBlock;
-import static net.minecraft.block.Blocks.register;
 
 public class ModBlocks {
 
-   public static final Block PALM_LOG = registerBlock("palm_log",
-           new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
-   public static final Block STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
-           new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
-   public static final Block PALM_WOOD = registerBlock("palm_wood",
-           new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
-   public static final Block STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
-           new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block PALM_PLANKS = registerBlock("palm_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
-    public static final Block PALM_STAIRS = registerBlock("palm_stairs",
-            new StairsBlock(ModBlocks.PALM_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
-    public static final Block PALM_SLAB = registerBlock("palm_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
-    public static final Block PALM_BUTTON = registerBlock("palm_button",
-            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
-    public static final Block PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
-    public static final Block PALM_FENCE = registerBlock("palm_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
-    public static final Block PALM_FENCE_GATE = registerBlock("palm_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
-    public static final Block PALM_DOOR = registerBlock("palm_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
-    public static final Block PALM_TRAPDOOR = registerBlock("palm_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
-    public static final Block PALM_LEAVES = registerBlock("palm_leaves",
-            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SAND));
-    public static final Block POTTED_PALM_SAPLING = register("potted_palm_sapling",
+   public static final Block PALM_LOG = registerWithItem("palm_log",
+           Blocks.createLogBlock(MapColor.OAK_TAN, MapColor.OAK_TAN));
+   public static final Block STRIPPED_PALM_LOG = registerWithItem("stripped_palm_log",
+          Blocks.createLogBlock(MapColor.OAK_TAN, MapColor.OAK_TAN));
+   public static final Block PALM_WOOD = registerWithItem("palm_wood",
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.OAK_TAN)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
+   public static final Block STRIPPED_PALM_WOOD = registerWithItem("stripped_palm_wood",
+           new PillarBlock(AbstractBlock.Settings.create()
+                   .mapColor(MapColor.OAK_TAN)
+                   .instrument(NoteBlockInstrument.BANJO)
+                   .strength(2.0F)
+                   .sounds(BlockSoundGroup.WOOD)
+                   .burnable()));
+    public static final Block PALM_PLANKS = registerWithItem("palm_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.OAK_TAN)));
+    public static final StairsBlock PALM_STAIRS = registerBlock("palm_stairs",
+            new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+    public static final Block PALM_SLAB = registerWithItem("palm_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
+    public static final Block PALM_BUTTON = registerWithItem("palm_button",
+            Blocks.createWoodenButtonBlock(BlockSetTypeList.PALM));
+    public static final PressurePlateBlock PALM_PRESSURE_PLATE = registerWithItem("palm_pressure_plate",
+            new PressurePlateBlock(BlockSetTypeList.PALM, AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .noCollision()
+                    .strength(0.5F)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final FenceBlock PALM_FENCE = registerWithItem("palm_fence",
+            new FenceBlock(AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
+    public static final FenceGateBlock PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            new FenceGateBlock(WoodTypeList.PALM, AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(2.0F, 3.0F)
+                    .burnable()));
+    public static final DoorBlock PALM_DOOR = registerBlock("palm_door",
+            new DoorBlock(BlockSetTypeList.PALM, AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block PALM_TRAPDOOR = registerWithItem("palm_trapdoor",
+            new TrapdoorBlock(BlockSetTypeList.PALM, AbstractBlock.Settings.create()
+                    .mapColor(PALM_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .burnable()));
+    public static final LeavesBlock PALM_LEAVES = registerWithItem("palm_leaves",
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .strength(2.0F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
+    public static final SaplingBlock PALM_SAPLING = registerWithItem("palm_sapling",
+            new ModSaplingBlock(ModSaplingGenerators.PALM, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never), Blocks.SAND));
+    public static final Block POTTED_PALM_SAPLING = registerBlock("potted_palm_sapling",
             Blocks.createFlowerPotBlock(PALM_SAPLING));
+
+    private static final Identifier PALM_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/palm");
+    private static final Identifier PALM_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/palm");
+    private static final Identifier PALM_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/palm");
+    public static final TerraformSignBlock PALM_SIGN = registerBlock("palm_sign",
+            new TerraformSignBlock(PALM_SIGN_TEXTURE, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.OAK_TAN)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()));
+    public static final TerraformWallSignBlock PALM_WALL_SIGN = registerBlock("palm_wall_sign",
+            new TerraformWallSignBlock(PALM_SIGN_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(PALM_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .burnable()
+                            .strength(1.0F)));
+    public static final TerraformHangingSignBlock PALM_HANGING_SIGN = registerBlock("palm_hanging_sign",
+            new TerraformHangingSignBlock(PALM_HANGING_SIGN_TEXTURE, PALM_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(PALM_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+    public static final TerraformWallHangingSignBlock PALM_WALL_HANGING_SIGN = registerBlock("palm_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(PALM_HANGING_SIGN_TEXTURE, PALM_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(PALM_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+
 
 
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
@@ -86,8 +191,47 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
             new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_REDWOOD_SAPLING = register("potted_redwood_sapling",
+    public static final Block POTTED_REDWOOD_SAPLING = registerBlock("potted_redwood_sapling",
             Blocks.createFlowerPotBlock(REDWOOD_SAPLING));
+
+    private static final Identifier REDWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/redwood");
+    private static final Identifier REDWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/redwood");
+    private static final Identifier REDWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/redwood");
+    public static final TerraformSignBlock REDWOOD_SIGN = registerBlock("redwood_sign",
+            new TerraformSignBlock(REDWOOD_SIGN_TEXTURE, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.RED)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()));
+    public static final TerraformWallSignBlock REDWOOD_WALL_SIGN = registerBlock("redwood_wall_sign",
+            new TerraformWallSignBlock(REDWOOD_SIGN_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .burnable()
+                            .strength(1.0F)));
+    public static final TerraformHangingSignBlock REDWOOD_HANGING_SIGN = registerBlock("redwood_hanging_sign",
+            new TerraformHangingSignBlock(REDWOOD_HANGING_SIGN_TEXTURE, REDWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+    public static final TerraformWallHangingSignBlock REDWOOD_WALL_HANGING_SIGN = registerBlock("redwood_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(REDWOOD_HANGING_SIGN_TEXTURE, REDWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
 
 
  public static final Block CYPRESS_LEAVES = registerBlock("cypress_leaves",
@@ -121,8 +265,47 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
     public static final Block CYPRESS_SAPLING = registerBlock("cypress_sapling",
             new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_CYPRESS_SAPLING = register("potted_cypress_sapling",
+    public static final Block POTTED_CYPRESS_SAPLING = registerBlock("potted_cypress_sapling",
             Blocks.createFlowerPotBlock(CYPRESS_SAPLING));
+
+    private static final Identifier CYPRESS_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/cypress");
+    private static final Identifier CYPRESS_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/cypress");
+    private static final Identifier CYPRESS_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/cypress");
+    public static final TerraformSignBlock CYPRESS_SIGN = registerBlock("cypress_sign",
+            new TerraformSignBlock(CYPRESS_SIGN_TEXTURE, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()));
+    public static final TerraformWallSignBlock CYPRESS_WALL_SIGN = registerBlock("cypress_wall_sign",
+            new TerraformWallSignBlock(CYPRESS_SIGN_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .burnable()
+                            .strength(1.0F)));
+    public static final TerraformHangingSignBlock CYPRESS_HANGING_SIGN = registerBlock("cypress_hanging_sign",
+            new TerraformHangingSignBlock(CYPRESS_HANGING_SIGN_TEXTURE, CYPRESS_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(PALM_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+    public static final TerraformWallHangingSignBlock CYPRESS_WALL_HANGING_SIGN = registerBlock("palm_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(CYPRESS_HANGING_SIGN_TEXTURE, CYPRESS_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
 
 
     public static final Block MANAWOOD_LOG = registerBlock("manawood_log",
@@ -156,8 +339,47 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block MANAWOOD_SAPLING = registerBlock("manawood_sapling",
             new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_MANAWOOD_SAPLING = register("potted_manawood_sapling",
+    public static final Block POTTED_MANAWOOD_SAPLING = registerBlock("potted_manawood_sapling",
             Blocks.createFlowerPotBlock(MANAWOOD_SAPLING));
+
+    private static final Identifier MANAWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/manawoood");
+    private static final Identifier MANAWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/manawood");
+    private static final Identifier MANAWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/manawood");
+    public static final TerraformSignBlock MANAWOOD_SIGN = registerBlock("manawood_sign",
+            new TerraformSignBlock(PALM_SIGN_TEXTURE, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.OAK_TAN)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()));
+    public static final TerraformWallSignBlock MANAWOOD_WALL_SIGN = registerBlock("manawood_wall_sign",
+            new TerraformWallSignBlock(MANAWOOD_SIGN_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .burnable()
+                            .strength(1.0F)));
+    public static final TerraformHangingSignBlock MANAWOOD_HANGING_SIGN = registerBlock("manawood_hanging_sign",
+            new TerraformHangingSignBlock(MANAWOOD_HANGING_SIGN_TEXTURE, MANAWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+    public static final TerraformWallHangingSignBlock MANAWOOD_WALL_HANGING_SIGN = registerBlock("manawood_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(MANAWOOD_HANGING_SIGN_TEXTURE, MANAWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
 
 
     public static final Block GLOOMWOOD_LOG = registerBlock("gloomwood_log",
@@ -191,8 +413,47 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block GLOOMWOOD_SAPLING = registerBlock("gloomwood_sapling",
             new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
-    public static final Block POTTED_GLOOMWOOD_SAPLING = register("potted_gloomwood_sapling",
+    public static final Block POTTED_GLOOMWOOD_SAPLING = registerBlock("potted_gloomwood_sapling",
             Blocks.createFlowerPotBlock(GLOOMWOOD_SAPLING));
+
+    private static final Identifier GLOOMWOOD_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/gloomwood");
+    private static final Identifier GLOOMWOOD_HANGING_SIGN_TEXTURE = NaturalMaterials.id("entity/signs/hanging/gloomwood");
+    private static final Identifier GLOOMWOOD_HANGING_SIGN_GUI_TEXTURE = NaturalMaterials.id("textures/gui/hanging_signs/gloomwood");
+    public static final TerraformSignBlock GLOOMWOOD_SIGN = registerBlock("gloomwood_sign",
+            new TerraformSignBlock(GLOOMWOOD_SIGN_TEXTURE, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.GRAY)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()));
+    public static final TerraformWallSignBlock GLOOMWOOD_WALL_SIGN = registerBlock("gloomwood_wall_sign",
+            new TerraformWallSignBlock(GLOOMWOOD_SIGN_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .burnable()
+                            .strength(1.0F)));
+    public static final TerraformHangingSignBlock GLOOMWOOD_HANGING_SIGN = registerBlock("gloomwood_hanging_sign",
+            new TerraformHangingSignBlock(GLOOMWOOD_HANGING_SIGN_TEXTURE, GLOOMWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
+    public static final TerraformWallHangingSignBlock GLOOMWOOD_WALL_HANGING_SIGN = registerBlock("gloomwood_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(GLOOMWOOD_HANGING_SIGN_TEXTURE, GLOOMWOOD_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.create()
+                            .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .burnable()));
 
 
     public static final Block DUSKSLATE = registerBlock("duskslate",
@@ -289,12 +550,16 @@ public class ModBlocks {
 
 
 
-    private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(NaturalMaterials.MOD_ID, name), block);
+    public static <T extends Block> T registerBlock(String name, T block) {
+        return Registry.register(Registries.BLOCK, NaturalMaterials.id(name), block);
     }
-    public static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(NaturalMaterials.MOD_ID, name), new BlockItem(block, new Item.Settings()));
+    public static <T extends Block> T registerWithItem(String name, T block, Item.Settings settings) {
+        T registered = registerBlock(name, block);
+        ModItems.register(name, new BlockItem(registered, settings));
+        return registered;
+    }
+    public static <T extends Block> T registerWithItem(String name, T block) {
+        return registerWithItem(name, block, new Item.Settings());
     }
     public static void registerModBlocks() {
         NaturalMaterials.LOGGER.info("Registering Mod Blocks for " + NaturalMaterials.MOD_ID);

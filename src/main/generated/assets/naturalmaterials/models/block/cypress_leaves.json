@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/leaves",
-  "textures": {
-    "all": "naturalmaterials:block/cypress_leaves"
-  }
-}

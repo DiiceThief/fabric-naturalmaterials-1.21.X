@@ -5,6 +5,8 @@ import net.diice.naturalmaterials.block.ModBlocks;
 import net.diice.naturalmaterials.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -37,8 +39,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createDoorRecipe(ModBlocks.PALM_DOOR, Ingredient.ofItems(ModBlocks.PALM_PLANKS));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PALM_BUTTON, 1)
                         .input(ModBlocks.PALM_PLANKS)
-                                .criterion(hasItem(ModBlocks.PALM_PLANKS), conditionsFromItem(ModBlocks.PALM_PLANKS))
-                                        .offerTo(recipeExporter);
+                        .criterion(hasItem(ModBlocks.PALM_PLANKS), conditionsFromItem(ModBlocks.PALM_PLANKS))
+                        .offerTo(recipeExporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALM_WOOD, 3)
                 .pattern("##")
                 .pattern("##")
@@ -50,6 +52,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("##")
                 .input('#', ModBlocks.STRIPPED_PALM_LOG)
                 .criterion(hasItem(ModBlocks.STRIPPED_PALM_LOG), conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PALM_SIGN, 3)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern(" | ")
+                        .input('#', ModBlocks.PALM_PLANKS)
+                        .input('|', Items.STICK)
+                        .criterion(hasItem(ModBlocks.PALM_PLANKS), conditionsFromItem(ModBlocks.PALM_PLANKS))
+                        .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PALM_HANGING_SIGN, 6)
+                .pattern("| |")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModBlocks.PALM_PLANKS)
+                .input('|', ConventionalItemTags.CHAINS)
+                .criterion(hasItem(ModBlocks.STRIPPED_PALM_LOG), conditionsFromItem(ModBlocks.STRIPPED_PALM_LOG))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, ModItems.PALM_BOAT)
+                        .pattern("# #")
+                        .pattern("###")
+                        .input('#', ModBlocks.PALM_PLANKS)
+                        .criterion(hasItem(ModBlocks.PALM_PLANKS), conditionsFromItem(ModBlocks.PALM_PLANKS))
+                        .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, ModItems.PALM_CHEST_BOAT)
+                .input(ModBlocks.PALM_PLANKS)
+                .input(Blocks.CHEST)
+                .criterion(hasItem(ModItems.PALM_BOAT), conditionsFromItem(ModItems.PALM_BOAT))
                 .offerTo(recipeExporter);
 
         createStairsRecipe(ModBlocks.REDWOOD_STAIRS, Ingredient.ofItems(ModBlocks.REDWOOD_PLANKS));

@@ -4,11 +4,11 @@ import net.diice.naturalmaterials.block.ModBlocks;
 import net.diice.naturalmaterials.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.*;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -19,134 +19,135 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        BlockStateModelGenerator.BlockTexturePool PALM_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PALM_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool REDWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDWOOD_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool CYPRESS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYPRESS_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool MANAWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANAWOOD_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool GLOOMWOOD_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOOMWOOD_PLANKS);
-        BlockStateModelGenerator.BlockTexturePool DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DUSKSLATE);
-        BlockStateModelGenerator.BlockTexturePool POLISHED_DUSKSLATE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_DUSKSLATE);
-        BlockStateModelGenerator.BlockTexturePool BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUESHIST);
-        BlockStateModelGenerator.BlockTexturePool POLISHED_BLUESHIST_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BLUESHIST);
-        BlockStateModelGenerator.BlockTexturePool VIRIDIUM_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VIRIDIUM_BLOCK);
-        BlockStateModelGenerator.BlockTexturePool THALRENITE_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.THALRENITE_BLOCK);
+        var palmFamily = new BlockFamily.Builder(ModBlocks.PALM_PLANKS)
+                .button(ModBlocks.PALM_BUTTON)
+                .pressurePlate(ModBlocks.PALM_PRESSURE_PLATE)
+                .fence(ModBlocks.PALM_FENCE)
+                .fenceGate(ModBlocks.PALM_FENCE_GATE)
+                .sign(ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN)
+                .slab(ModBlocks.PALM_SLAB)
+                .stairs(ModBlocks.PALM_STAIRS)
+                .door(ModBlocks.PALM_DOOR)
+                .trapdoor(ModBlocks.PALM_TRAPDOOR)
+                .group("wooden")
+                .unlockCriterionName("has_planks")
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(palmFamily.getBaseBlock()).family(palmFamily);
 
-        PALM_POOL.stairs(ModBlocks.PALM_STAIRS);
-        PALM_POOL.slab(ModBlocks.PALM_SLAB);
-        PALM_POOL.pressurePlate(ModBlocks.PALM_PRESSURE_PLATE);
-        PALM_POOL.button(ModBlocks.PALM_BUTTON);
-        PALM_POOL.fence(ModBlocks.PALM_FENCE);
-        PALM_POOL.fenceGate(ModBlocks.PALM_FENCE_GATE);
-
-        blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
-
-        blockStateModelGenerator.registerDoor(ModBlocks.PALM_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.PALM_TRAPDOOR);
-
+        blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG)
+                .log(ModBlocks.PALM_LOG)
+                .wood(ModBlocks.PALM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG)
+                .log(ModBlocks.STRIPPED_PALM_LOG)
+                .wood(ModBlocks.STRIPPED_PALM_WOOD);
         blockStateModelGenerator.registerSingleton(ModBlocks.PALM_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING, ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PALM_SAPLING,
+                ModBlocks.POTTED_PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_PALM_LOG,
+                ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN);
 
-        REDWOOD_POOL.stairs(ModBlocks.REDWOOD_STAIRS);
-        REDWOOD_POOL.slab(ModBlocks.REDWOOD_SLAB);
-        REDWOOD_POOL.pressurePlate(ModBlocks.REDWOOD_PRESSURE_PLATE);
-        REDWOOD_POOL.button(ModBlocks.REDWOOD_BUTTON);
-        REDWOOD_POOL.fence(ModBlocks.REDWOOD_FENCE);
-        REDWOOD_POOL.fenceGate(ModBlocks.REDWOOD_FENCE_GATE);
+        var redwoodFamily = new BlockFamily.Builder(ModBlocks.REDWOOD_PLANKS)
+                .button(ModBlocks.REDWOOD_BUTTON)
+                .pressurePlate(ModBlocks.REDWOOD_PRESSURE_PLATE)
+                .fence(ModBlocks.REDWOOD_FENCE)
+                .fenceGate(ModBlocks.REDWOOD_FENCE_GATE)
+                .sign(ModBlocks.REDWOOD_SIGN, ModBlocks.REDWOOD_WALL_SIGN)
+                .slab(ModBlocks.REDWOOD_SLAB)
+                .stairs(ModBlocks.REDWOOD_STAIRS)
+                .door(ModBlocks.REDWOOD_DOOR)
+                .trapdoor(ModBlocks.REDWOOD_TRAPDOOR)
+                .group("wooden")
+                .unlockCriterionName("has_planks")
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(redwoodFamily.getBaseBlock()).family(redwoodFamily);
 
-        blockStateModelGenerator.registerLog(ModBlocks.REDWOOD_LOG).log(ModBlocks.REDWOOD_LOG).wood(ModBlocks.REDWOOD_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_REDWOOD_LOG).log(ModBlocks.STRIPPED_REDWOOD_LOG).wood(ModBlocks.STRIPPED_REDWOOD_WOOD);
 
-        blockStateModelGenerator.registerDoor(ModBlocks.REDWOOD_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.REDWOOD_TRAPDOOR);
-
+        blockStateModelGenerator.registerLog(ModBlocks.REDWOOD_LOG)
+                .log(ModBlocks.REDWOOD_LOG)
+                .wood(ModBlocks.REDWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_REDWOOD_LOG)
+                .log(ModBlocks.STRIPPED_REDWOOD_LOG)
+                .wood(ModBlocks.STRIPPED_REDWOOD_WOOD);
         blockStateModelGenerator.registerSingleton(ModBlocks.REDWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.REDWOOD_SAPLING, ModBlocks.POTTED_REDWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.REDWOOD_SAPLING,
+                ModBlocks.POTTED_REDWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        CYPRESS_POOL.stairs(ModBlocks.CYPRESS_STAIRS);
-        CYPRESS_POOL.slab(ModBlocks.CYPRESS_SLAB);
-        CYPRESS_POOL.pressurePlate(ModBlocks.CYPRESS_PRESSURE_PLATE);
-        CYPRESS_POOL.button(ModBlocks.CYPRESS_BUTTON);
-        CYPRESS_POOL.fence(ModBlocks.CYPRESS_FENCE);
-        CYPRESS_POOL.fenceGate(ModBlocks.CYPRESS_FENCE_GATE);
+        var cypressFamily = new BlockFamily.Builder(ModBlocks.CYPRESS_PLANKS)
+                .button(ModBlocks.CYPRESS_BUTTON)
+                .pressurePlate(ModBlocks.CYPRESS_PRESSURE_PLATE)
+                .fence(ModBlocks.CYPRESS_FENCE)
+                .fenceGate(ModBlocks.CYPRESS_FENCE_GATE)
+                .sign(ModBlocks.CYPRESS_SIGN, ModBlocks.CYPRESS_WALL_SIGN)
+                .slab(ModBlocks.CYPRESS_SLAB)
+                .stairs(ModBlocks.CYPRESS_STAIRS)
+                .door(ModBlocks.CYPRESS_DOOR)
+                .trapdoor(ModBlocks.CYPRESS_TRAPDOOR)
+                .group("wooden")
+                .unlockCriterionName("has_planks")
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(cypressFamily.getBaseBlock()).family(cypressFamily);
 
-        blockStateModelGenerator.registerLog(ModBlocks.CYPRESS_LOG).log(ModBlocks.CYPRESS_LOG).wood(ModBlocks.CYPRESS_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CYPRESS_LOG).log(ModBlocks.STRIPPED_CYPRESS_LOG).wood(ModBlocks.STRIPPED_CYPRESS_WOOD);
-
-        blockStateModelGenerator.registerDoor(ModBlocks.CYPRESS_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.CYPRESS_TRAPDOOR);
-
+        blockStateModelGenerator.registerLog(ModBlocks.CYPRESS_LOG)
+                .log(ModBlocks.CYPRESS_LOG)
+                .wood(ModBlocks.CYPRESS_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CYPRESS_LOG)
+                .log(ModBlocks.STRIPPED_CYPRESS_LOG)
+                .wood(ModBlocks.STRIPPED_CYPRESS_WOOD);
         blockStateModelGenerator.registerSingleton(ModBlocks.CYPRESS_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CYPRESS_SAPLING, ModBlocks.POTTED_CYPRESS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CYPRESS_SAPLING,
+                ModBlocks.POTTED_CYPRESS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        MANAWOOD_POOL.stairs(ModBlocks.MANAWOOD_STAIRS);
-        MANAWOOD_POOL.slab(ModBlocks.MANAWOOD_SLAB);
-        MANAWOOD_POOL.pressurePlate(ModBlocks.MANAWOOD_PRESSURE_PLATE);
-        MANAWOOD_POOL.button(ModBlocks.MANAWOOD_BUTTON);
-        MANAWOOD_POOL.fence(ModBlocks.MANAWOOD_FENCE);
-        MANAWOOD_POOL.fenceGate(ModBlocks.MANAWOOD_FENCE_GATE);
+        var manawoodFamily = new BlockFamily.Builder(ModBlocks.MANAWOOD_PLANKS)
+                .button(ModBlocks.MANAWOOD_BUTTON)
+                .pressurePlate(ModBlocks.MANAWOOD_PRESSURE_PLATE)
+                .fence(ModBlocks.MANAWOOD_FENCE)
+                .fenceGate(ModBlocks.MANAWOOD_FENCE_GATE)
+                .sign(ModBlocks.MANAWOOD_SIGN, ModBlocks.MANAWOOD_WALL_SIGN)
+                .slab(ModBlocks.MANAWOOD_SLAB)
+                .stairs(ModBlocks.MANAWOOD_STAIRS)
+                .door(ModBlocks.MANAWOOD_DOOR)
+                .trapdoor(ModBlocks.MANAWOOD_TRAPDOOR)
+                .group("wooden")
+                .unlockCriterionName("has_planks")
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(manawoodFamily.getBaseBlock()).family(manawoodFamily);
 
-        blockStateModelGenerator.registerLog(ModBlocks.MANAWOOD_LOG).log(ModBlocks.MANAWOOD_LOG).wood(ModBlocks.MANAWOOD_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MANAWOOD_LOG).log(ModBlocks.STRIPPED_MANAWOOD_LOG).wood(ModBlocks.STRIPPED_MANAWOOD_WOOD);
-
-        blockStateModelGenerator.registerDoor(ModBlocks.MANAWOOD_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.MANAWOOD_TRAPDOOR);
-
+        blockStateModelGenerator.registerLog(ModBlocks.MANAWOOD_LOG)
+                .log(ModBlocks.MANAWOOD_LOG)
+                .wood(ModBlocks.MANAWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MANAWOOD_LOG)
+                .log(ModBlocks.STRIPPED_MANAWOOD_LOG)
+                .wood(ModBlocks.STRIPPED_MANAWOOD_WOOD);
         blockStateModelGenerator.registerSingleton(ModBlocks.MANAWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MANAWOOD_SAPLING, ModBlocks.POTTED_MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MANAWOOD_SAPLING,
+                ModBlocks.POTTED_MANAWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        GLOOMWOOD_POOL.stairs(ModBlocks.GLOOMWOOD_STAIRS);
-        GLOOMWOOD_POOL.slab(ModBlocks.GLOOMWOOD_SLAB);
-        GLOOMWOOD_POOL.pressurePlate(ModBlocks.GLOOMWOOD_PRESSURE_PLATE);
-        GLOOMWOOD_POOL.button(ModBlocks.GLOOMWOOD_BUTTON);
-        GLOOMWOOD_POOL.fence(ModBlocks.GLOOMWOOD_FENCE);
-        GLOOMWOOD_POOL.fenceGate(ModBlocks.GLOOMWOOD_FENCE_GATE);
+        var gloomwoodFamily = new BlockFamily.Builder(ModBlocks.GLOOMWOOD_PLANKS)
+                .button(ModBlocks.GLOOMWOOD_BUTTON)
+                .pressurePlate(ModBlocks.GLOOMWOOD_PRESSURE_PLATE)
+                .fence(ModBlocks.GLOOMWOOD_FENCE)
+                .fenceGate(ModBlocks.GLOOMWOOD_FENCE_GATE)
+                .sign(ModBlocks.GLOOMWOOD_SIGN, ModBlocks.GLOOMWOOD_WALL_SIGN)
+                .slab(ModBlocks.GLOOMWOOD_SLAB)
+                .stairs(ModBlocks.GLOOMWOOD_STAIRS)
+                .door(ModBlocks.GLOOMWOOD_DOOR)
+                .trapdoor(ModBlocks.GLOOMWOOD_TRAPDOOR)
+                .group("wooden")
+                .unlockCriterionName("has_planks")
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(gloomwoodFamily.getBaseBlock()).family(gloomwoodFamily);
 
-        blockStateModelGenerator.registerLog(ModBlocks.GLOOMWOOD_LOG).log(ModBlocks.GLOOMWOOD_LOG).wood(ModBlocks.GLOOMWOOD_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GLOOMWOOD_LOG).log(ModBlocks.STRIPPED_GLOOMWOOD_LOG).wood(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GLOOMWOOD_SAPLING, ModBlocks.POTTED_GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-
-        blockStateModelGenerator.registerDoor(ModBlocks.GLOOMWOOD_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.GLOOMWOOD_TRAPDOOR);
-
+        blockStateModelGenerator.registerLog(ModBlocks.GLOOMWOOD_LOG)
+                .log(ModBlocks.GLOOMWOOD_LOG)
+                .wood(ModBlocks.GLOOMWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GLOOMWOOD_LOG)
+                .log(ModBlocks.STRIPPED_GLOOMWOOD_LOG)
+                .wood(ModBlocks.STRIPPED_GLOOMWOOD_WOOD);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GLOOMWOOD_SAPLING,
+                ModBlocks.POTTED_GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerSingleton(ModBlocks.GLOOMWOOD_LEAVES, TexturedModel.LEAVES);
 
-
-        DUSKSLATE_POOL.stairs(ModBlocks.DUSKSLATE_STAIRS);
-        DUSKSLATE_POOL.slab(ModBlocks.DUSKSLATE_SLAB);
-        DUSKSLATE_POOL.wall(ModBlocks.DUSKSLATE_WALL);
-        DUSKSLATE_POOL.button(ModBlocks.DUSKSLATE_BUTTON);
-        DUSKSLATE_POOL.pressurePlate(ModBlocks.DUSKSLATE_PRESSURE_PLATE);
-
-        POLISHED_DUSKSLATE_POOL.stairs(ModBlocks.POLISHED_DUSKSLATE_STAIRS);
-        POLISHED_DUSKSLATE_POOL.slab(ModBlocks.POLISHED_DUSKSLATE_SLAB);
-        POLISHED_DUSKSLATE_POOL.wall(ModBlocks.POLISHED_DUSKSLATE_WALL);
-        POLISHED_DUSKSLATE_POOL.button(ModBlocks.POLISHED_DUSKSLATE_BUTTON);
-        POLISHED_DUSKSLATE_POOL.pressurePlate(ModBlocks.POLISHED_DUSKSLATE_PRESSURE_PLATE);
-
-        BLUESHIST_POOL.stairs(ModBlocks.BLUESHIST_STAIRS);
-        BLUESHIST_POOL.slab(ModBlocks.BLUESHIST_SLAB);
-        BLUESHIST_POOL.wall(ModBlocks.BLUESHIST_WALL);
-        BLUESHIST_POOL.button(ModBlocks.BLUESHIST_BUTTON);
-        BLUESHIST_POOL.pressurePlate(ModBlocks.BLUESHIST_PRESSURE_PLATE);
-
-        POLISHED_BLUESHIST_POOL.stairs(ModBlocks.POLISHED_BLUESHIST_STAIRS);
-        POLISHED_BLUESHIST_POOL.slab(ModBlocks.POLISHED_BLUESHIST_SLAB);
-        POLISHED_BLUESHIST_POOL.wall(ModBlocks.POLISHED_BLUESHIST_WALL);
-        POLISHED_BLUESHIST_POOL.button(ModBlocks.POLISHED_BLUESHIST_BUTTON);
-        POLISHED_BLUESHIST_POOL.pressurePlate(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE);
-
-        VIRIDIUM_POOL.stairs(ModBlocks.VIRIDIUM_STAIRS);
-        VIRIDIUM_POOL.slab(ModBlocks.VIRIDIUM_SLAB);
-        VIRIDIUM_POOL.wall(ModBlocks.VIRIDIUM_WALL);
-        VIRIDIUM_POOL.pressurePlate(ModBlocks.VIRIDIUM_PRESSURE_PLATE);
-
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VIRIDIUM_BLOCK);
-
-        THALRENITE_POOL.stairs(ModBlocks.THALRENITE_STAIRS);
-        THALRENITE_POOL.slab(ModBlocks.THALRENITE_SLAB);
-        THALRENITE_POOL.wall(ModBlocks.THALRENITE_WALL);
-        THALRENITE_POOL.pressurePlate(ModBlocks.THALRENITE_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_THALRENITE_BLOCK);
 
@@ -163,6 +164,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDRITE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDRITE_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PALM_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PALM_CHEST_BOAT, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AMBER_CHESTPLATE));

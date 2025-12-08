@@ -3,17 +3,23 @@ package net.diice.naturalmaterials;
 import net.diice.naturalmaterials.block.ModBlocks;
 import net.diice.naturalmaterials.item.ModItemGroups;
 import net.diice.naturalmaterials.item.ModItems;
+import net.diice.naturalmaterials.util.BoatInit;
 import net.diice.naturalmaterials.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.FireBlock;
 import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class NaturalMaterials implements ModInitializer {
+	public static Identifier id(String path){
+		return Identifier.of(NaturalMaterials.MOD_ID, path);
+	}
 	public static final String MOD_ID = "naturalmaterials";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -26,6 +32,8 @@ public class NaturalMaterials implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
+
+		BoatInit.load();
 
 		StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
 		StrippableBlockRegistry.register(ModBlocks.PALM_WOOD, ModBlocks.STRIPPED_PALM_WOOD);

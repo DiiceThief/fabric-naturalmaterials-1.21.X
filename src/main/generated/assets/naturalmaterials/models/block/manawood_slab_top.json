@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "naturalmaterials:block/manawood_planks",
-    "side": "naturalmaterials:block/manawood_planks",
-    "top": "naturalmaterials:block/manawood_planks"
-  }
-}

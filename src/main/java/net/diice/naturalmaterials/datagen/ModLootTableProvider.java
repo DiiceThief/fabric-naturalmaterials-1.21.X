@@ -29,6 +29,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_PALM_WOOD);
         addDrop(ModBlocks.PALM_LEAVES, leavesDrops(ModBlocks.PALM_LEAVES, ModBlocks.PALM_SAPLING, 0.0635f));
         addDrop(ModBlocks.PALM_SAPLING);
+        addDrop(ModBlocks.PALM_SIGN, ModBlocks.PALM_SIGN);
+        addDrop(ModBlocks.PALM_WALL_SIGN, ModBlocks.PALM_SIGN);
+        addDrop(ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_HANGING_SIGN);
+        addDrop(ModBlocks.PALM_WALL_HANGING_SIGN, ModBlocks.PALM_HANGING_SIGN);
+
 
         addPottedPlantDrops(ModBlocks.POTTED_PALM_SAPLING);
 
