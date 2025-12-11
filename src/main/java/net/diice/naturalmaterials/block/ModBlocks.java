@@ -8,6 +8,7 @@ import net.diice.naturalmaterials.NaturalMaterials;
 import net.diice.naturalmaterials.block.custom.ModSaplingBlock;
 import net.diice.naturalmaterials.item.ModItems;
 import net.diice.naturalmaterials.util.BlockSetTypeList;
+import net.diice.naturalmaterials.util.ModTags;
 import net.diice.naturalmaterials.util.WoodTypeList;
 import net.diice.naturalmaterials.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
@@ -693,20 +694,24 @@ public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redw
 
 
     public static final Block DUSKSLATE = registerWithItem("duskslate",
-            new Block(AbstractBlock.Settings.create().requiresTool()
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
                     .strength(3.0f, 6.0f)
-                    .sounds(BlockSoundGroup.DEEPSLATE)));
+                    .sounds(BlockSoundGroup.DEEPSLATE)
+                    .mapColor(MapColor.BROWN)));
     public static final Block DUSKSLATE_STAIRS = registerWithItem("duskslate_stairs",
             new StairsBlock(ModBlocks.DUSKSLATE.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_STAIRS).mapColor(MapColor.BROWN)));
     public static final Block DUSKSLATE_SLAB = registerWithItem("duskslate_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_SLAB).mapColor(MapColor.BROWN)));
     public static final Block DUSKSLATE_BUTTON = registerWithItem("duskslate_button",
-            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
+            Blocks.createStoneButtonBlock());
     public static final Block DUSKSLATE_WALL = registerWithItem("duskslate_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_WALL)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_WALL).mapColor(MapColor.BROWN)));
     public static final Block DUSKSLATE_PRESSURE_PLATE = registerWithItem("duskslate_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.BROWN)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
 
 
     public static final Block POLISHED_DUSKSLATE = registerWithItem("polished_duskslate",
@@ -717,72 +722,87 @@ public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redw
     public static final Block POLISHED_DUSKSLATE_SLAB = registerWithItem("polished_duskslate_slab",
             new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_SLAB)));
     public static final Block POLISHED_DUSKSLATE_BUTTON = registerWithItem("polished_duskslate_button",
-            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_BUTTON)));
+            Blocks.createStoneButtonBlock());
     public static final Block POLISHED_DUSKSLATE_WALL = registerWithItem("polished_duskslate_wall",
             new WallBlock(AbstractBlock.Settings.copy(ModBlocks.DUSKSLATE_WALL)));
     public static final Block POLISHED_DUSKSLATE_PRESSURE_PLATE = registerWithItem("polished_duskslate_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
-
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(MapColor.BROWN)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block BLUESHIST = registerWithItem("blueshist",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BLUE)
+                    .requiresTool()
+                    .strength(3.0f, 3.0f)
+                    .sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block BLUESHIST_STAIRS = registerWithItem("blueshist_stairs",
             new StairsBlock(ModBlocks.BLUESHIST.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS).mapColor(MapColor.BLUE)));
     public static final Block BLUESHIST_SLAB = registerWithItem("blueshist_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB).mapColor(MapColor.BLUE)));
     public static final Block BLUESHIST_BUTTON = registerWithItem("blueshist_button",
-            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
+            Blocks.createStoneButtonBlock());
     public static final Block BLUESHIST_WALL = registerWithItem("blueshist_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL).mapColor(MapColor.BLUE)));
     public static final Block BLUESHIST_PRESSURE_PLATE = registerWithItem("blueshist_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
-
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.BLUE)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block POLISHED_BLUESHIST = registerWithItem("polished_blueshist",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+            new Block(AbstractBlock.Settings.copy(ModBlocks.BLUESHIST).mapColor(MapColor.LAPIS_BLUE)));
     public static final Block POLISHED_BLUESHIST_STAIRS = registerWithItem("polished_blueshist_stairs",
-            new StairsBlock(ModBlocks.BLUESHIST.getDefaultState(),
+            new StairsBlock(ModBlocks.POLISHED_BLUESHIST.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
     public static final Block POLISHED_BLUESHIST_SLAB = registerWithItem("polished_blueshist_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(ModBlocks.BLUESHIST_SLAB).mapColor(MapColor.LAPIS_BLUE)));
     public static final Block POLISHED_BLUESHIST_BUTTON = registerWithItem("polished_blueshist_button",
-            new ButtonBlock(BlockSetType.STONE, 2, AbstractBlock.Settings.copy(Blocks.STONE_BUTTON)));
+            Blocks.createStoneButtonBlock());
     public static final Block POLISHED_BLUESHIST_WALL = registerWithItem("polished_blueshist_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+            new WallBlock(AbstractBlock.Settings.copy(ModBlocks.BLUESHIST_WALL).mapColor(MapColor.LAPIS_BLUE)));
     public static final Block POLISHED_BLUESHIST_PRESSURE_PLATE = registerWithItem("polished_blueshist_pressure_plate",
-            new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetType.STONE,
+                    AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.LAPIS_BLUE)
+                            .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block VIRIDIUM_BLOCK = registerWithItem("viridium_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).mapColor(MapColor.DARK_GREEN)));
     public static final Block RAW_VIRIDIUM_BLOCK = registerWithItem("raw_viridium_block",
-           new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK)));
+           new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK).mapColor(MapColor.EMERALD_GREEN)));
     public static final Block VIRIDIUM_STAIRS = registerWithItem("viridium_stairs",
             new StairsBlock(ModBlocks.VIRIDIUM_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)
+                            .mapColor(MapColor.DARK_GREEN)));
     public static final Block VIRIDIUM_SLAB = registerWithItem("viridium_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB).mapColor(MapColor.DARK_GREEN)));
     public static final Block VIRIDIUM_WALL = registerWithItem("viridium_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL).mapColor(MapColor.DARK_GREEN)));
     public static final Block VIRIDIUM_PRESSURE_PLATE = registerWithItem("viridium_pressure_plate",
-            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE)
+                    .mapColor(MapColor.DARK_GREEN)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block THALRENITE_BLOCK = registerWithItem("thalrenite_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).mapColor(MapColor.DARK_AQUA)));
     public static final Block RAW_THALRENITE_BLOCK = registerWithItem("raw_thalrenite_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.RAW_COPPER_BLOCK).mapColor(MapColor.TEAL)));
     public static final Block THALRENITE_STAIRS = registerWithItem("thalrenite_stairs",
             new StairsBlock(ModBlocks.THALRENITE_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.STONE_STAIRS).mapColor(MapColor.DARK_AQUA)));
     public static final Block THALRENITE_SLAB = registerWithItem("thalrenite_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB).mapColor(MapColor.DARK_AQUA)));
     public static final Block THALRENITE_WALL = registerWithItem("thalrenite_wall",
-            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL)));
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_WALL).mapColor(MapColor.DARK_AQUA)));
     public static final Block THALRENITE_PRESSURE_PLATE = registerWithItem("thalrenite_pressure_plate",
-            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)
+                    .mapColor(MapColor.DARK_AQUA)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block ENDRITE_BLOCK = registerWithItem("endrite_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK)));
+            new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).mapColor(MapColor.TERRACOTTA_PURPLE)));
 
 
 
