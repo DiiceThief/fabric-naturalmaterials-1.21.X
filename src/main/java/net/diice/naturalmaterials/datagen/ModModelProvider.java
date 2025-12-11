@@ -8,6 +8,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 
@@ -184,8 +185,22 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(polishedBlueshistFamily.getBaseBlock()).family(polishedBlueshistFamily);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VIRIDIUM_BLOCK);
+        var viridiumFamily = new BlockFamily.Builder(ModBlocks.VIRIDIUM_BLOCK)
+                .stairs(ModBlocks.VIRIDIUM_STAIRS)
+                .slab(ModBlocks.VIRIDIUM_SLAB)
+                .wall(ModBlocks.VIRIDIUM_WALL)
+                .pressurePlate(ModBlocks.VIRIDIUM_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(viridiumFamily.getBaseBlock()).family(viridiumFamily);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_THALRENITE_BLOCK);
+        var thalreniteFamily = new BlockFamily.Builder(ModBlocks.THALRENITE_BLOCK)
+                .stairs(ModBlocks.THALRENITE_STAIRS)
+                .slab(ModBlocks.THALRENITE_SLAB)
+                .wall(ModBlocks.THALRENITE_WALL)
+                .pressurePlate(ModBlocks.THALRENITE_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(thalreniteFamily.getBaseBlock()).family(thalreniteFamily);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDRITE_BLOCK);
     }

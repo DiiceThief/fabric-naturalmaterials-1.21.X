@@ -140,10 +140,52 @@ public class ModItems {
     public static final SignItem PALM_SIGN = registerItem("palm_sign",
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.PALM_SIGN, ModBlocks.PALM_WALL_SIGN));
     public static final SignItem PALM_HANGING_SIGN = registerItem("palm_hanging_sign",
-            new HangingSignItem(ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
-    public static final Item PALM_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.PALM_BOAT_ID, BoatInit.PALM_BOAT_KEY, false);
-    public static final Item PALM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.PALM_CHEST_BOAT_ID, BoatInit.PALM_BOAT_KEY, true);
+            new HangingSignItem(ModBlocks.PALM_HANGING_SIGN, ModBlocks.PALM_WALL_HANGING_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item PALM_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.PALM_BOAT_ID,
+            BoatInit.PALM_BOAT_KEY, false);
+    public static final Item PALM_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.PALM_CHEST_BOAT_ID,
+            BoatInit.PALM_BOAT_KEY, true);
 
+    public static final SignItem CYPRESS_SIGN = registerItem("cypress_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.CYPRESS_SIGN, ModBlocks.CYPRESS_WALL_SIGN));
+    public static final SignItem CYPRESS_HANGING_SIGN = registerItem("cypress_hanging_sign",
+            new HangingSignItem(ModBlocks.CYPRESS_HANGING_SIGN, ModBlocks.CYPRESS_WALL_HANGING_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item CYPRESS_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.CYPRESS_BOAT_ID,
+            BoatInit.CYPRESS_BOAT_KEY, false);
+    public static final Item CYPRESS_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.CYPRESS_CHEST_BOAT_ID,
+            BoatInit.CYPRESS_BOAT_KEY, true);
+
+    public static final SignItem REDWOOD_SIGN = registerItem("redwood_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.REDWOOD_SIGN, ModBlocks.REDWOOD_WALL_SIGN));
+    public static final SignItem REDWOOD_HANGING_SIGN = registerItem("redwood_hanging_sign",
+            new HangingSignItem(ModBlocks.REDWOOD_HANGING_SIGN, ModBlocks.REDWOOD_WALL_HANGING_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item REDWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.REDWOOD_BOAT_ID,
+            BoatInit.REDWOOD_BOAT_KEY, false);
+    public static final Item REDWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.REDWOOD_CHEST_BOAT_ID,
+            BoatInit.REDWOOD_BOAT_KEY, true);
+
+    public static final SignItem MANAWOOD_SIGN = registerItem("manawood_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.MANAWOOD_SIGN, ModBlocks.MANAWOOD_WALL_SIGN));
+    public static final SignItem MANAWOOD_HANGING_SIGN = registerItem("manawood_hanging_sign",
+            new HangingSignItem(ModBlocks.MANAWOOD_HANGING_SIGN, ModBlocks.MANAWOOD_WALL_HANGING_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item MANAWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.MANAWOOD_BOAT_ID,
+            BoatInit.MANAWOOD_BOAT_KEY, false);
+    public static final Item MANAWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.MANAWOOD_CHEST_BOAT_ID,
+            BoatInit.MANAWOOD_BOAT_KEY, true);
+
+    public static final SignItem GLOOMWOOD_SIGN = registerItem("gloomwood_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.GLOOMWOOD_SIGN, ModBlocks.GLOOMWOOD_WALL_SIGN));
+    public static final SignItem GLOOMWOOD_HANGING_SIGN = registerItem("gloomwood_hanging_sign",
+            new HangingSignItem(ModBlocks.GLOOMWOOD_HANGING_SIGN, ModBlocks.GLOOMWOOD_WALL_HANGING_SIGN,
+                    new Item.Settings().maxCount(16)));
+    public static final Item GLOOMWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.GLOOMWOOD_BOAT_ID,
+            BoatInit.GLOOMWOOD_BOAT_KEY, false);
+    public static final Item GLOOMWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(BoatInit.GLOOMWOOD_CHEST_BOAT_ID,
+            BoatInit.GLOOMWOOD_BOAT_KEY, true);
     public static <T extends Item> T registerItem (String name, T item) {
         return Registry.register(Registries.ITEM, NaturalMaterials.id(name), item);
     }
