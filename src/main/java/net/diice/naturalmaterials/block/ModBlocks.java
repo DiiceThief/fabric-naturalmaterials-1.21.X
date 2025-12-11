@@ -43,7 +43,7 @@ public class ModBlocks {
     public static final Block PALM_PLANKS = registerWithItem("palm_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.OAK_TAN)));
     public static final StairsBlock PALM_STAIRS = registerWithItem("palm_stairs",
-            new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+            new StairsBlock(PALM_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.OAK_TAN)));
     public static final Block PALM_SLAB = registerWithItem("palm_slab",
             new SlabBlock(AbstractBlock.Settings.create()
                     .mapColor(PALM_PLANKS.getDefaultMapColor())
@@ -161,36 +161,95 @@ public class ModBlocks {
 
 
     public static final Block REDWOOD_LOG = registerWithItem("redwood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            Blocks.createLogBlock(MapColor.RED, MapColor.TERRACOTTA_BROWN));
 public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redwood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+            Blocks.createLogBlock(MapColor.RED, MapColor.RED));
     public static final Block REDWOOD_WOOD = registerWithItem("redwood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.TERRACOTTA_BROWN)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block STRIPPED_REDWOOD_WOOD = registerWithItem("stripped_redwood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.TERRACOTTA_BROWN)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block REDWOOD_PLANKS = registerWithItem("redwood_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.BRIGHT_RED)));
     public static final Block REDWOOD_STAIRS = registerBlock("redwood_stairs",
             new StairsBlock(ModBlocks.REDWOOD_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.BRIGHT_RED)));
     public static final Block REDWOOD_SLAB = registerWithItem("redwood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.BRIGHT_RED)));
     public static final Block REDWOOD_BUTTON = registerWithItem("redwood_button",
-            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            Blocks.createWoodenButtonBlock(BlockSetTypeList.REDWOOD));
     public static final Block REDWOOD_PRESSURE_PLATE = registerWithItem("redwood_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetTypeList.REDWOOD, AbstractBlock.Settings.create()
+                    .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .noCollision()
+                    .strength(0.5F)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block REDWOOD_FENCE = registerWithItem("redwood_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new FenceBlock(AbstractBlock.Settings.create()
+                    .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block REDWOOD_FENCE_GATE = registerWithItem("redwood_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+            new FenceGateBlock(WoodTypeList.REDWOOD, AbstractBlock.Settings.create()
+                    .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.0F, 3.0F)
+                    .burnable()));
     public static final Block REDWOOD_DOOR = registerWithItem("redwood_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)));
+            new DoorBlock(BlockSetTypeList.REDWOOD, AbstractBlock.Settings.create()
+                    .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block REDWOOD_TRAPDOOR = registerWithItem("redwood_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+            new TrapdoorBlock(BlockSetTypeList.REDWOOD, AbstractBlock.Settings.create()
+                    .mapColor(REDWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .burnable()));
     public static final Block REDWOOD_LEAVES = registerWithItem("redwood_leaves",
-            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LICHEN_GREEN)
+                    .strength(2.0F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block REDWOOD_SAPLING = registerWithItem("redwood_sapling",
-            new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.REDWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DULL_RED)
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block POTTED_REDWOOD_SAPLING = registerWithItem("potted_redwood_sapling",
             Blocks.createFlowerPotBlock(REDWOOD_SAPLING));
 
@@ -234,37 +293,96 @@ public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redw
                             .burnable()));
 
 
- public static final Block CYPRESS_LEAVES = registerWithItem("cypress_leaves",
-         new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block CYPRESS_LEAVES = registerWithItem("cypress_leaves",
+         new LeavesBlock(AbstractBlock.Settings.create()
+                 .mapColor(MapColor.LICHEN_GREEN)
+                 .strength(2.0F)
+                 .ticksRandomly()
+                 .sounds(BlockSoundGroup.GRASS)
+                 .nonOpaque()
+                 .allowsSpawning(Blocks::canSpawnOnLeaves)
+                 .suffocates(Blocks::never)
+                 .burnable()
+                 .pistonBehavior(PistonBehavior.DESTROY)
+                 .solidBlock(Blocks::never)));
     public static final Block CYPRESS_LOG = registerWithItem("cypress_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            Blocks.createLogBlock(MapColor.GREEN, MapColor.DARK_GREEN));
     public static final Block STRIPPED_CYPRESS_LOG = registerWithItem("stripped_cypress_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+            Blocks.createLogBlock(MapColor.GREEN, MapColor.DARK_GREEN));
     public static final Block CYPRESS_WOOD = registerWithItem("cypress_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block STRIPPED_CYPRESS_WOOD = registerWithItem("stripped_cypress_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.GREEN)
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block CYPRESS_PLANKS = registerWithItem("cypress_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.PALE_GREEN)));
     public static final Block CYPRESS_STAIRS = registerWithItem("cypress_stairs",
             new StairsBlock(ModBlocks.CYPRESS_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.PALE_GREEN)));
     public static final Block CYPRESS_SLAB = registerWithItem("cypress_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.PALE_GREEN)));
     public static final Block CYPRESS_BUTTON = registerWithItem("cypress_button",
-            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            Blocks.createWoodenButtonBlock(BlockSetTypeList.CYPRESS));
     public static final Block CYPRESS_PRESSURE_PLATE = registerWithItem("cypress_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetTypeList.CYPRESS, AbstractBlock.Settings.create()
+                    .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .noCollision()
+                    .strength(0.5F)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block CYPRESS_FENCE = registerWithItem("cypress_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new FenceBlock(AbstractBlock.Settings.create()
+                    .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block CYPRESS_FENCE_GATE = registerWithItem("cypress_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+            new FenceGateBlock(WoodTypeList.CYPRESS, AbstractBlock.Settings.create()
+                    .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(2.0F, 3.0F)
+                    .burnable()));
     public static final Block CYPRESS_DOOR = registerWithItem("cypress_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+            new DoorBlock(BlockSetTypeList.CYPRESS, AbstractBlock.Settings.create()
+                    .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block CYPRESS_TRAPDOOR = registerWithItem("cypress_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+            new TrapdoorBlock(BlockSetTypeList.CYPRESS, AbstractBlock.Settings.create()
+                    .mapColor(CYPRESS_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.DIDGERIDOO)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .burnable()));
     public static final Block CYPRESS_SAPLING = registerWithItem("cypress_sapling",
-            new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.CYPRESS, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PALE_GREEN)
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block POTTED_CYPRESS_SAPLING = registerWithItem("potted_cypress_sapling",
             Blocks.createFlowerPotBlock(CYPRESS_SAPLING));
 
@@ -309,36 +427,95 @@ public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redw
 
 
     public static final Block MANAWOOD_LOG = registerWithItem("manawood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            Blocks.createLogBlock(MapColor.BLUE, MapColor.LAPIS_BLUE));
     public static final Block STRIPPED_MANAWOOD_LOG = registerWithItem("stripped_manawood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+            Blocks.createLogBlock(MapColor.LIGHT_BLUE_GRAY, MapColor.LIGHT_BLUE_GRAY));
     public static final Block MANAWOOD_WOOD = registerWithItem("manawood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block STRIPPED_MANAWOOD_WOOD = registerWithItem("stripped_manawood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE_GRAY)
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block MANAWOOD_PLANKS = registerWithItem("manawood_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.BLUE)));
     public static final Block MANAWOOD_STAIRS = registerWithItem("manawood_stairs",
             new StairsBlock(ModBlocks.MANAWOOD_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.BLUE)));
     public static final Block MANAWOOD_SLAB = registerWithItem("manawood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.BLUE)));
     public static final Block MANAWOOD_BUTTON = registerWithItem("manawood_button",
-            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            Blocks.createWoodenButtonBlock(BlockSetTypeList.MANAWOOD));
     public static final Block MANAWOOD_PRESSURE_PLATE = registerWithItem("manawood_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetTypeList.MANAWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .noCollision()
+                    .strength(0.5F)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block MANAWOOD_FENCE = registerWithItem("manawood_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new FenceBlock(AbstractBlock.Settings.create()
+                    .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block MANAWOOD_FENCE_GATE = registerWithItem("manawood_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+            new FenceGateBlock(WoodTypeList.MANAWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(2.0F, 3.0F)
+                    .burnable()));
     public static final Block MANAWOOD_DOOR = registerWithItem("manawood_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+            new DoorBlock(BlockSetTypeList.MANAWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block MANAWOOD_TRAPDOOR = registerWithItem("manawood_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+            new TrapdoorBlock(BlockSetTypeList.MANAWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MANAWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.CHIME)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .burnable()));
     public static final Block MANAWOOD_LEAVES = registerWithItem("manawood_leaves",
-            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE)
+                    .strength(2.0F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block MANAWOOD_SAPLING = registerWithItem("manawood_sapling",
-            new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.MANAWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE)
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block POTTED_MANAWOOD_SAPLING = registerWithItem("potted_manawood_sapling",
             Blocks.createFlowerPotBlock(MANAWOOD_SAPLING));
 
@@ -383,36 +560,95 @@ public static final Block STRIPPED_REDWOOD_LOG = registerWithItem("stripped_redw
 
 
     public static final Block GLOOMWOOD_LOG = registerWithItem("gloomwood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+            Blocks.createLogBlock(MapColor.GRAY, MapColor.DEEPSLATE_GRAY));
     public static final Block STRIPPED_GLOOMWOOD_LOG = registerWithItem("stripped_gloomwood_log",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+            Blocks.createLogBlock(MapColor.GRAY, MapColor.GRAY));
     public static final Block GLOOMWOOD_WOOD = registerWithItem("gloomwood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DEEPSLATE_GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block STRIPPED_GLOOMWOOD_WOOD = registerWithItem("stripped_gloomwood_wood",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.GRAY)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(2.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block GLOOMWOOD_PLANKS = registerWithItem("gloomwood_planks",
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block GLOOMWOOD_STAIRS = registerWithItem("gloomwood_stairs",
-            new StairsBlock(ModBlocks.GLOOMWOOD_PLANKS.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)));
+            new StairsBlock(ModBlocks.MANAWOOD_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block GLOOMWOOD_SLAB = registerWithItem("gloomwood_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)));
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.DEEPSLATE_GRAY)));
     public static final Block GLOOMWOOD_BUTTON = registerWithItem("gloomwood_button",
-            new ButtonBlock(BlockSetType.OAK, 2, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)));
+            Blocks.createWoodenButtonBlock(BlockSetTypeList.GLOOMWOOD));
     public static final Block GLOOMWOOD_PRESSURE_PLATE = registerWithItem("gloomwood_pressure_plate",
-            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)));
+            new PressurePlateBlock(BlockSetTypeList.GLOOMWOOD, AbstractBlock.Settings.create()
+                    .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .noCollision()
+                    .strength(0.5F)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block GLOOMWOOD_FENCE = registerWithItem("gloomwood_fence",
-            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+            new FenceBlock(AbstractBlock.Settings.create()
+                    .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(2.0F, 3.0F)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()));
     public static final Block GLOOMWOOD_FENCE_GATE = registerWithItem("gloomwood_fence_gate",
-            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)));
+            new FenceGateBlock(WoodTypeList.GLOOMWOOD, AbstractBlock.Settings.create()
+                    .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(2.0F, 3.0F)
+                    .burnable()));
     public static final Block GLOOMWOOD_DOOR = registerWithItem("gloomwood_door",
-            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).nonOpaque()));
+            new DoorBlock(BlockSetTypeList.GLOOMWOOD, AbstractBlock.Settings.create()
+                    .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block GLOOMWOOD_TRAPDOOR = registerWithItem("gloomwood_trapdoor",
-            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)));
+            new TrapdoorBlock(BlockSetTypeList.GLOOMWOOD, AbstractBlock.Settings.create()
+                    .mapColor(GLOOMWOOD_PLANKS.getDefaultMapColor())
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(3.0F)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::never)
+                    .burnable()));
     public static final Block GLOOMWOOD_LEAVES = registerWithItem("gloomwood_leaves",
-            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+            new LeavesBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LICHEN_GREEN)
+                    .strength(2.0F)
+                    .ticksRandomly()
+                    .sounds(BlockSoundGroup.GRASS)
+                    .nonOpaque()
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block GLOOMWOOD_SAPLING = registerWithItem("gloomwood_sapling",
-            new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(ModSaplingGenerators.GLOOMWOOD, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LICHEN_GREEN)
+                    .ticksRandomly()
+                    .strength(0.0f)
+                    .sounds(BlockSoundGroup.GRASS)
+                    .allowsSpawning(Blocks::canSpawnOnLeaves)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .burnable()
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .solidBlock(Blocks::never)));
     public static final Block POTTED_GLOOMWOOD_SAPLING = registerBlock("potted_gloomwood_sapling",
             Blocks.createFlowerPotBlock(GLOOMWOOD_SAPLING));
 

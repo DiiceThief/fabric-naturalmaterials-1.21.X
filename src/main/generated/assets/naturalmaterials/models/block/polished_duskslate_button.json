@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "naturalmaterials:block/polished_duskslate"
+  }
+}

@@ -147,6 +147,42 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.POTTED_GLOOMWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerSingleton(ModBlocks.GLOOMWOOD_LEAVES, TexturedModel.LEAVES);
 
+        var duskslateFamily = new BlockFamily.Builder(ModBlocks.DUSKSLATE)
+                .wall(ModBlocks.DUSKSLATE_WALL)
+                .stairs(ModBlocks.DUSKSLATE_STAIRS)
+                .button(ModBlocks.DUSKSLATE_BUTTON)
+                .slab(ModBlocks.DUSKSLATE_SLAB)
+                .pressurePlate(ModBlocks.DUSKSLATE_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(duskslateFamily.getBaseBlock()).family(duskslateFamily);
+
+        var blueshistFamily = new BlockFamily.Builder(ModBlocks.BLUESHIST)
+                .stairs(ModBlocks.BLUESHIST_STAIRS)
+                .slab(ModBlocks.BLUESHIST_SLAB)
+                .wall(ModBlocks.BLUESHIST_WALL)
+                .button(ModBlocks.BLUESHIST_BUTTON)
+                .pressurePlate(ModBlocks.BLUESHIST_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(blueshistFamily.getBaseBlock()).family(blueshistFamily);
+
+        var polishedDuskslateFamily = new BlockFamily.Builder(ModBlocks.POLISHED_DUSKSLATE)
+                .stairs(ModBlocks.POLISHED_DUSKSLATE_STAIRS)
+                .slab(ModBlocks.POLISHED_DUSKSLATE_SLAB)
+                .wall(ModBlocks.POLISHED_DUSKSLATE_WALL)
+                .button(ModBlocks.POLISHED_DUSKSLATE_BUTTON)
+                .pressurePlate(ModBlocks.POLISHED_DUSKSLATE_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(polishedDuskslateFamily.getBaseBlock()).family(polishedDuskslateFamily);
+
+        var polishedBlueshistFamily = new BlockFamily.Builder(ModBlocks.POLISHED_BLUESHIST)
+                .stairs(ModBlocks.POLISHED_BLUESHIST_STAIRS)
+                .slab(ModBlocks.POLISHED_BLUESHIST_SLAB)
+                .wall(ModBlocks.POLISHED_BLUESHIST_WALL)
+                .button(ModBlocks.POLISHED_BLUESHIST_BUTTON)
+                .pressurePlate(ModBlocks.POLISHED_BLUESHIST_PRESSURE_PLATE)
+                .build();
+        blockStateModelGenerator.registerCubeAllModelTexturePool(polishedBlueshistFamily.getBaseBlock()).family(polishedBlueshistFamily);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_VIRIDIUM_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_THALRENITE_BLOCK);

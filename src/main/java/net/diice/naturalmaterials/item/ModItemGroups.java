@@ -95,6 +95,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PALM_TRAPDOOR);
                         entries.add(ModBlocks.PALM_LEAVES);
                         entries.add(ModBlocks.PALM_SAPLING);
+                        entries.add(ModBlocks.PALM_SIGN);
+                        entries.add(ModBlocks.PALM_HANGING_SIGN);
 
                         entries.add(ModBlocks.REDWOOD_LOG);
                         entries.add(ModBlocks.REDWOOD_WOOD);
@@ -111,6 +113,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.REDWOOD_TRAPDOOR);
                         entries.add(ModBlocks.REDWOOD_LEAVES);
                         entries.add(ModBlocks.REDWOOD_SAPLING);
+                        entries.add(ModBlocks.REDWOOD_SIGN);
+                        entries.add(ModBlocks.REDWOOD_HANGING_SIGN);
 
                         entries.add(ModBlocks.CYPRESS_LOG);
                         entries.add(ModBlocks.CYPRESS_WOOD);
@@ -127,6 +131,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CYPRESS_TRAPDOOR);
                         entries.add(ModBlocks.CYPRESS_LEAVES);
                         entries.add(ModBlocks.CYPRESS_SAPLING);
+                        entries.add(ModBlocks.CYPRESS_SIGN);
+                        entries.add(ModBlocks.CYPRESS_HANGING_SIGN);
 
                         entries.add(ModBlocks.MANAWOOD_LOG);
                         entries.add(ModBlocks.MANAWOOD_WOOD);
@@ -143,6 +149,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MANAWOOD_TRAPDOOR);
                         entries.add(ModBlocks.MANAWOOD_LEAVES);
                         entries.add(ModBlocks.MANAWOOD_SAPLING);
+                        entries.add(ModBlocks.MANAWOOD_SIGN);
+                        entries.add(ModBlocks.MANAWOOD_HANGING_SIGN);
 
                         entries.add(ModBlocks.GLOOMWOOD_LOG);
                         entries.add(ModBlocks.GLOOMWOOD_WOOD);
@@ -159,6 +167,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GLOOMWOOD_TRAPDOOR);
                         entries.add(ModBlocks.GLOOMWOOD_LEAVES);
                         entries.add(ModBlocks.GLOOMWOOD_SAPLING);
+                        entries.add(ModBlocks.GLOOMWOOD_SIGN);
+                        entries.add(ModBlocks.GLOOMWOOD_HANGING_SIGN);
 
                         entries.add(ModBlocks.DUSKSLATE);
                         entries.add(ModBlocks.DUSKSLATE_STAIRS);

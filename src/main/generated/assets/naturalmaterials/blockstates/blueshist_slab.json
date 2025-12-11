@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "naturalmaterials:block/blueshist_slab"
+    },
+    "type=double": {
+      "model": "naturalmaterials:block/blueshist"
+    },
+    "type=top": {
+      "model": "naturalmaterials:block/blueshist_slab_top"
+    }
+  }
+}
