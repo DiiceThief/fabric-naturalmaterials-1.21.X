@@ -215,6 +215,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HUNTER_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDRITE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDRITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDRITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PALM_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PALM_CHEST_BOAT, Models.GENERATED);
